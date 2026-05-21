@@ -82,7 +82,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={`${inter.variable} h-full antialiased`}>
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         {GA_ID && (
           <>
             <Script
