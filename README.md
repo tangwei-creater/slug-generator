@@ -7,12 +7,27 @@ Free online tool to convert any text into clean, SEO-friendly URL slugs.
 ## Features
 
 - Real-time slug generation as you type
+- **Bulk mode** — convert multiple texts to slugs at once
+- **Stop words removal** — filter out 100+ common English stop words
+- **Copy as /path** — one-click copy with leading slash for URL paths
+- **Example buttons** — quick demos to try the tool instantly
 - Custom separators (hyphens, underscores, dots)
 - Unicode transliteration (accented characters to ASCII)
 - Max length control with word-boundary awareness
 - One-click copy to clipboard
 - 6 languages: English, Japanese, German, Spanish, Portuguese, French
 - No data sent to any server — everything runs in your browser
+
+## SEO
+
+- JSON-LD structured data (WebApplication, FAQPage, BreadcrumbList, WebSite with SearchAction)
+- Hreflang tags for all 6 locales
+- Dynamic sitemap with 66 URLs
+- Open Graph and Twitter Card meta tags
+- Canonical URLs on all pages
+- 5 SEO blog articles with Article schema
+- Google Analytics 4 integrated
+- Security headers (X-Content-Type-Options, X-Frame-Options, Referrer-Policy)
 
 ## Tools
 
