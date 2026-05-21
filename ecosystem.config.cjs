@@ -12,7 +12,7 @@ module.exports = {
       env: {
         NODE_ENV: "production",
         PORT: 3000,
-        // NEXT_PUBLIC_GA_ID: "G-XXXXXXXXXX",  // 取消注释并填入你的 GA4 ID
+        NEXT_PUBLIC_GA_ID: "G-GQK63V1GJG",
       },
     },
   ],

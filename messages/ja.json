@@ -24,7 +24,17 @@
     "copied": "コピーしました！",
     "clear": "クリア",
     "characters": "文字数",
-    "words": "単語数"
+    "words": "単語数",
+    "removeStopWords": "ストップワード除去",
+    "singleMode": "単一",
+    "bulkMode": "一括",
+    "bulkInputLabel": "テキストを入力（1行に1つ）",
+    "bulkPlaceholder": "最初のブログ記事\nもう一つの素晴らしい記事\nSEO改善の10のヒント",
+    "bulkOutputLabel": "生成されたスラッグ",
+    "copyAll": "すべてコピー",
+    "slugsGenerated": "件のスラッグを生成",
+    "copyAsPath": "/pathとしてコピー",
+    "tryExample": "例："
   },
   "nav": {
     "urlSlug": "URLスラッグ",

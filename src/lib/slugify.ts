@@ -20,6 +20,22 @@ export function transliterate(str: string): string {
     .join("");
 }
 
+const STOP_WORDS = new Set([
+  "a", "an", "the", "and", "or", "but", "in", "on", "at", "to", "for",
+  "of", "with", "by", "from", "is", "it", "as", "be", "was", "are",
+  "been", "being", "have", "has", "had", "do", "does", "did", "will",
+  "would", "could", "should", "may", "might", "shall", "can", "need",
+  "not", "no", "nor", "so", "if", "then", "than", "too", "very",
+  "just", "about", "above", "after", "again", "all", "also", "am",
+  "any", "because", "before", "between", "both", "each", "few",
+  "further", "here", "how", "into", "more", "most", "much", "must",
+  "my", "myself", "now", "only", "other", "our", "out", "over",
+  "own", "same", "she", "he", "her", "him", "his", "its", "me",
+  "that", "their", "them", "these", "they", "this", "those",
+  "through", "under", "until", "up", "we", "what", "when", "where",
+  "which", "while", "who", "whom", "why", "you", "your",
+]);
+
 export interface SlugOptions {
   separator: string;
   lowercase: boolean;
@@ -27,6 +43,7 @@ export interface SlugOptions {
   transliterate: boolean;
   maxLength: number;
   stripNumbers: boolean;
+  removeStopWords: boolean;
 }
 
 export const DEFAULT_OPTIONS: SlugOptions = {
@@ -36,6 +53,7 @@ export const DEFAULT_OPTIONS: SlugOptions = {
   transliterate: true,
   maxLength: 0,
   stripNumbers: false,
+  removeStopWords: false,
 };
 
 function escapeRegex(str: string) {
@@ -60,7 +78,16 @@ export function slugify(text: string, options: SlugOptions = DEFAULT_OPTIONS): s
   result = result
     .normalize("NFKD")
     .replace(/[̀-ͯ]/g, "")
-    .replace(/[^\w\s-]/g, " ")
+    .replace(/[^\w\s-]/g, " ");
+
+  if (options.removeStopWords) {
+    result = result
+      .split(/\s+/)
+      .filter((word) => !STOP_WORDS.has(word.toLowerCase()))
+      .join(" ");
+  }
+
+  result = result
     .replace(/[\s_-]+/g, options.separator)
     .replace(
       new RegExp(

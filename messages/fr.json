@@ -24,7 +24,17 @@
     "copied": "Copié !",
     "clear": "Effacer",
     "characters": "Caractères",
-    "words": "Mots"
+    "words": "Mots",
+    "removeStopWords": "Supprimer les mots vides",
+    "singleMode": "Simple",
+    "bulkMode": "En masse",
+    "bulkInputLabel": "Entrez du texte (un par ligne)",
+    "bulkPlaceholder": "Mon premier article de blog\nUn autre super article\n10 conseils pour un meilleur SEO",
+    "bulkOutputLabel": "Slugs générés",
+    "copyAll": "Tout copier",
+    "slugsGenerated": "slugs générés",
+    "copyAsPath": "Copier comme /chemin",
+    "tryExample": "Essayer :"
   },
   "nav": {
     "urlSlug": "Slug URL",
