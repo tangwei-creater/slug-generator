@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useCallback, useRef } from "react";
+import { useTranslations } from "next-intl";
 import { slugify, DEFAULT_OPTIONS, type SlugOptions } from "@/lib/slugify";
 
 interface SlugToolProps {
@@ -14,8 +15,9 @@ export default function SlugTool({
   defaultSeparator = "-",
   defaultStripNumbers = false,
   defaultMaxLength = 0,
-  placeholder = "e.g. My Awesome Blog Post Title! (2024)",
+  placeholder,
 }: SlugToolProps) {
+  const t = useTranslations("tool");
   const [input, setInput] = useState("");
   const [copied, setCopied] = useState(false);
   const [options, setOptions] = useState<SlugOptions>({
@@ -46,35 +48,35 @@ export default function SlugTool({
     <div className="w-full max-w-3xl mx-auto">
       <div className="mb-6">
         <label htmlFor="text-input" className="block text-sm font-semibold text-gray-700 mb-2">
-          Enter your text
+          {t("inputLabel")}
         </label>
         <textarea
           id="text-input"
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          placeholder={placeholder}
+          placeholder={placeholder ?? t("placeholder")}
           className="w-full h-32 px-4 py-3 border-2 border-gray-200 rounded-xl text-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all outline-none resize-none bg-white"
           autoFocus
         />
       </div>
 
       <div className="mb-6 p-4 bg-gray-50 rounded-xl border border-gray-100">
-        <p className="text-sm font-semibold text-gray-700 mb-3">Options</p>
+        <p className="text-sm font-semibold text-gray-700 mb-3">{t("options")}</p>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           <div>
-            <label className="text-xs text-gray-500 mb-1 block">Separator</label>
+            <label className="text-xs text-gray-500 mb-1 block">{t("separator")}</label>
             <select
               value={options.separator}
               onChange={(e) => setOptions({ ...options, separator: e.target.value })}
               className="w-full px-3 py-2 border border-gray-200 rounded-lg text-sm bg-white focus:border-blue-500 outline-none"
             >
-              <option value="-">Hyphen (-)</option>
-              <option value="_">Underscore (_)</option>
-              <option value=".">Dot (.)</option>
+              <option value="-">{t("hyphen")}</option>
+              <option value="_">{t("underscore")}</option>
+              <option value=".">{t("dot")}</option>
             </select>
           </div>
           <div>
-            <label className="text-xs text-gray-500 mb-1 block">Max length (0 = no limit)</label>
+            <label className="text-xs text-gray-500 mb-1 block">{t("maxLength")}</label>
             <input
               type="number"
               min={0}
@@ -85,15 +87,15 @@ export default function SlugTool({
             />
           </div>
           <div className="flex flex-col gap-2">
-            <Toggle label="Lowercase" checked={options.lowercase} onChange={(v) => setOptions({ ...options, lowercase: v })} />
-            <Toggle label="Transliterate" checked={options.transliterate} onChange={(v) => setOptions({ ...options, transliterate: v })} />
-            <Toggle label="Strip numbers" checked={options.stripNumbers} onChange={(v) => setOptions({ ...options, stripNumbers: v })} />
+            <Toggle label={t("lowercase")} checked={options.lowercase} onChange={(v) => setOptions({ ...options, lowercase: v })} />
+            <Toggle label={t("transliterate")} checked={options.transliterate} onChange={(v) => setOptions({ ...options, transliterate: v })} />
+            <Toggle label={t("stripNumbers")} checked={options.stripNumbers} onChange={(v) => setOptions({ ...options, stripNumbers: v })} />
           </div>
         </div>
       </div>
 
       <div className="mb-4">
-        <label className="block text-sm font-semibold text-gray-700 mb-2">Your slug</label>
+        <label className="block text-sm font-semibold text-gray-700 mb-2">{t("outputLabel")}</label>
         <div className="flex gap-2">
           <input
             ref={outputRef}
@@ -108,21 +110,21 @@ export default function SlugTool({
             disabled={!slug}
             className="px-6 py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 active:bg-blue-800 disabled:bg-gray-300 disabled:cursor-not-allowed transition-colors whitespace-nowrap"
           >
-            {copied ? "Copied!" : "Copy"}
+            {copied ? t("copied") : t("copy")}
           </button>
           <button
             onClick={() => { setInput(""); setCopied(false); }}
             className="px-4 py-3 bg-gray-100 text-gray-600 rounded-xl font-medium hover:bg-gray-200 transition-colors"
           >
-            Clear
+            {t("clear")}
           </button>
         </div>
       </div>
 
       {slug && (
         <div className="flex gap-4 text-sm text-gray-500">
-          <span>Characters: <strong className="text-gray-700">{slug.length}</strong></span>
-          <span>Words: <strong className="text-gray-700">{slug.split(options.separator).filter(Boolean).length}</strong></span>
+          <span>{t("characters")}: <strong className="text-gray-700">{slug.length}</strong></span>
+          <span>{t("words")}: <strong className="text-gray-700">{slug.split(options.separator).filter(Boolean).length}</strong></span>
         </div>
       )}
     </div>

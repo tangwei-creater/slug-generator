@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "title": "Slug Generator - Kostenloser Online-URL-Slug-Ersteller | SlugGenerator.app",
+    "description": "Erstellen Sie sofort saubere, SEO-freundliche URL-Slugs. Konvertieren Sie Text in URL-sichere Slugs mit benutzerdefinierten Trennzeichen und Transliteration. Kostenloses Online-Tool."
+  },
+  "hero": {
+    "h1": "Slug Generator",
+    "subtitle": "Konvertieren Sie beliebigen Text in einen sauberen, SEO-freundlichen URL-Slug. Kostenlos, schnell und direkt im Browser — keine Anmeldung erforderlich."
+  },
+  "tool": {
+    "inputLabel": "Text eingeben",
+    "placeholder": "z.B. Mein großartiger Blog-Beitrag Titel! (2024)",
+    "options": "Optionen",
+    "separator": "Trennzeichen",
+    "hyphen": "Bindestrich (-)",
+    "underscore": "Unterstrich (_)",
+    "dot": "Punkt (.)",
+    "maxLength": "Maximale Länge (0 = kein Limit)",
+    "lowercase": "Kleinbuchstaben",
+    "transliterate": "Transliterieren",
+    "stripNumbers": "Zahlen entfernen",
+    "outputLabel": "Ihr Slug",
+    "copy": "Kopieren",
+    "copied": "Kopiert!",
+    "clear": "Löschen",
+    "characters": "Zeichen",
+    "words": "Wörter"
+  },
+  "nav": {
+    "urlSlug": "URL-Slug",
+    "textToSlug": "Text zu Slug",
+    "kebabCase": "Kebab Case",
+    "blog": "Blog"
+  },
+  "related": {
+    "title": "Verwandte Tools"
+  },
+  "footer": {
+    "text": "Kostenloser Online-Slug-Generator. Keine Daten werden an Server gesendet. Alles läuft in Ihrem Browser."
+  },
+  "seo": {
+    "whatIsSlug": "Was ist ein URL-Slug?",
+    "whatIsSlugP1": "Ein URL-Slug ist der Teil einer Webadresse, der nach dem Domainnamen kommt und eine bestimmte Seite auf menschenlesbare Weise identifiziert.",
+    "whatIsSlugP2": "Gute Slugs sind kurz, beschreibend und verwenden Bindestriche zur Worttrennung. Sie helfen sowohl Suchmaschinen als auch Nutzern zu verstehen, worum es auf einer Seite geht, bevor sie klicken.",
+    "whyUse": "Warum einen Slug Generator verwenden?",
+    "seoFriendly": "SEO-freundliche URLs",
+    "seoFriendlyDesc": "Saubere Slugs verbessern Ihr Suchmaschinen-Ranking, indem relevante Keywords in der URL enthalten sind.",
+    "consistency": "Konsistenz",
+    "consistencyDesc": "Sonderzeichen, Akzente und Formatierungen werden automatisch verarbeitet, sodass jede URL dem gleichen Muster folgt.",
+    "saveTime": "Zeit sparen",
+    "saveTimeDesc": "Kein manuelles Konvertieren von Titeln in URL-sichere Zeichenketten mehr. Text einfügen und sofort einen Slug erhalten.",
+    "avoidBroken": "Defekte Links vermeiden",
+    "avoidBrokenDesc": "Sonderzeichen in URLs können 404-Fehler verursachen. Ein Slug Generator entfernt sie automatisch.",
+    "howToCreate": "Wie erstellt man einen guten URL-Slug?",
+    "howToStep1": "Beginnen Sie mit Ihrem Seitentitel oder einer beschreibenden Phrase",
+    "howToStep2": "Alles in Kleinbuchstaben umwandeln",
+    "howToStep3": "Leerzeichen und Sonderzeichen durch Bindestriche ersetzen",
+    "howToStep4": "Stoppwörter entfernen, wenn der Slug zu lang ist",
+    "howToStep5": "Für optimale SEO-Ergebnisse unter 60 Zeichen bleiben",
+    "howToStep6": "Nur Buchstaben, Zahlen und Bindestriche verwenden — keine Unterstriche oder Sonderzeichen",
+    "features": "Slug Generator Funktionen",
+    "featuresIntro": "Dieser kostenlose Online-Slug-Generator bietet:",
+    "feature1": "Echtzeit-Konvertierung",
+    "feature1Desc": "Sehen Sie Ihren Slug beim Tippen aktualisiert",
+    "feature2": "Benutzerdefinierte Trennzeichen",
+    "feature2Desc": "Wählen Sie zwischen Bindestrichen, Unterstrichen oder Punkten",
+    "feature3": "Transliteration",
+    "feature3Desc": "Konvertiert Akzentzeichen automatisch in ihre ASCII-Entsprechungen",
+    "feature4": "Maximale Längenkontrolle",
+    "feature4Desc": "Zeichenlimit setzen — der Text wird an der nächsten Wortgrenze geschnitten",
+    "feature5": "Ein-Klick-Kopieren",
+    "feature5Desc": "Slug sofort in die Zwischenablage kopieren",
+    "useCases": "Häufige Anwendungsfälle",
+    "useCase1": "Blog-URLs für WordPress, Ghost oder Hugo",
+    "useCase2": "Produktseiten-URLs für E-Commerce-Plattformen",
+    "useCase3": "API-Endpunkt-Namenskonventionen",
+    "useCase4": "Dateibenennung für Web-Assets",
+    "useCase5": "Datenbankfreundliche Bezeichner",
+    "useCase6": "GitHub-Repository- und Branch-Namen",
+    "faq": "FAQ",
+    "faqQ1": "Welche Zeichen sind in einem URL-Slug erlaubt?",
+    "faqA1": "URL-Slugs sollten nur Kleinbuchstaben (a-z), Zahlen (0-9) und Bindestriche (-) enthalten. Alle anderen Zeichen sollten konvertiert oder entfernt werden.",
+    "faqQ2": "Sollte ich Bindestriche oder Unterstriche in Slugs verwenden?",
+    "faqA2": "Google empfiehlt Bindestriche (-) gegenüber Unterstrichen (_). Bindestriche werden von Suchmaschinen als Worttrenner behandelt, Unterstriche hingegen nicht.",
+    "faqQ3": "Wie lang sollte ein URL-Slug sein?",
+    "faqA3": "Halten Sie Ihre Slugs unter 60 Zeichen. Kürzere Slugs sind leichter zu lesen, zu teilen und zu merken."
+  },
+  "tools": {
+    "slugGenerator": { "name": "Slug Generator", "desc": "Text in URL-Slugs umwandeln" },
+    "urlSlugGenerator": { "name": "URL-Slug-Generator", "desc": "SEO-freundliche URL-Slugs erstellen" },
+    "textToSlug": { "name": "Text zu Slug", "desc": "Text in einen Slug umwandeln" },
+    "kebabCaseConverter": { "name": "Kebab-Case-Konverter", "desc": "Text in Kebab-Case umwandeln" },
+    "slugifyOnline": { "name": "Online Slugifizieren", "desc": "Text sofort online slugifizieren" }
+  },
+  "pages": {
+    "urlSlugGenerator": {
+      "title": "URL-Slug-Generator - SEO-freundliche URLs erstellen | SlugGenerator.app",
+      "description": "Erstellen Sie saubere URL-Slugs für Ihre Webseiten. Titel oder Text einfügen und sofort einen SEO-optimierten URL-Slug erhalten.",
+      "h1": "URL-Slug-Generator",
+      "subtitle": "Erstellen Sie saubere, SEO-freundliche URL-Slugs aus beliebigem Text. Perfekt für Blogbeiträge, Produktseiten und Webanwendungen.",
+      "placeholder": "z.B. Wie man eine REST API mit Node.js baut"
+    },
+    "textToSlug": {
+      "title": "Text-zu-Slug-Konverter - Sofortige Text-Slugifizierung | SlugGenerator.app",
+      "description": "Konvertieren Sie Text in einen URL-sicheren Slug. Verarbeitet Akzentzeichen, Sonderzeichen und Unicode. Sofortige Ergebnisse mit Ein-Klick-Kopieren.",
+      "h1": "Text-zu-Slug-Konverter",
+      "subtitle": "Verwandeln Sie beliebigen Text in einen URL-sicheren Slug. Akzentzeichen, Symbole und Unicode werden automatisch verarbeitet.",
+      "placeholder": "z.B. Ça fait déjà 10 ans — Résumé complet"
+    },
+    "kebabCaseConverter": {
+      "title": "Kebab-Case-Konverter - Text in kebab-case umwandeln | SlugGenerator.app",
+      "description": "Konvertieren Sie Text in das Kebab-Case-Format. Ideal für CSS-Klassennamen, URL-Slugs, Dateinamen und Programmierkonventionen.",
+      "h1": "Kebab-Case-Konverter",
+      "subtitle": "Text in das Kebab-Case-Format umwandeln. Verwendet für CSS-Klassennamen, URL-Slugs und Dateibenennungen.",
+      "placeholder": "z.B. myVariableName oder My Component Title"
+    },
+    "slugifyOnline": {
+      "title": "Online Slugifizieren - Kostenloser Online-Text-Slugifier | SlugGenerator.app",
+      "description": "Slugifizieren Sie Text kostenlos online. Wandelt Titel, Sätze und Phrasen in saubere URL-freundliche Slugs um. Keine Installation nötig.",
+      "h1": "Online Slugifizieren",
+      "subtitle": "Text sofort online slugifizieren. Keine Installation oder Registrierung erforderlich. Alles läuft in Ihrem Browser.",
+      "placeholder": "z.B. 10 Tipps für bessere Code-Reviews (2024 Edition)"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Tipps, Anleitungen und Best Practices für URL-Slugs und SEO-freundliche URLs.",
+    "readMore": "Weiterlesen",
+    "minRead": "Min. Lesezeit"
+  }
+}

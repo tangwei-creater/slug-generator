@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "title": "Slug Generator - Free Online URL Slug Creator | SlugGenerator.app",
+    "description": "Generate clean, SEO-friendly URL slugs instantly. Convert any text to a URL-safe slug with custom separators, transliteration, and more. Free online tool, no signup required."
+  },
+  "hero": {
+    "h1": "Slug Generator",
+    "subtitle": "Convert any text into a clean, SEO-friendly URL slug. Free, fast, and works right in your browser — no signup required."
+  },
+  "tool": {
+    "inputLabel": "Enter your text",
+    "placeholder": "e.g. My Awesome Blog Post Title! (2024)",
+    "options": "Options",
+    "separator": "Separator",
+    "hyphen": "Hyphen (-)",
+    "underscore": "Underscore (_)",
+    "dot": "Dot (.)",
+    "maxLength": "Max length (0 = no limit)",
+    "lowercase": "Lowercase",
+    "transliterate": "Transliterate",
+    "stripNumbers": "Strip numbers",
+    "outputLabel": "Your slug",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "clear": "Clear",
+    "characters": "Characters",
+    "words": "Words"
+  },
+  "nav": {
+    "urlSlug": "URL Slug",
+    "textToSlug": "Text to Slug",
+    "kebabCase": "Kebab Case",
+    "blog": "Blog"
+  },
+  "related": {
+    "title": "Related Tools"
+  },
+  "footer": {
+    "text": "Free online slug generator. No data is sent to any server. Everything runs in your browser."
+  },
+  "seo": {
+    "whatIsSlug": "What Is a URL Slug?",
+    "whatIsSlugP1": "A URL slug is the part of a web address that comes after the domain name and identifies a specific page in a human-readable way.",
+    "whatIsSlugP2": "Good slugs are short, descriptive, and use hyphens to separate words. They help both search engines and users understand what a page is about before clicking.",
+    "whyUse": "Why Use a Slug Generator?",
+    "seoFriendly": "SEO-friendly URLs",
+    "seoFriendlyDesc": "Clean slugs improve your search engine rankings by including relevant keywords in the URL.",
+    "consistency": "Consistency",
+    "consistencyDesc": "Automatically handle special characters, accents, and formatting so every URL follows the same pattern.",
+    "saveTime": "Save time",
+    "saveTimeDesc": "No more manually converting titles to URL-safe strings. Paste your text and get a slug instantly.",
+    "avoidBroken": "Avoid broken links",
+    "avoidBrokenDesc": "Special characters in URLs can cause 404 errors. A slug generator strips them automatically.",
+    "howToCreate": "How to Create a Good URL Slug",
+    "howToStep1": "Start with your page title or a descriptive phrase",
+    "howToStep2": "Convert everything to lowercase",
+    "howToStep3": "Replace spaces and special characters with hyphens",
+    "howToStep4": "Remove stop words if the slug is too long (a, the, is, etc.)",
+    "howToStep5": "Keep it under 60 characters for best SEO results",
+    "howToStep6": "Use only letters, numbers, and hyphens — no underscores or special characters",
+    "features": "Slug Generator Features",
+    "featuresIntro": "This free online slug generator offers:",
+    "feature1": "Real-time conversion",
+    "feature1Desc": "See your slug update as you type",
+    "feature2": "Custom separators",
+    "feature2Desc": "Choose between hyphens, underscores, or dots",
+    "feature3": "Transliteration",
+    "feature3Desc": "Automatically converts accented characters to their ASCII equivalents",
+    "feature4": "Max length control",
+    "feature4Desc": "Set a character limit and the tool cuts at the nearest word boundary",
+    "feature5": "One-click copy",
+    "feature5Desc": "Copy your slug to clipboard instantly",
+    "useCases": "Common Use Cases",
+    "useCase1": "Blog post URLs for WordPress, Ghost, or Hugo",
+    "useCase2": "Product page URLs for e-commerce platforms",
+    "useCase3": "API endpoint naming conventions",
+    "useCase4": "File naming for web assets",
+    "useCase5": "Database-friendly identifiers",
+    "useCase6": "GitHub repository and branch names",
+    "faq": "FAQ",
+    "faqQ1": "What characters are allowed in a URL slug?",
+    "faqA1": "URL slugs should only contain lowercase letters (a-z), numbers (0-9), and hyphens (-). All other characters should be converted or removed.",
+    "faqQ2": "Should I use hyphens or underscores in slugs?",
+    "faqA2": "Google recommends hyphens (-) over underscores (_). Hyphens are treated as word separators by search engines, while underscores are not.",
+    "faqQ3": "How long should a URL slug be?",
+    "faqA3": "Keep your slugs under 60 characters. Shorter slugs are easier to read, share, and remember."
+  },
+  "tools": {
+    "slugGenerator": { "name": "Slug Generator", "desc": "Convert text to URL slugs" },
+    "urlSlugGenerator": { "name": "URL Slug Generator", "desc": "Create SEO-friendly URL slugs" },
+    "textToSlug": { "name": "Text to Slug", "desc": "Transform any text into a slug" },
+    "kebabCaseConverter": { "name": "Kebab Case Converter", "desc": "Convert text to kebab-case" },
+    "slugifyOnline": { "name": "Slugify Online", "desc": "Slugify text instantly online" }
+  },
+  "pages": {
+    "urlSlugGenerator": {
+      "title": "URL Slug Generator - Create SEO-Friendly URLs | SlugGenerator.app",
+      "description": "Generate clean URL slugs for your web pages. Paste any title or text and get an SEO-optimized URL slug instantly.",
+      "h1": "URL Slug Generator",
+      "subtitle": "Create clean, SEO-friendly URL slugs from any text. Perfect for blog posts, product pages, and web applications.",
+      "placeholder": "e.g. How to Build a REST API with Node.js"
+    },
+    "textToSlug": {
+      "title": "Text to Slug Converter - Instant Text Slugification | SlugGenerator.app",
+      "description": "Convert any text to a URL-safe slug. Handles accented characters, special symbols, and Unicode. Instant results with one-click copy.",
+      "h1": "Text to Slug Converter",
+      "subtitle": "Transform any text into a URL-safe slug. Handles accented characters, symbols, and Unicode automatically.",
+      "placeholder": "e.g. Ça fait déjà 10 ans — Résumé complet"
+    },
+    "kebabCaseConverter": {
+      "title": "Kebab Case Converter - Convert Text to kebab-case | SlugGenerator.app",
+      "description": "Convert any text to kebab-case format. Ideal for CSS class names, URL slugs, file names, and programming conventions. Free online tool.",
+      "h1": "Kebab Case Converter",
+      "subtitle": "Convert any text to kebab-case format. Used for CSS class names, URL slugs, and file naming conventions.",
+      "placeholder": "e.g. myVariableName or My Component Title"
+    },
+    "slugifyOnline": {
+      "title": "Slugify Online - Free Online Text Slugifier | SlugGenerator.app",
+      "description": "Slugify any text online for free. Converts titles, sentences, and phrases into clean URL-friendly slugs. No installation, works in your browser.",
+      "h1": "Slugify Online",
+      "subtitle": "Slugify any text online instantly. No installation or signup needed. Everything runs in your browser.",
+      "placeholder": "e.g. 10 Tips for Better Code Reviews (2024 Edition)"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Tips, guides, and best practices for URL slugs and SEO-friendly URLs.",
+    "readMore": "Read more",
+    "minRead": "min read"
+  }
+}

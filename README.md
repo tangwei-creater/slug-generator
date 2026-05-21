@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Slug Generator
 
-## Getting Started
+Free online tool to convert any text into clean, SEO-friendly URL slugs.
 
-First, run the development server:
+**Live site: [sluggenerator.app](https://sluggenerator.app)**
+
+## Features
+
+- Real-time slug generation as you type
+- Custom separators (hyphens, underscores, dots)
+- Unicode transliteration (accented characters to ASCII)
+- Max length control with word-boundary awareness
+- One-click copy to clipboard
+- 6 languages: English, Japanese, German, Spanish, Portuguese, French
+- No data sent to any server — everything runs in your browser
+
+## Tools
+
+| Tool | URL | Description |
+|------|-----|-------------|
+| Slug Generator | [/](https://sluggenerator.app) | Core text-to-slug converter |
+| URL Slug Generator | [/url-slug-generator](https://sluggenerator.app/url-slug-generator) | Generate SEO-friendly URL slugs |
+| Text to Slug | [/text-to-slug](https://sluggenerator.app/text-to-slug) | Convert any text to a URL-safe slug |
+| Kebab Case Converter | [/kebab-case-converter](https://sluggenerator.app/kebab-case-converter) | Convert text to kebab-case |
+| Slugify Online | [/slugify-online](https://sluggenerator.app/slugify-online) | Slugify text instantly in your browser |
+
+## Tech Stack
+
+- **Framework**: Next.js 16 (App Router)
+- **Internationalization**: next-intl v4
+- **Styling**: Tailwind CSS v4
+- **Language**: TypeScript
+
+## Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deployment (Linux VPS)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+git clone <this-repo> /var/www/slug-generator
+cd /var/www/slug-generator
+chmod +x deploy.sh
+bash deploy.sh
+```
 
-## Learn More
+See `deploy.sh` for the full setup (Node.js, PM2, Nginx, SSL).
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT

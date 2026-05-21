@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "title": "スラッグジェネレーター - 無料オンラインURLスラッグ作成ツール | SlugGenerator.app",
+    "description": "テキストをSEOに最適なURLスラッグに即座に変換。カスタム区切り文字、音訳機能付き。無料オンラインツール、登録不要。"
+  },
+  "hero": {
+    "h1": "スラッグジェネレーター",
+    "subtitle": "テキストをクリーンでSEOに最適なURLスラッグに変換。無料・高速・ブラウザ上で完結 — 登録不要。"
+  },
+  "tool": {
+    "inputLabel": "テキストを入力",
+    "placeholder": "例: 私の素晴らしいブログ記事タイトル！（2024）",
+    "options": "オプション",
+    "separator": "区切り文字",
+    "hyphen": "ハイフン (-)",
+    "underscore": "アンダースコア (_)",
+    "dot": "ドット (.)",
+    "maxLength": "最大文字数（0 = 制限なし）",
+    "lowercase": "小文字化",
+    "transliterate": "音訳",
+    "stripNumbers": "数字を除去",
+    "outputLabel": "生成されたスラッグ",
+    "copy": "コピー",
+    "copied": "コピーしました！",
+    "clear": "クリア",
+    "characters": "文字数",
+    "words": "単語数"
+  },
+  "nav": {
+    "urlSlug": "URLスラッグ",
+    "textToSlug": "テキスト→スラッグ",
+    "kebabCase": "ケバブケース",
+    "blog": "ブログ"
+  },
+  "related": {
+    "title": "関連ツール"
+  },
+  "footer": {
+    "text": "無料オンラインスラッグジェネレーター。データはサーバーに送信されません。すべてブラウザ上で動作します。"
+  },
+  "seo": {
+    "whatIsSlug": "URLスラッグとは？",
+    "whatIsSlugP1": "URLスラッグとは、ドメイン名の後に続くウェブアドレスの一部で、特定のページを人間が読みやすい形で識別するものです。",
+    "whatIsSlugP2": "良いスラッグは短く、説明的で、単語の区切りにハイフンを使用します。検索エンジンとユーザーの両方が、クリックする前にページの内容を理解するのに役立ちます。",
+    "whyUse": "スラッグジェネレーターを使う理由",
+    "seoFriendly": "SEOに最適なURL",
+    "seoFriendlyDesc": "クリーンなスラッグは、URLに関連キーワードを含めることで検索エンジンのランキングを向上させます。",
+    "consistency": "一貫性",
+    "consistencyDesc": "特殊文字、アクセント記号、フォーマットを自動処理し、すべてのURLを同じパターンに統一します。",
+    "saveTime": "時間を節約",
+    "saveTimeDesc": "タイトルをURL安全な文字列に手動変換する必要はありません。テキストを貼り付けるだけでスラッグを即座に取得。",
+    "avoidBroken": "リンク切れを防止",
+    "avoidBrokenDesc": "URLの特殊文字は404エラーの原因になります。スラッグジェネレーターが自動的に除去します。",
+    "howToCreate": "良いURLスラッグの作り方",
+    "howToStep1": "ページタイトルまたは説明的なフレーズから始める",
+    "howToStep2": "すべてを小文字に変換する",
+    "howToStep3": "スペースと特殊文字をハイフンに置き換える",
+    "howToStep4": "スラッグが長すぎる場合はストップワードを削除する",
+    "howToStep5": "SEOに最適な60文字以内に抑える",
+    "howToStep6": "文字、数字、ハイフンのみ使用 — アンダースコアや特殊文字は不可",
+    "features": "スラッグジェネレーターの機能",
+    "featuresIntro": "この無料オンラインスラッグジェネレーターの機能：",
+    "feature1": "リアルタイム変換",
+    "feature1Desc": "入力と同時にスラッグが更新されます",
+    "feature2": "カスタム区切り文字",
+    "feature2Desc": "ハイフン、アンダースコア、ドットから選択可能",
+    "feature3": "音訳機能",
+    "feature3Desc": "アクセント付き文字をASCII文字に自動変換",
+    "feature4": "最大文字数制御",
+    "feature4Desc": "文字数制限を設定すると、最も近い単語境界でカット",
+    "feature5": "ワンクリックコピー",
+    "feature5Desc": "スラッグをクリップボードに即座にコピー",
+    "useCases": "一般的な使用例",
+    "useCase1": "WordPress、Ghost、HugoのブログURL",
+    "useCase2": "ECサイトの商品ページURL",
+    "useCase3": "APIエンドポイントの命名規則",
+    "useCase4": "Webアセットのファイル命名",
+    "useCase5": "データベース対応の識別子",
+    "useCase6": "GitHubリポジトリ名とブランチ名",
+    "faq": "よくある質問",
+    "faqQ1": "URLスラッグに使える文字は？",
+    "faqA1": "URLスラッグには小文字（a-z）、数字（0-9）、ハイフン（-）のみを使用すべきです。その他の文字は変換または除去する必要があります。",
+    "faqQ2": "スラッグにはハイフンとアンダースコアのどちらを使うべき？",
+    "faqA2": "Googleはアンダースコア（_）よりハイフン（-）を推奨しています。ハイフンは検索エンジンで単語の区切りとして扱われますが、アンダースコアはそうではありません。",
+    "faqQ3": "URLスラッグの長さはどのくらいが適切？",
+    "faqA3": "スラッグは60文字以内に抑えましょう。短いスラッグは読みやすく、共有しやすく、覚えやすいです。"
+  },
+  "tools": {
+    "slugGenerator": { "name": "スラッグジェネレーター", "desc": "テキストをURLスラッグに変換" },
+    "urlSlugGenerator": { "name": "URLスラッグジェネレーター", "desc": "SEO対応のURLスラッグを作成" },
+    "textToSlug": { "name": "テキスト→スラッグ変換", "desc": "テキストをスラッグに変換" },
+    "kebabCaseConverter": { "name": "ケバブケース変換", "desc": "テキストをケバブケースに変換" },
+    "slugifyOnline": { "name": "オンラインスラッグ化", "desc": "テキストを即座にスラッグ化" }
+  },
+  "pages": {
+    "urlSlugGenerator": {
+      "title": "URLスラッグジェネレーター - SEO対応URL作成ツール | SlugGenerator.app",
+      "description": "Webページ用のクリーンなURLスラッグを生成。タイトルやテキストを貼り付けてSEO最適化されたURLスラッグを即座に取得。",
+      "h1": "URLスラッグジェネレーター",
+      "subtitle": "テキストからクリーンでSEO対応のURLスラッグを作成。ブログ記事、商品ページ、Webアプリに最適。",
+      "placeholder": "例: Node.jsでREST APIを構築する方法"
+    },
+    "textToSlug": {
+      "title": "テキスト→スラッグ変換 - テキストを即座にスラッグ化 | SlugGenerator.app",
+      "description": "テキストをURL安全なスラッグに変換。アクセント文字、特殊記号、Unicodeに対応。ワンクリックコピーで即座に結果を取得。",
+      "h1": "テキスト→スラッグ変換",
+      "subtitle": "テキストをURL安全なスラッグに変換。アクセント文字、記号、Unicodeを自動処理。",
+      "placeholder": "例: Ça fait déjà 10 ans — Résumé complet"
+    },
+    "kebabCaseConverter": {
+      "title": "ケバブケース変換 - テキストをkebab-caseに変換 | SlugGenerator.app",
+      "description": "テキストをkebab-case形式に変換。CSSクラス名、URLスラッグ、ファイル名、プログラミング規約に最適。無料オンラインツール。",
+      "h1": "ケバブケース変換",
+      "subtitle": "テキストをkebab-case形式に変換。CSSクラス名、URLスラッグ、ファイル命名に使用。",
+      "placeholder": "例: myVariableName または My Component Title"
+    },
+    "slugifyOnline": {
+      "title": "オンラインスラッグ化 - 無料テキストスラッグ化ツール | SlugGenerator.app",
+      "description": "テキストを無料でオンラインスラッグ化。タイトルや文章をクリーンなURL対応スラッグに変換。インストール不要。",
+      "h1": "オンラインスラッグ化",
+      "subtitle": "テキストを即座にオンラインでスラッグ化。インストールや登録不要。すべてブラウザ上で動作。",
+      "placeholder": "例: コードレビューを改善する10のヒント（2024年版）"
+    }
+  },
+  "blog": {
+    "title": "ブログ",
+    "subtitle": "URLスラッグとSEO対応URLに関するヒント、ガイド、ベストプラクティス。",
+    "readMore": "続きを読む",
+    "minRead": "分で読了"
+  }
+}

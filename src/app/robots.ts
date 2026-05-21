@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://sluggenerator.tools/sitemap.xml",
+    sitemap: "https://sluggenerator.app/sitemap.xml",
   };
 }

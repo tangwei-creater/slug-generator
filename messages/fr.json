@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "title": "Générateur de Slugs - Créateur Gratuit de Slugs URL en Ligne | SlugGenerator.app",
+    "description": "Générez instantanément des slugs URL propres et optimisés pour le SEO. Convertissez n'importe quel texte en slug compatible URL avec séparateurs personnalisés et translittération. Outil en ligne gratuit."
+  },
+  "hero": {
+    "h1": "Générateur de Slugs",
+    "subtitle": "Convertissez n'importe quel texte en un slug URL propre et optimisé pour le SEO. Gratuit, rapide et fonctionne directement dans votre navigateur — aucune inscription requise."
+  },
+  "tool": {
+    "inputLabel": "Entrez votre texte",
+    "placeholder": "ex. Mon Super Titre d'Article de Blog ! (2024)",
+    "options": "Options",
+    "separator": "Séparateur",
+    "hyphen": "Tiret (-)",
+    "underscore": "Tiret bas (_)",
+    "dot": "Point (.)",
+    "maxLength": "Longueur maximale (0 = pas de limite)",
+    "lowercase": "Minuscules",
+    "transliterate": "Translittérer",
+    "stripNumbers": "Supprimer les chiffres",
+    "outputLabel": "Votre slug",
+    "copy": "Copier",
+    "copied": "Copié !",
+    "clear": "Effacer",
+    "characters": "Caractères",
+    "words": "Mots"
+  },
+  "nav": {
+    "urlSlug": "Slug URL",
+    "textToSlug": "Texte en Slug",
+    "kebabCase": "Kebab Case",
+    "blog": "Blog"
+  },
+  "related": {
+    "title": "Outils Associés"
+  },
+  "footer": {
+    "text": "Générateur de slugs en ligne gratuit. Aucune donnée n'est envoyée à un serveur. Tout fonctionne dans votre navigateur."
+  },
+  "seo": {
+    "whatIsSlug": "Qu'est-ce qu'un Slug URL ?",
+    "whatIsSlugP1": "Un slug URL est la partie d'une adresse web qui vient après le nom de domaine et identifie une page spécifique de manière lisible pour les humains.",
+    "whatIsSlugP2": "Les bons slugs sont courts, descriptifs et utilisent des tirets pour séparer les mots. Ils aident à la fois les moteurs de recherche et les utilisateurs à comprendre le contenu d'une page avant de cliquer.",
+    "whyUse": "Pourquoi utiliser un Générateur de Slugs ?",
+    "seoFriendly": "URLs optimisées pour le SEO",
+    "seoFriendlyDesc": "Des slugs propres améliorent votre classement dans les moteurs de recherche en incluant des mots-clés pertinents dans l'URL.",
+    "consistency": "Cohérence",
+    "consistencyDesc": "Gère automatiquement les caractères spéciaux, les accents et le formatage pour que chaque URL suive le même modèle.",
+    "saveTime": "Gagnez du temps",
+    "saveTimeDesc": "Plus besoin de convertir manuellement les titres en chaînes sécurisées pour les URLs. Collez votre texte et obtenez un slug instantanément.",
+    "avoidBroken": "Évitez les liens cassés",
+    "avoidBrokenDesc": "Les caractères spéciaux dans les URLs peuvent causer des erreurs 404. Un générateur de slugs les supprime automatiquement.",
+    "howToCreate": "Comment créer un bon Slug URL",
+    "howToStep1": "Commencez par le titre de votre page ou une phrase descriptive",
+    "howToStep2": "Convertissez tout en minuscules",
+    "howToStep3": "Remplacez les espaces et caractères spéciaux par des tirets",
+    "howToStep4": "Supprimez les mots vides si le slug est trop long",
+    "howToStep5": "Restez sous 60 caractères pour de meilleurs résultats SEO",
+    "howToStep6": "Utilisez uniquement des lettres, chiffres et tirets — pas de tirets bas ni caractères spéciaux",
+    "features": "Fonctionnalités du Générateur de Slugs",
+    "featuresIntro": "Ce générateur de slugs en ligne gratuit offre :",
+    "feature1": "Conversion en temps réel",
+    "feature1Desc": "Voyez votre slug se mettre à jour pendant la saisie",
+    "feature2": "Séparateurs personnalisés",
+    "feature2Desc": "Choisissez entre tirets, tirets bas ou points",
+    "feature3": "Translittération",
+    "feature3Desc": "Convertit automatiquement les caractères accentués en leurs équivalents ASCII",
+    "feature4": "Contrôle de longueur maximale",
+    "feature4Desc": "Définissez une limite de caractères et l'outil coupe à la limite de mot la plus proche",
+    "feature5": "Copie en un clic",
+    "feature5Desc": "Copiez votre slug dans le presse-papiers instantanément",
+    "useCases": "Cas d'Utilisation Courants",
+    "useCase1": "URLs de blog pour WordPress, Ghost ou Hugo",
+    "useCase2": "URLs de pages produits pour les plateformes e-commerce",
+    "useCase3": "Conventions de nommage pour les endpoints d'API",
+    "useCase4": "Nommage de fichiers pour les assets web",
+    "useCase5": "Identifiants compatibles avec les bases de données",
+    "useCase6": "Noms de dépôts et branches GitHub",
+    "faq": "FAQ",
+    "faqQ1": "Quels caractères sont autorisés dans un slug URL ?",
+    "faqA1": "Les slugs URL ne doivent contenir que des lettres minuscules (a-z), des chiffres (0-9) et des tirets (-). Tous les autres caractères doivent être convertis ou supprimés.",
+    "faqQ2": "Faut-il utiliser des tirets ou des tirets bas dans les slugs ?",
+    "faqA2": "Google recommande les tirets (-) plutôt que les tirets bas (_). Les tirets sont traités comme des séparateurs de mots par les moteurs de recherche, contrairement aux tirets bas.",
+    "faqQ3": "Quelle longueur doit avoir un slug URL ?",
+    "faqA3": "Gardez vos slugs en dessous de 60 caractères. Les slugs plus courts sont plus faciles à lire, partager et mémoriser."
+  },
+  "tools": {
+    "slugGenerator": { "name": "Générateur de Slugs", "desc": "Convertir du texte en slugs URL" },
+    "urlSlugGenerator": { "name": "Générateur de Slugs URL", "desc": "Créer des slugs URL optimisés SEO" },
+    "textToSlug": { "name": "Texte en Slug", "desc": "Transformer du texte en slug" },
+    "kebabCaseConverter": { "name": "Convertisseur Kebab Case", "desc": "Convertir du texte en kebab-case" },
+    "slugifyOnline": { "name": "Slugifier en Ligne", "desc": "Slugifier du texte instantanément en ligne" }
+  },
+  "pages": {
+    "urlSlugGenerator": {
+      "title": "Générateur de Slugs URL - Créez des URLs SEO-Friendly | SlugGenerator.app",
+      "description": "Générez des slugs URL propres pour vos pages web. Collez un titre ou du texte et obtenez un slug URL optimisé SEO instantanément.",
+      "h1": "Générateur de Slugs URL",
+      "subtitle": "Créez des slugs URL propres et optimisés pour le SEO à partir de n'importe quel texte. Parfait pour les articles de blog, pages produits et applications web.",
+      "placeholder": "ex. Comment construire une API REST avec Node.js"
+    },
+    "textToSlug": {
+      "title": "Convertisseur Texte en Slug - Slugification Instantanée | SlugGenerator.app",
+      "description": "Convertissez n'importe quel texte en slug compatible URL. Gère les caractères accentués, symboles spéciaux et Unicode. Résultats instantanés.",
+      "h1": "Convertisseur Texte en Slug",
+      "subtitle": "Transformez n'importe quel texte en slug compatible URL. Gère automatiquement les caractères accentués, symboles et Unicode.",
+      "placeholder": "ex. Ça fait déjà 10 ans — Résumé complet"
+    },
+    "kebabCaseConverter": {
+      "title": "Convertisseur Kebab Case - Convertir du Texte en kebab-case | SlugGenerator.app",
+      "description": "Convertissez n'importe quel texte au format kebab-case. Idéal pour les noms de classes CSS, slugs URL, noms de fichiers et conventions de programmation.",
+      "h1": "Convertisseur Kebab Case",
+      "subtitle": "Convertissez n'importe quel texte au format kebab-case. Utilisé pour les noms de classes CSS, slugs URL et conventions de nommage.",
+      "placeholder": "ex. myVariableName ou My Component Title"
+    },
+    "slugifyOnline": {
+      "title": "Slugifier en Ligne - Outil de Slugification Gratuit | SlugGenerator.app",
+      "description": "Slugifiez n'importe quel texte en ligne gratuitement. Convertit titres, phrases et expressions en slugs URL propres. Sans installation.",
+      "h1": "Slugifier en Ligne",
+      "subtitle": "Slugifiez n'importe quel texte en ligne instantanément. Sans installation ni inscription. Tout fonctionne dans votre navigateur.",
+      "placeholder": "ex. 10 Astuces pour de Meilleurs Code Reviews (Édition 2024)"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Conseils, guides et bonnes pratiques pour les slugs URL et les URLs optimisées SEO.",
+    "readMore": "Lire la suite",
+    "minRead": "min de lecture"
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "title": "Generador de Slugs - Creador Gratuito de Slugs URL Online | SlugGenerator.app",
+    "description": "Genera slugs URL limpios y optimizados para SEO al instante. Convierte cualquier texto en un slug seguro para URLs con separadores personalizados y transliteración. Herramienta online gratuita."
+  },
+  "hero": {
+    "h1": "Generador de Slugs",
+    "subtitle": "Convierte cualquier texto en un slug URL limpio y optimizado para SEO. Gratis, rápido y funciona directamente en tu navegador — sin registro."
+  },
+  "tool": {
+    "inputLabel": "Ingresa tu texto",
+    "placeholder": "ej. Mi Increíble Título de Blog! (2024)",
+    "options": "Opciones",
+    "separator": "Separador",
+    "hyphen": "Guión (-)",
+    "underscore": "Guión bajo (_)",
+    "dot": "Punto (.)",
+    "maxLength": "Longitud máxima (0 = sin límite)",
+    "lowercase": "Minúsculas",
+    "transliterate": "Transliterar",
+    "stripNumbers": "Eliminar números",
+    "outputLabel": "Tu slug",
+    "copy": "Copiar",
+    "copied": "¡Copiado!",
+    "clear": "Limpiar",
+    "characters": "Caracteres",
+    "words": "Palabras"
+  },
+  "nav": {
+    "urlSlug": "Slug URL",
+    "textToSlug": "Texto a Slug",
+    "kebabCase": "Kebab Case",
+    "blog": "Blog"
+  },
+  "related": {
+    "title": "Herramientas Relacionadas"
+  },
+  "footer": {
+    "text": "Generador de slugs online gratuito. No se envían datos a ningún servidor. Todo funciona en tu navegador."
+  },
+  "seo": {
+    "whatIsSlug": "¿Qué es un Slug URL?",
+    "whatIsSlugP1": "Un slug URL es la parte de una dirección web que viene después del nombre de dominio e identifica una página específica de forma legible para humanos.",
+    "whatIsSlugP2": "Los buenos slugs son cortos, descriptivos y usan guiones para separar palabras. Ayudan tanto a los motores de búsqueda como a los usuarios a entender de qué trata una página antes de hacer clic.",
+    "whyUse": "¿Por qué usar un Generador de Slugs?",
+    "seoFriendly": "URLs optimizadas para SEO",
+    "seoFriendlyDesc": "Los slugs limpios mejoran tu posicionamiento en buscadores al incluir palabras clave relevantes en la URL.",
+    "consistency": "Consistencia",
+    "consistencyDesc": "Maneja automáticamente caracteres especiales, acentos y formato para que cada URL siga el mismo patrón.",
+    "saveTime": "Ahorra tiempo",
+    "saveTimeDesc": "No más conversión manual de títulos a cadenas seguras para URLs. Pega tu texto y obtén un slug al instante.",
+    "avoidBroken": "Evita enlaces rotos",
+    "avoidBrokenDesc": "Los caracteres especiales en URLs pueden causar errores 404. Un generador de slugs los elimina automáticamente.",
+    "howToCreate": "Cómo crear un buen Slug URL",
+    "howToStep1": "Comienza con el título de tu página o una frase descriptiva",
+    "howToStep2": "Convierte todo a minúsculas",
+    "howToStep3": "Reemplaza espacios y caracteres especiales con guiones",
+    "howToStep4": "Elimina palabras vacías si el slug es demasiado largo",
+    "howToStep5": "Mantén menos de 60 caracteres para mejores resultados SEO",
+    "howToStep6": "Usa solo letras, números y guiones — sin guiones bajos ni caracteres especiales",
+    "features": "Funciones del Generador de Slugs",
+    "featuresIntro": "Este generador de slugs online gratuito ofrece:",
+    "feature1": "Conversión en tiempo real",
+    "feature1Desc": "Ve tu slug actualizarse mientras escribes",
+    "feature2": "Separadores personalizados",
+    "feature2Desc": "Elige entre guiones, guiones bajos o puntos",
+    "feature3": "Transliteración",
+    "feature3Desc": "Convierte automáticamente caracteres acentuados a sus equivalentes ASCII",
+    "feature4": "Control de longitud máxima",
+    "feature4Desc": "Establece un límite de caracteres y la herramienta corta en el límite de palabra más cercano",
+    "feature5": "Copia en un clic",
+    "feature5Desc": "Copia tu slug al portapapeles instantáneamente",
+    "useCases": "Casos de Uso Comunes",
+    "useCase1": "URLs de blog para WordPress, Ghost o Hugo",
+    "useCase2": "URLs de páginas de productos para plataformas e-commerce",
+    "useCase3": "Convenciones de nombres para endpoints de API",
+    "useCase4": "Nombrado de archivos para assets web",
+    "useCase5": "Identificadores compatibles con bases de datos",
+    "useCase6": "Nombres de repositorios y ramas de GitHub",
+    "faq": "Preguntas Frecuentes",
+    "faqQ1": "¿Qué caracteres están permitidos en un slug URL?",
+    "faqA1": "Los slugs URL solo deben contener letras minúsculas (a-z), números (0-9) y guiones (-). Todos los demás caracteres deben ser convertidos o eliminados.",
+    "faqQ2": "¿Debo usar guiones o guiones bajos en los slugs?",
+    "faqA2": "Google recomienda guiones (-) sobre guiones bajos (_). Los guiones son tratados como separadores de palabras por los motores de búsqueda, mientras que los guiones bajos no.",
+    "faqQ3": "¿Cuánto debe medir un slug URL?",
+    "faqA3": "Mantén tus slugs por debajo de 60 caracteres. Los slugs más cortos son más fáciles de leer, compartir y recordar."
+  },
+  "tools": {
+    "slugGenerator": { "name": "Generador de Slugs", "desc": "Convierte texto a slugs URL" },
+    "urlSlugGenerator": { "name": "Generador de Slugs URL", "desc": "Crea slugs URL optimizados para SEO" },
+    "textToSlug": { "name": "Texto a Slug", "desc": "Transforma texto en un slug" },
+    "kebabCaseConverter": { "name": "Conversor Kebab Case", "desc": "Convierte texto a kebab-case" },
+    "slugifyOnline": { "name": "Slugificar Online", "desc": "Slugifica texto al instante online" }
+  },
+  "pages": {
+    "urlSlugGenerator": {
+      "title": "Generador de Slugs URL - Crea URLs SEO-Friendly | SlugGenerator.app",
+      "description": "Genera slugs URL limpios para tus páginas web. Pega cualquier título o texto y obtén un slug URL optimizado para SEO al instante.",
+      "h1": "Generador de Slugs URL",
+      "subtitle": "Crea slugs URL limpios y optimizados para SEO a partir de cualquier texto. Perfecto para posts de blog, páginas de productos y aplicaciones web.",
+      "placeholder": "ej. Cómo construir una API REST con Node.js"
+    },
+    "textToSlug": {
+      "title": "Conversor de Texto a Slug - Slugificación Instantánea | SlugGenerator.app",
+      "description": "Convierte cualquier texto a un slug seguro para URLs. Maneja caracteres acentuados, símbolos especiales y Unicode. Resultados instantáneos.",
+      "h1": "Conversor de Texto a Slug",
+      "subtitle": "Transforma cualquier texto en un slug seguro para URLs. Maneja automáticamente caracteres acentuados, símbolos y Unicode.",
+      "placeholder": "ej. Ça fait déjà 10 ans — Résumé complet"
+    },
+    "kebabCaseConverter": {
+      "title": "Conversor Kebab Case - Convierte Texto a kebab-case | SlugGenerator.app",
+      "description": "Convierte cualquier texto al formato kebab-case. Ideal para nombres de clases CSS, slugs URL, nombres de archivos y convenciones de programación.",
+      "h1": "Conversor Kebab Case",
+      "subtitle": "Convierte cualquier texto al formato kebab-case. Usado para nombres de clases CSS, slugs URL y convenciones de archivos.",
+      "placeholder": "ej. myVariableName o My Component Title"
+    },
+    "slugifyOnline": {
+      "title": "Slugificar Online - Slugificador de Texto Gratuito | SlugGenerator.app",
+      "description": "Slugifica cualquier texto online gratis. Convierte títulos, oraciones y frases en slugs URL limpios. Sin instalación, funciona en tu navegador.",
+      "h1": "Slugificar Online",
+      "subtitle": "Slugifica cualquier texto online al instante. Sin instalación ni registro. Todo funciona en tu navegador.",
+      "placeholder": "ej. 10 Consejos para Mejores Code Reviews (Edición 2024)"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Consejos, guías y mejores prácticas para slugs URL y URLs optimizadas para SEO.",
+    "readMore": "Leer más",
+    "minRead": "min de lectura"
+  }
+}
