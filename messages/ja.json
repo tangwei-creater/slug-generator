@@ -100,7 +100,11 @@
     "urlSlugGenerator": { "name": "URLスラッグジェネレーター", "desc": "SEO対応のURLスラッグを作成" },
     "textToSlug": { "name": "テキスト→スラッグ変換", "desc": "テキストをスラッグに変換" },
     "kebabCaseConverter": { "name": "ケバブケース変換", "desc": "テキストをケバブケースに変換" },
-    "slugifyOnline": { "name": "オンラインスラッグ化", "desc": "テキストを即座にスラッグ化" }
+    "slugifyOnline": { "name": "オンラインスラッグ化", "desc": "テキストを即座にスラッグ化" },
+    "permalinkGenerator": { "name": "パーマリンク生成", "desc": "クリーンな固定URLを作成" },
+    "snakeCaseConverter": { "name": "スネークケース変換", "desc": "テキストをsnake_caseに変換" },
+    "camelCaseConverter": { "name": "キャメルケース変換", "desc": "テキストをcamelCaseに変換" },
+    "titleCaseConverter": { "name": "タイトルケース変換", "desc": "テキストをTitle Caseに変換" }
   },
   "pages": {
     "urlSlugGenerator": {
@@ -130,6 +134,34 @@
       "h1": "オンラインスラッグ化",
       "subtitle": "テキストを即座にオンラインでスラッグ化。インストールや登録不要。すべてブラウザ上で動作。",
       "placeholder": "例: コードレビューを改善する10のヒント（2024年版）"
+    },
+    "permalinkGenerator": {
+      "title": "パーマリンクジェネレーター - SEO対応の固定URL作成ツール | SlugGenerator.app",
+      "description": "ブログ記事やWebページ用のクリーンな固定URLを生成。タイトルからSEO最適化されたパーマリンクを即座に作成。無料オンラインツール。",
+      "h1": "パーマリンクジェネレーター",
+      "subtitle": "タイトルやテキストからクリーンでSEO対応の固定URLを作成。WordPress、Blogger、あらゆるCMSに最適。",
+      "placeholder": "例: 2024年にブログを始める方法：完全ガイド"
+    },
+    "snakeCaseConverter": {
+      "title": "スネークケース変換 - テキストをsnake_caseに変換 | SlugGenerator.app",
+      "description": "テキストをsnake_case形式に変換。Python変数名、データベースカラム名、APIフィールド名に最適。無料オンラインツール。",
+      "h1": "スネークケース変換",
+      "subtitle": "テキストをsnake_case形式に変換。Python変数名、データベースカラム名、ファイル名、APIフィールドに使用。",
+      "placeholder": "例: myVariableName または User First Name"
+    },
+    "camelCaseConverter": {
+      "title": "キャメルケース変換 - テキストをcamelCaseに変換 | SlugGenerator.app",
+      "description": "テキストをcamelCase形式に変換。JavaScript変数名、JSONキー、プログラミング命名規則に最適。無料オンラインツール。",
+      "h1": "キャメルケース変換",
+      "subtitle": "テキストをcamelCase形式に変換。JavaScript変数名、JSONキー、プログラミング識別子に使用。",
+      "placeholder": "例: user first name または My Component Title"
+    },
+    "titleCaseConverter": {
+      "title": "タイトルケース変換 - テキストを正しく大文字化 | SlugGenerator.app",
+      "description": "テキストをTitle Case形式に変換。見出し、ブログタイトル、ヘッドラインをAP・APA・Chicagoスタイルに従って正しく大文字化。無料オンラインツール。",
+      "h1": "タイトルケース変換",
+      "subtitle": "テキストを正しいTitle Caseに変換。見出し、タイトル、ヘッドラインを標準的なスタイルルールに従って大文字化。",
+      "placeholder": "例: the quick brown fox jumps over the lazy dog"
     }
   },
   "blog": {

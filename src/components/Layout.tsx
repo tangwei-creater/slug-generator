@@ -9,6 +9,8 @@ const toolPaths = [
   { href: "/text-to-slug" as const, key: "textToSlug" },
   { href: "/kebab-case-converter" as const, key: "kebabCaseConverter" },
   { href: "/slugify-online" as const, key: "slugifyOnline" },
+  { href: "/permalink-generator" as const, key: "permalinkGenerator" },
+  { href: "/snake-case-converter" as const, key: "snakeCaseConverter" },
 ];
 
 export async function Header() {

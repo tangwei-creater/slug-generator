@@ -100,7 +100,11 @@
     "urlSlugGenerator": { "name": "URL Slug Generator", "desc": "Create SEO-friendly URL slugs" },
     "textToSlug": { "name": "Text to Slug", "desc": "Transform any text into a slug" },
     "kebabCaseConverter": { "name": "Kebab Case Converter", "desc": "Convert text to kebab-case" },
-    "slugifyOnline": { "name": "Slugify Online", "desc": "Slugify text instantly online" }
+    "slugifyOnline": { "name": "Slugify Online", "desc": "Slugify text instantly online" },
+    "permalinkGenerator": { "name": "Permalink Generator", "desc": "Create clean permanent URLs" },
+    "snakeCaseConverter": { "name": "Snake Case Converter", "desc": "Convert text to snake_case" },
+    "camelCaseConverter": { "name": "CamelCase Converter", "desc": "Convert text to camelCase" },
+    "titleCaseConverter": { "name": "Title Case Converter", "desc": "Capitalize text in title case" }
   },
   "pages": {
     "urlSlugGenerator": {
@@ -130,6 +134,34 @@
       "h1": "Slugify Online",
       "subtitle": "Slugify any text online instantly. No installation or signup needed. Everything runs in your browser.",
       "placeholder": "e.g. 10 Tips for Better Code Reviews (2024 Edition)"
+    },
+    "permalinkGenerator": {
+      "title": "Permalink Generator - Create SEO-Friendly Permanent URLs | SlugGenerator.app",
+      "description": "Generate clean, permanent URLs for blog posts and web pages. Convert titles to SEO-friendly permalinks instantly. Free online tool.",
+      "h1": "Permalink Generator",
+      "subtitle": "Create clean, SEO-friendly permanent URLs from any title or text. Perfect for WordPress, Blogger, and any CMS.",
+      "placeholder": "e.g. How to Start a Blog in 2024: Complete Guide"
+    },
+    "snakeCaseConverter": {
+      "title": "Snake Case Converter - Convert Text to snake_case | SlugGenerator.app",
+      "description": "Convert any text to snake_case format. Ideal for Python variables, database columns, and API field names. Free online tool.",
+      "h1": "Snake Case Converter",
+      "subtitle": "Convert any text to snake_case format. Used for Python variables, database columns, file names, and API fields.",
+      "placeholder": "e.g. myVariableName or User First Name"
+    },
+    "camelCaseConverter": {
+      "title": "CamelCase Converter - Convert Text to camelCase | SlugGenerator.app",
+      "description": "Convert any text to camelCase format. Ideal for JavaScript variables, JSON keys, and programming naming conventions. Free online tool.",
+      "h1": "CamelCase Converter",
+      "subtitle": "Convert any text to camelCase format. Used for JavaScript variables, JSON keys, and programming identifiers.",
+      "placeholder": "e.g. user first name or My Component Title"
+    },
+    "titleCaseConverter": {
+      "title": "Title Case Converter - Capitalize Text Properly | SlugGenerator.app",
+      "description": "Convert any text to Title Case. Properly capitalize headlines, blog titles, and headings following AP, APA, and Chicago style rules. Free online tool.",
+      "h1": "Title Case Converter",
+      "subtitle": "Convert any text to proper Title Case. Capitalize headlines, titles, and headings following standard style rules.",
+      "placeholder": "e.g. the quick brown fox jumps over the lazy dog"
     }
   },
   "blog": {
