@@ -96,6 +96,29 @@ export default async function LocaleLayout({
         )}
       </head>
       <body className="min-h-full flex flex-col bg-white text-gray-900">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "SlugGenerator.app",
+              url: "https://sluggenerator.app",
+              description:
+                "Free online tool to convert any text into clean, SEO-friendly URL slugs.",
+              inLanguage: ["en", "ja", "de", "es", "pt", "fr"],
+              potentialAction: {
+                "@type": "SearchAction",
+                target: {
+                  "@type": "EntryPoint",
+                  urlTemplate:
+                    "https://sluggenerator.app?q={search_term_string}",
+                },
+                "query-input": "required name=search_term_string",
+              },
+            }),
+          }}
+        />
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>

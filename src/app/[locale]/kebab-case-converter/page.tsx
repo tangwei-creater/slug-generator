@@ -3,6 +3,7 @@ import { getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { Header, Footer, RelatedTools } from "@/components/Layout";
 import { JsonLd } from "@/components/JsonLd";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import SlugTool from "@/components/SlugTool";
 
 const siteUrl = "https://sluggenerator.app";
@@ -58,6 +59,7 @@ export default async function KebabCaseConverter({
       <Header />
       <main className="flex-1 px-4 py-12">
         <div className="max-w-5xl mx-auto">
+          <Breadcrumbs items={[{ name: "Kebab Case Converter" }]} />
           <div className="text-center mb-10">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               {t("h1")}
