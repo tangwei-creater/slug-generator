@@ -2,6 +2,7 @@ import { Link } from "@/i18n/navigation";
 import { getTranslations } from "next-intl/server";
 import MobileNav from "./MobileNav";
 import LocaleSwitcher from "./LocaleSwitcher";
+import { blogPosts } from "@/lib/blog";
 
 const toolPaths = [
   { href: "/" as const, key: "slugGenerator" },
@@ -75,7 +76,7 @@ export async function Footer() {
   return (
     <footer className="border-t border-gray-100 bg-gray-50 mt-16">
       <div className="max-w-5xl mx-auto px-4 py-10">
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-[200px_1fr_220px] gap-8 mb-8">
           <div>
             <h4 className="text-sm font-semibold text-gray-900 mb-3">Tools</h4>
             <ul className="space-y-2 text-sm text-gray-500">
@@ -90,32 +91,14 @@ export async function Footer() {
           </div>
           <div>
             <h4 className="text-sm font-semibold text-gray-900 mb-3">Blog</h4>
-            <ul className="space-y-2 text-sm text-gray-500">
-              <li>
-                <Link href="/blog/what-is-a-url-slug" className="hover:text-gray-700 transition-colors">
-                  What Is a URL Slug?
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog/url-slug-best-practices-seo" className="hover:text-gray-700 transition-colors">
-                  URL Slug Best Practices
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog/slugify-text-javascript-python-php" className="hover:text-gray-700 transition-colors">
-                  Slugify in JS, Python, PHP
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog/url-slug-vs-url-path-whats-the-difference" className="hover:text-gray-700 transition-colors">
-                  URL Slug vs URL Path
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog/handling-special-characters-in-url-slugs" className="hover:text-gray-700 transition-colors">
-                  Special Characters in Slugs
-                </Link>
-              </li>
+            <ul className="columns-2 gap-x-6 space-y-2 text-sm text-gray-500">
+              {blogPosts.map((post) => (
+                <li key={post.slug} className="break-inside-avoid">
+                  <Link href={`/blog/${post.slug}` as never} className="hover:text-gray-700 transition-colors">
+                    {post.title}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
           <div>
