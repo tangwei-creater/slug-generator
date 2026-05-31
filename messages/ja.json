@@ -40,6 +40,8 @@
     "urlSlug": "URLスラッグ",
     "textToSlug": "テキスト→スラッグ",
     "kebabCase": "ケバブケース",
+    "camelCase": "キャメルケース",
+    "titleCase": "タイトルケース",
     "blog": "ブログ"
   },
   "related": {
@@ -96,15 +98,42 @@
     "faqA3": "スラッグは60文字以内に抑えましょう。短いスラッグは読みやすく、共有しやすく、覚えやすいです。"
   },
   "tools": {
-    "slugGenerator": { "name": "スラッグジェネレーター", "desc": "テキストをURLスラッグに変換" },
-    "urlSlugGenerator": { "name": "URLスラッグジェネレーター", "desc": "SEO対応のURLスラッグを作成" },
-    "textToSlug": { "name": "テキスト→スラッグ変換", "desc": "テキストをスラッグに変換" },
-    "kebabCaseConverter": { "name": "ケバブケース変換", "desc": "テキストをケバブケースに変換" },
-    "slugifyOnline": { "name": "オンラインスラッグ化", "desc": "テキストを即座にスラッグ化" },
-    "permalinkGenerator": { "name": "パーマリンク生成", "desc": "クリーンな固定URLを作成" },
-    "snakeCaseConverter": { "name": "スネークケース変換", "desc": "テキストをsnake_caseに変換" },
-    "camelCaseConverter": { "name": "キャメルケース変換", "desc": "テキストをcamelCaseに変換" },
-    "titleCaseConverter": { "name": "タイトルケース変換", "desc": "テキストをTitle Caseに変換" }
+    "slugGenerator": {
+      "name": "スラッグジェネレーター",
+      "desc": "テキストをURLスラッグに変換"
+    },
+    "urlSlugGenerator": {
+      "name": "URLスラッグジェネレーター",
+      "desc": "SEO対応のURLスラッグを作成"
+    },
+    "textToSlug": {
+      "name": "テキスト→スラッグ変換",
+      "desc": "テキストをスラッグに変換"
+    },
+    "kebabCaseConverter": {
+      "name": "ケバブケース変換",
+      "desc": "テキストをケバブケースに変換"
+    },
+    "slugifyOnline": {
+      "name": "オンラインスラッグ化",
+      "desc": "テキストを即座にスラッグ化"
+    },
+    "permalinkGenerator": {
+      "name": "パーマリンク生成",
+      "desc": "クリーンな固定URLを作成"
+    },
+    "snakeCaseConverter": {
+      "name": "スネークケース変換",
+      "desc": "テキストをsnake_caseに変換"
+    },
+    "camelCaseConverter": {
+      "name": "キャメルケース変換",
+      "desc": "テキストをcamelCaseに変換"
+    },
+    "titleCaseConverter": {
+      "name": "タイトルケース変換",
+      "desc": "テキストをTitle Caseに変換"
+    }
   },
   "pages": {
     "urlSlugGenerator": {
@@ -168,6 +197,7 @@
     "title": "ブログ",
     "subtitle": "URLスラッグとSEO対応URLに関するヒント、ガイド、ベストプラクティス。",
     "readMore": "続きを読む",
-    "minRead": "分で読了"
+    "minRead": "分で読了",
+    "metaTitle": "URLスラッグ ブログ - SEOのヒントとガイド"
   }
 }

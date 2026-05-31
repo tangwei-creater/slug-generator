@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-import { routing } from "@/i18n/routing";
+import { buildMetadata } from "@/lib/seo";
 import { Header, Footer, RelatedTools } from "@/components/Layout";
 import { JsonLd } from "@/components/JsonLd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -17,21 +17,12 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "pages.permalinkGenerator" });
 
-  const url = locale === "en" ? `${siteUrl}${path}` : `${siteUrl}/${locale}${path}`;
-
-  return {
+  return buildMetadata({
     title: t("title"),
     description: t("description"),
-    alternates: {
-      canonical: url,
-      languages: Object.fromEntries(
-        routing.locales.map((l) => [
-          l,
-          l === "en" ? `${siteUrl}${path}` : `${siteUrl}/${l}${path}`,
-        ])
-      ),
-    },
-  };
+    path,
+    locale,
+  });
 }
 
 export default async function PermalinkGenerator({

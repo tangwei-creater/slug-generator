@@ -40,6 +40,8 @@
     "urlSlug": "Slug URL",
     "textToSlug": "Texto para Slug",
     "kebabCase": "Kebab Case",
+    "camelCase": "CamelCase",
+    "titleCase": "Title Case",
     "blog": "Blog"
   },
   "related": {
@@ -96,15 +98,42 @@
     "faqA3": "Mantenha seus slugs abaixo de 60 caracteres. Slugs mais curtos são mais fáceis de ler, compartilhar e lembrar."
   },
   "tools": {
-    "slugGenerator": { "name": "Gerador de Slugs", "desc": "Converta texto em slugs URL" },
-    "urlSlugGenerator": { "name": "Gerador de Slugs URL", "desc": "Crie slugs URL otimizados para SEO" },
-    "textToSlug": { "name": "Texto para Slug", "desc": "Transforme texto em slug" },
-    "kebabCaseConverter": { "name": "Conversor Kebab Case", "desc": "Converta texto para kebab-case" },
-    "slugifyOnline": { "name": "Slugificar Online", "desc": "Slugifique texto instantaneamente online" },
-    "permalinkGenerator": { "name": "Gerador de Permalinks", "desc": "Crie URLs permanentes limpas" },
-    "snakeCaseConverter": { "name": "Conversor Snake Case", "desc": "Converta texto para snake_case" },
-    "camelCaseConverter": { "name": "Conversor CamelCase", "desc": "Converta texto para camelCase" },
-    "titleCaseConverter": { "name": "Conversor Title Case", "desc": "Capitalize texto em Title Case" }
+    "slugGenerator": {
+      "name": "Gerador de Slugs",
+      "desc": "Converta texto em slugs URL"
+    },
+    "urlSlugGenerator": {
+      "name": "Gerador de Slugs URL",
+      "desc": "Crie slugs URL otimizados para SEO"
+    },
+    "textToSlug": {
+      "name": "Texto para Slug",
+      "desc": "Transforme texto em slug"
+    },
+    "kebabCaseConverter": {
+      "name": "Conversor Kebab Case",
+      "desc": "Converta texto para kebab-case"
+    },
+    "slugifyOnline": {
+      "name": "Slugificar Online",
+      "desc": "Slugifique texto instantaneamente online"
+    },
+    "permalinkGenerator": {
+      "name": "Gerador de Permalinks",
+      "desc": "Crie URLs permanentes limpas"
+    },
+    "snakeCaseConverter": {
+      "name": "Conversor Snake Case",
+      "desc": "Converta texto para snake_case"
+    },
+    "camelCaseConverter": {
+      "name": "Conversor CamelCase",
+      "desc": "Converta texto para camelCase"
+    },
+    "titleCaseConverter": {
+      "name": "Conversor Title Case",
+      "desc": "Capitalize texto em Title Case"
+    }
   },
   "pages": {
     "urlSlugGenerator": {
@@ -129,7 +158,7 @@
       "placeholder": "ex. myVariableName ou My Component Title"
     },
     "slugifyOnline": {
-      "title": "Slugificar Online - Slugificador de Texto Gratuito | SlugGenerator.app",
+      "title": "Slugificar Online - Gerador de Slug de Texto Grátis | SlugGenerator.app",
       "description": "Slugifique qualquer texto online gratuitamente. Converte títulos, frases e expressões em slugs URL limpos. Sem instalação.",
       "h1": "Slugificar Online",
       "subtitle": "Slugifique qualquer texto online instantaneamente. Sem instalação ou cadastro. Tudo funciona no seu navegador.",
@@ -168,6 +197,7 @@
     "title": "Blog",
     "subtitle": "Dicas, guias e melhores práticas para slugs URL e URLs otimizadas para SEO.",
     "readMore": "Ler mais",
-    "minRead": "min de leitura"
+    "minRead": "min de leitura",
+    "metaTitle": "Blog de Slugs de URL - Dicas e Guias de SEO"
   }
 }

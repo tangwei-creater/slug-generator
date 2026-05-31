@@ -143,6 +143,7 @@ export default function SlugTool({
               {t("separator")}
             </label>
             <select
+              aria-label={t("separator")}
               value={options.separator}
               onChange={(e) =>
                 setOptions({ ...options, separator: e.target.value })
@@ -160,6 +161,7 @@ export default function SlugTool({
             </label>
             <input
               type="number"
+              aria-label={t("maxLength")}
               min={0}
               max={200}
               value={options.maxLength}
@@ -241,15 +243,17 @@ export default function SlugTool({
           <label className="block text-sm font-semibold text-gray-700 mb-2">
             {t("outputLabel")}
           </label>
-          <div className="flex gap-2">
+          <div className="flex flex-col sm:flex-row gap-2">
             <input
               ref={outputRef}
               type="text"
               readOnly
+              aria-label={t("outputLabel")}
               value={slug}
-              className="flex-1 px-4 py-3 border-2 border-gray-200 rounded-xl text-lg font-mono bg-gray-50 text-blue-700 select-all outline-none"
+              className="flex-1 min-w-0 px-4 py-3 border-2 border-gray-200 rounded-xl text-lg font-mono bg-gray-50 text-blue-700 select-all outline-none"
               onClick={(e) => (e.target as HTMLInputElement).select()}
             />
+            <div className="flex gap-2 shrink-0">
             <button
               onClick={() => handleCopy()}
               disabled={!slug}
@@ -274,6 +278,7 @@ export default function SlugTool({
             >
               {t("clear")}
             </button>
+            </div>
           </div>
         </div>
       )}

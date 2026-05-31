@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
+import { buildMetadata } from "@/lib/seo";
 import { Link } from "@/i18n/navigation";
-import { blogPosts } from "@/lib/blog";
+import { getBlogList } from "@/lib/blog";
+import type { Locale } from "@/i18n/routing";
 import { Header, Footer } from "@/components/Layout";
-import { routing } from "@/i18n/routing";
-
-const siteUrl = "https://sluggenerator.app";
 
 export async function generateMetadata({
   params,
@@ -15,25 +14,22 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "blog" });
 
-  const url = locale === "en" ? `${siteUrl}/blog` : `${siteUrl}/${locale}/blog`;
-
-  return {
-    title: `${t("title")} | SlugGenerator.tools`,
+  return buildMetadata({
+    title: `${t("metaTitle")} | SlugGenerator.app`,
     description: t("subtitle"),
-    alternates: {
-      canonical: url,
-      languages: Object.fromEntries(
-        routing.locales.map((l) => [
-          l,
-          l === "en" ? `${siteUrl}/blog` : `${siteUrl}/${l}/blog`,
-        ])
-      ),
-    },
-  };
+    path: "/blog",
+    locale,
+  });
 }
 
-export default async function BlogIndex() {
+export default async function BlogIndex({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
   const t = await getTranslations("blog");
+  const posts = getBlogList(locale as Locale);
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -48,7 +44,7 @@ export default async function BlogIndex() {
           </div>
 
           <div className="space-y-8">
-            {blogPosts.map((post) => (
+            {posts.map((post) => (
               <article key={post.slug} className="border-b border-gray-100 pb-8">
                 <Link
                   href={`/blog/${post.slug}`}
@@ -60,7 +56,7 @@ export default async function BlogIndex() {
                   <p className="text-gray-600 mb-3">{post.description}</p>
                   <div className="flex items-center gap-4 text-sm text-gray-400">
                     <time dateTime={post.date}>
-                      {new Date(post.date).toLocaleDateString("en-US", {
+                      {new Date(post.date).toLocaleDateString(locale, {
                         year: "numeric",
                         month: "long",
                         day: "numeric",

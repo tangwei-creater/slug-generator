@@ -11,6 +11,8 @@ const toolPaths = [
   { href: "/slugify-online" as const, key: "slugifyOnline" },
   { href: "/permalink-generator" as const, key: "permalinkGenerator" },
   { href: "/snake-case-converter" as const, key: "snakeCaseConverter" },
+  { href: "/camelcase-converter" as const, key: "camelCaseConverter" },
+  { href: "/title-case-converter" as const, key: "titleCaseConverter" },
 ];
 
 export async function Header() {
@@ -20,6 +22,8 @@ export async function Header() {
     { href: "/url-slug-generator", label: t("urlSlug") },
     { href: "/text-to-slug", label: t("textToSlug") },
     { href: "/kebab-case-converter", label: t("kebabCase") },
+    { href: "/camelcase-converter", label: t("camelCase") },
+    { href: "/title-case-converter", label: t("titleCase") },
     { href: "/blog", label: t("blog") },
   ];
 

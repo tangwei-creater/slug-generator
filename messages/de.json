@@ -40,6 +40,8 @@
     "urlSlug": "URL-Slug",
     "textToSlug": "Text zu Slug",
     "kebabCase": "Kebab Case",
+    "camelCase": "CamelCase",
+    "titleCase": "Title Case",
     "blog": "Blog"
   },
   "related": {
@@ -96,15 +98,42 @@
     "faqA3": "Halten Sie Ihre Slugs unter 60 Zeichen. Kürzere Slugs sind leichter zu lesen, zu teilen und zu merken."
   },
   "tools": {
-    "slugGenerator": { "name": "Slug Generator", "desc": "Text in URL-Slugs umwandeln" },
-    "urlSlugGenerator": { "name": "URL-Slug-Generator", "desc": "SEO-freundliche URL-Slugs erstellen" },
-    "textToSlug": { "name": "Text zu Slug", "desc": "Text in einen Slug umwandeln" },
-    "kebabCaseConverter": { "name": "Kebab-Case-Konverter", "desc": "Text in Kebab-Case umwandeln" },
-    "slugifyOnline": { "name": "Online Slugifizieren", "desc": "Text sofort online slugifizieren" },
-    "permalinkGenerator": { "name": "Permalink-Generator", "desc": "Saubere permanente URLs erstellen" },
-    "snakeCaseConverter": { "name": "Snake-Case-Konverter", "desc": "Text in snake_case umwandeln" },
-    "camelCaseConverter": { "name": "CamelCase-Konverter", "desc": "Text in camelCase umwandeln" },
-    "titleCaseConverter": { "name": "Title-Case-Konverter", "desc": "Text in Title Case umwandeln" }
+    "slugGenerator": {
+      "name": "Slug Generator",
+      "desc": "Text in URL-Slugs umwandeln"
+    },
+    "urlSlugGenerator": {
+      "name": "URL-Slug-Generator",
+      "desc": "SEO-freundliche URL-Slugs erstellen"
+    },
+    "textToSlug": {
+      "name": "Text zu Slug",
+      "desc": "Text in einen Slug umwandeln"
+    },
+    "kebabCaseConverter": {
+      "name": "Kebab-Case-Konverter",
+      "desc": "Text in Kebab-Case umwandeln"
+    },
+    "slugifyOnline": {
+      "name": "Online Slugifizieren",
+      "desc": "Text sofort online slugifizieren"
+    },
+    "permalinkGenerator": {
+      "name": "Permalink-Generator",
+      "desc": "Saubere permanente URLs erstellen"
+    },
+    "snakeCaseConverter": {
+      "name": "Snake-Case-Konverter",
+      "desc": "Text in snake_case umwandeln"
+    },
+    "camelCaseConverter": {
+      "name": "CamelCase-Konverter",
+      "desc": "Text in camelCase umwandeln"
+    },
+    "titleCaseConverter": {
+      "name": "Title-Case-Konverter",
+      "desc": "Text in Title Case umwandeln"
+    }
   },
   "pages": {
     "urlSlugGenerator": {
@@ -168,6 +197,7 @@
     "title": "Blog",
     "subtitle": "Tipps, Anleitungen und Best Practices für URL-Slugs und SEO-freundliche URLs.",
     "readMore": "Weiterlesen",
-    "minRead": "Min. Lesezeit"
+    "minRead": "Min. Lesezeit",
+    "metaTitle": "URL-Slug-Blog - Tipps & SEO-Anleitungen"
   }
 }
