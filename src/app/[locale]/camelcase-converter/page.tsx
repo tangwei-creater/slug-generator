@@ -94,6 +94,52 @@ export default async function CamelCaseConverter({
                 </li>
               </ul>
 
+              <h2>How to Convert underscore_case to camelCase</h2>
+              <p>
+                Converting snake_case (underscore notation) to camelCase is
+                essential when working across Python and JavaScript codebases.
+                The algorithm removes each underscore and capitalizes the
+                following letter:
+              </p>
+              <ul>
+                <li><code>user_first_name</code> → <code>userFirstName</code></li>
+                <li><code>get_user_by_id</code> → <code>getUserById</code></li>
+                <li><code>api_base_url</code> → <code>apiBaseUrl</code></li>
+              </ul>
+              <p>
+                This conversion is common when consuming Python or Ruby APIs
+                from a JavaScript frontend, or when migrating database column
+                names into JSON response keys.
+              </p>
+
+              <h2>camelCase vs PascalCase</h2>
+              <div className="overflow-x-auto">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Convention</th>
+                      <th>Example</th>
+                      <th>First Letter</th>
+                      <th>Common Usage</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>camelCase</td>
+                      <td><code>myVariable</code></td>
+                      <td>lowercase</td>
+                      <td>JS/TS variables, JSON keys</td>
+                    </tr>
+                    <tr>
+                      <td>PascalCase</td>
+                      <td><code>MyVariable</code></td>
+                      <td>uppercase</td>
+                      <td>Classes, React components</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
               <h2>Where to Use CamelCase</h2>
               <ul>
                 <li>JavaScript and TypeScript variable and function names</li>
@@ -102,6 +148,8 @@ export default async function CamelCaseConverter({
                 <li>Swift and Kotlin identifiers</li>
                 <li>Go exported identifiers (PascalCase)</li>
                 <li>React state variables and event handlers</li>
+                <li>C# local variables and method parameters</li>
+                <li>GraphQL field names</li>
               </ul>
             </section>
           )}

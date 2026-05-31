@@ -92,6 +92,52 @@ export default async function KebabCaseConverter({
                 </li>
               </ul>
 
+              <h2>How to Convert camelCase to kebab-case</h2>
+              <p>
+                Converting camelCase to kebab-case is common when turning
+                JavaScript variable names into CSS classes or URL-friendly
+                strings. The algorithm inserts a hyphen before each uppercase
+                letter and lowercases everything:
+              </p>
+              <ul>
+                <li><code>myComponentName</code> → <code>my-component-name</code></li>
+                <li><code>userProfilePage</code> → <code>user-profile-page</code></li>
+                <li><code>backgroundColor</code> → <code>background-color</code></li>
+              </ul>
+              <p>
+                This is especially useful in React projects where component
+                names (PascalCase) need to become CSS class names (kebab-case),
+                or when generating URL slugs from code identifiers.
+              </p>
+
+              <h2>kebab-case vs snake_case</h2>
+              <div className="overflow-x-auto">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Convention</th>
+                      <th>Separator</th>
+                      <th>Example</th>
+                      <th>Best For</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>kebab-case</td>
+                      <td>hyphen (-)</td>
+                      <td><code>my-variable</code></td>
+                      <td>URLs, CSS, HTML</td>
+                    </tr>
+                    <tr>
+                      <td>snake_case</td>
+                      <td>underscore (_)</td>
+                      <td><code>my_variable</code></td>
+                      <td>Python, databases, APIs</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
               <h2>Where to Use Kebab Case</h2>
               <ul>
                 <li>CSS class names and IDs</li>
@@ -100,6 +146,8 @@ export default async function KebabCaseConverter({
                 <li>npm package names</li>
                 <li>Git branch names</li>
                 <li>Docker container names</li>
+                <li>Kubernetes resource names</li>
+                <li>Angular component selectors</li>
               </ul>
             </section>
           )}

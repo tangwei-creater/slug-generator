@@ -92,6 +92,57 @@ export default async function SnakeCaseConverter({
                 </li>
               </ul>
 
+              <h2>What Is SCREAMING_SNAKE_CASE?</h2>
+              <p>
+                SCREAMING_SNAKE_CASE (also called upper snake case or
+                CONSTANT_CASE) uses uppercase letters with underscores between
+                words, e.g. <code>MAX_RETRY_COUNT</code> or{" "}
+                <code>API_BASE_URL</code>. It is the standard for constants in
+                most programming languages including Python, Java, C, C++,
+                JavaScript, and Rust.
+              </p>
+              <div className="overflow-x-auto">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Format</th>
+                      <th>Example</th>
+                      <th>Usage</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>snake_case</td>
+                      <td><code>user_first_name</code></td>
+                      <td>Variables, functions</td>
+                    </tr>
+                    <tr>
+                      <td>SCREAMING_SNAKE_CASE</td>
+                      <td><code>USER_FIRST_NAME</code></td>
+                      <td>Constants, env vars</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h2>How to Convert camelCase to snake_case</h2>
+              <p>
+                Converting camelCase to snake_case is one of the most common text
+                transformations developers need. The algorithm inserts an
+                underscore before each uppercase letter and then lowercases the
+                entire string:
+              </p>
+              <ul>
+                <li><code>myVariableName</code> → <code>my_variable_name</code></li>
+                <li><code>getUserById</code> → <code>get_user_by_id</code></li>
+                <li><code>HTMLParser</code> → <code>html_parser</code></li>
+              </ul>
+              <p>
+                This is useful when migrating JavaScript or Java code to Python,
+                converting JSON API responses to match Python conventions, or
+                renaming database columns.
+              </p>
+
               <h2>Where to Use Snake Case</h2>
               <ul>
                 <li>Python variable and function names (PEP 8 standard)</li>
@@ -100,6 +151,8 @@ export default async function SnakeCaseConverter({
                 <li>API request and response field names</li>
                 <li>Configuration file keys</li>
                 <li>File naming in certain frameworks</li>
+                <li>Environment variable names (SCREAMING_SNAKE_CASE)</li>
+                <li>Rust variable and function names</li>
               </ul>
             </section>
           )}

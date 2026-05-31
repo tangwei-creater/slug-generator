@@ -13,6 +13,22 @@ const toolPaths = [
   { href: "/snake-case-converter" as const, key: "snakeCaseConverter" },
   { href: "/camelcase-converter" as const, key: "camelCaseConverter" },
   { href: "/title-case-converter" as const, key: "titleCaseConverter" },
+  { href: "/sentence-case-converter" as const, key: "sentenceCaseConverter" },
+  { href: "/case-converter-online" as const, key: "caseConverterOnline" },
+  { href: "/alternating-case-converter" as const, key: "alternatingCaseConverter" },
+  { href: "/pascal-case-converter" as const, key: "pascalCaseConverter" },
+  { href: "/dot-case-converter" as const, key: "dotCaseConverter" },
+  { href: "/constant-case-converter" as const, key: "constantCaseConverter" },
+  { href: "/json-keys-to-camelcase" as const, key: "jsonKeysToCamelcase" },
+  { href: "/json-keys-to-snake-case" as const, key: "jsonKeysToSnakeCase" },
+  { href: "/wordpress-slug-generator" as const, key: "wordpressSlugGenerator" },
+  { href: "/blog-slug-generator" as const, key: "blogSlugGenerator" },
+  { href: "/product-slug-generator" as const, key: "productSlugGenerator" },
+  { href: "/plain-text-converter" as const, key: "plainTextConverter" },
+  { href: "/duplicate-line-remover" as const, key: "duplicateLineRemover" },
+  { href: "/remove-empty-lines" as const, key: "removeEmptyLines" },
+  { href: "/sort-lines-alphabetically" as const, key: "sortLinesAlphabetically" },
+  { href: "/remove-line-breaks" as const, key: "removeLineBreaks" },
 ];
 
 export async function Header() {
@@ -24,6 +40,8 @@ export async function Header() {
     { href: "/kebab-case-converter", label: t("kebabCase") },
     { href: "/camelcase-converter", label: t("camelCase") },
     { href: "/title-case-converter", label: t("titleCase") },
+    { href: "/sentence-case-converter", label: t("sentenceCase") },
+    { href: "/case-converter-online", label: t("caseConverter") },
     { href: "/blog", label: t("blog") },
   ];
 

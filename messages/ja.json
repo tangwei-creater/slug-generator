@@ -42,6 +42,8 @@
     "kebabCase": "ケバブケース",
     "camelCase": "キャメルケース",
     "titleCase": "タイトルケース",
+    "sentenceCase": "Sentence Case",
+    "caseConverter": "ケース変換",
     "blog": "ブログ"
   },
   "related": {
@@ -133,7 +135,35 @@
     "titleCaseConverter": {
       "name": "タイトルケース変換",
       "desc": "テキストをTitle Caseに変換"
-    }
+    },
+    "sentenceCaseConverter": {
+      "name": "センテンスケース変換",
+      "desc": "テキストをSentence Caseに変換"
+    },
+    "caseConverterOnline": {
+      "name": "ケース変換ツール",
+      "desc": "テキストをあらゆる形式に変換"
+    },
+    "alternatingCaseConverter": {
+      "name": "交互ケース変換",
+      "desc": "テキストをaLtErNaTiNg CaSeに変換"
+    },
+    "pascalCaseConverter": {
+      "name": "パスカルケース変換",
+      "desc": "テキストをPascalCaseに変換"
+    },
+    "dotCaseConverter": { "name": "ドットケース変換", "desc": "テキストをdot.caseに変換" },
+    "constantCaseConverter": { "name": "定数ケース変換", "desc": "テキストをCONSTANT_CASEに変換" },
+    "jsonKeysToCamelcase": { "name": "JSONキーをcamelCaseに", "desc": "JSONキーをcamelCaseに変換" },
+    "jsonKeysToSnakeCase": { "name": "JSONキーをsnake_caseに", "desc": "JSONキーをsnake_caseに変換" },
+    "wordpressSlugGenerator": { "name": "WordPressスラッグ生成", "desc": "WordPress用スラッグ生成" },
+    "blogSlugGenerator": { "name": "ブログスラッグ生成", "desc": "ブログ記事用スラッグ生成" },
+    "productSlugGenerator": { "name": "商品スラッグ生成", "desc": "商品ページ用スラッグ生成" },
+    "plainTextConverter": { "name": "プレーンテキスト変換", "desc": "書式削除・テキスト整形" },
+    "duplicateLineRemover": { "name": "重複行削除", "desc": "テキストの重複行を削除" },
+    "removeEmptyLines": { "name": "空行削除", "desc": "空白行を削除" },
+    "sortLinesAlphabetically": { "name": "行の並べ替え", "desc": "テキスト行をアルファベット順にソート" },
+    "removeLineBreaks": { "name": "改行削除", "desc": "行を結合して1段落に" }
   },
   "pages": {
     "urlSlugGenerator": {
@@ -191,7 +221,47 @@
       "h1": "タイトルケース変換",
       "subtitle": "テキストを正しいTitle Caseに変換。見出し、タイトル、ヘッドラインを標準的なスタイルルールに従って大文字化。",
       "placeholder": "例: the quick brown fox jumps over the lazy dog"
-    }
+    },
+    "sentenceCaseConverter": {
+      "title": "センテンスケース変換 - テキストをSentence Caseに変換 | SlugGenerator.app",
+      "description": "テキストをSentence Case形式に変換。各文の最初の文字を大文字にし、残りを小文字に変換。無料オンラインツール。",
+      "h1": "センテンスケース変換",
+      "subtitle": "テキストをSentence Case形式に変換。各文の最初の文字を自動的に大文字化。無料、即座に変換。",
+      "placeholder": "例: THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG"
+    },
+    "caseConverterOnline": {
+      "title": "オンラインケース変換 - テキストをあらゆる形式に変換 | SlugGenerator.app",
+      "description": "テキストを大文字、小文字、タイトルケース、センテンスケース、camelCase、PascalCase、snake_case、kebab-caseなどに変換。無料オンラインツール。",
+      "h1": "オンラインケース変換ツール",
+      "subtitle": "テキストを13種類のケース形式に一度に変換。大文字、小文字、camelCase、snake_case、kebab-caseなど。",
+      "placeholder": "例: The Quick Brown Fox Jumps Over The Lazy Dog"
+    },
+    "alternatingCaseConverter": {
+      "title": "交互ケース変換 - aLtErNaTiNg CaSe ジェネレーター | SlugGenerator.app",
+      "description": "テキストをaLtErNaTiNg CaSeに変換。ミーム、SNS投稿用のモッキングテキストを作成。無料オンラインツール。",
+      "h1": "交互ケース変換",
+      "subtitle": "テキストを即座にaLtErNaTiNg CaSeに変換。ミーム、SNS投稿に最適。",
+      "placeholder": "例: I totally believe you"
+    },
+    "pascalCaseConverter": {
+      "title": "パスカルケース変換 - テキストをPascalCaseに変換 | SlugGenerator.app",
+      "description": "テキストをPascalCase形式に変換。C#クラス名、Reactコンポーネント、TypeScriptインターフェースに最適。無料オンラインツール。",
+      "h1": "パスカルケース変換",
+      "subtitle": "テキストをPascalCase形式に変換。クラス名、Reactコンポーネント、TypeScript型に使用。",
+      "placeholder": "例: user profile service または my-component-name"
+    },
+    "dotCaseConverter": { "title": "ドットケース変換 - dot.caseに変換 | SlugGenerator.app", "description": "テキストをdot.case形式に変換。Javaパッケージ名や設定キーに最適。無料オンラインツール。", "h1": "ドットケース変換", "subtitle": "テキストをdot.case形式に変換。Javaパッケージ名、設定キー、プロパティ表記に使用。", "placeholder": "例: myVariableName または User Profile Service" },
+    "constantCaseConverter": { "title": "定数ケース変換 - SCREAMING_SNAKE_CASE生成 | SlugGenerator.app", "description": "テキストをCONSTANT_CASE（SCREAMING_SNAKE_CASE）に変換。定数や環境変数に最適。無料オンラインツール。", "h1": "定数ケース変換", "subtitle": "テキストをCONSTANT_CASE（SCREAMING_SNAKE_CASE）に変換。定数、環境変数、設定キーに使用。", "placeholder": "例: max retry count または database host name" },
+    "jsonKeysToCamelcase": { "title": "JSONキーをcamelCaseに変換 | SlugGenerator.app", "description": "JSONオブジェクトキーをsnake_caseやkebab-caseからcamelCaseに変換。ネストオブジェクト対応。無料ツール。", "h1": "JSONキーをcamelCaseに変換", "subtitle": "すべてのJSONキーをcamelCaseに変換。ネストオブジェクトと配列に対応。", "placeholder": "{\"user_name\": \"John\", \"is_active\": true}" },
+    "jsonKeysToSnakeCase": { "title": "JSONキーをsnake_caseに変換 | SlugGenerator.app", "description": "JSONオブジェクトキーをcamelCaseやPascalCaseからsnake_caseに変換。ネストオブジェクト対応。無料ツール。", "h1": "JSONキーをsnake_caseに変換", "subtitle": "すべてのJSONキーをsnake_caseに変換。ネストオブジェクトと配列に対応。", "placeholder": "{\"userName\": \"John\", \"isActive\": true}" },
+    "wordpressSlugGenerator": { "title": "WordPressスラッグ生成 - SEOフレンドリーなパーマリンク | SlugGenerator.app", "description": "WordPress投稿・ページ用のSEOフレンドリーなURLスラッグを生成。公開前にパーマリンクをプレビュー。", "h1": "WordPressスラッグ生成", "subtitle": "WordPress用のSEO最適化URLスラッグを生成。公開前にパーマリンクをプレビュー。", "placeholder": "例: WordPressサイトを高速化する方法" },
+    "blogSlugGenerator": { "title": "ブログスラッグ生成 - ブログ記事のSEO URL | SlugGenerator.app", "description": "ブログ記事用のURLスラッグを生成。WordPress、Ghost、Hugo、Jekyllなど対応。無料ツール。", "h1": "ブログスラッグ生成", "subtitle": "ブログ記事用のSEO最適化URLスラッグを生成。あらゆるプラットフォームに対応。", "placeholder": "例: SEOランキングを上げる10のヒント" },
+    "productSlugGenerator": { "title": "商品スラッグ生成 - ECサイトURL生成 | SlugGenerator.app", "description": "商品ページ用のURLスラッグを生成。Shopify、WooCommerce、Magentoなど対応。無料ツール。", "h1": "商品スラッグ生成", "subtitle": "EC商品ページ用のSEOフレンドリーなURLスラッグを生成。", "placeholder": "例: ナイキ エアマックス 90 ホワイト メンズ" },
+    "plainTextConverter": { "title": "プレーンテキスト変換 - 書式削除＆テキスト整形 | SlugGenerator.app", "description": "HTML削除、不可視文字除去、スマートクォート変換など。テキストをプレーンテキストに変換。無料ツール。", "h1": "プレーンテキスト変換", "subtitle": "HTMLタグ削除、不可視文字除去、テキストの整形。すべてブラウザで処理。", "placeholder": "<p>Hello <strong>World</strong>!</p> テキストをここに貼り付け…" },
+    "duplicateLineRemover": { "title": "重複行削除 - オンライン重複行除去 | SlugGenerator.app", "description": "テキストの重複行を瞬時に削除。リストの重複除去、データクリーニング。無料オンラインツール。", "h1": "重複行削除", "subtitle": "テキストの重複行を瞬時に削除。リストを貼り付けてワンクリックで一意の行を取得。", "placeholder": "りんご\nバナナ\nさくらんぼ\nりんご\nなつめ\nバナナ" },
+    "removeEmptyLines": { "title": "空行削除 - テキストの空白行を削除 | SlugGenerator.app", "description": "テキストの空行・空白行を削除。コード、データ、文書の不要な空白行を整理。無料ツール。", "h1": "空行削除", "subtitle": "テキストの空行と空白のみの行を削除。コード、データ、文書を整形。", "placeholder": "行1\n\n行2\n\n\n行3\n\n行4" },
+    "sortLinesAlphabetically": { "title": "行のアルファベット順ソート - テキスト並べ替え | SlugGenerator.app", "description": "テキスト行をアルファベット順（A-ZまたはZ-A）にソート。リスト整理、インポート文ソート。無料ツール。", "h1": "行のアルファベット順ソート", "subtitle": "テキスト行をアルファベット順にソート。昇順（A-Z）または降順（Z-A）。", "placeholder": "さくらんぼ\nりんご\nバナナ\nなつめ" },
+    "removeLineBreaks": { "title": "改行削除 - テキストを1段落に結合 | SlugGenerator.app", "description": "改行を削除して複数行テキストを1つの段落に結合。PDF、メール、ターミナル出力の整形。無料ツール。", "h1": "改行削除", "subtitle": "改行を削除してテキストを1つの連続した段落に結合。", "placeholder": "このテキストには\n複数の改行が\nあります" }
   },
   "blog": {
     "title": "ブログ",

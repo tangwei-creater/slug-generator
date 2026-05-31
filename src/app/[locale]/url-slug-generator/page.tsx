@@ -89,6 +89,46 @@ export default async function UrlSlugGenerator({
                 <li>Remove stop words (a, the, is, and) when possible</li>
                 <li>Avoid changing slugs after a page is indexed</li>
               </ul>
+
+              <h2>Bulk URL Slug Generator</h2>
+              <p>
+                Need to generate slugs for multiple URLs at once? Switch to
+                bulk mode above to convert an entire list of titles into clean
+                URL slugs — one per line. This is ideal for batch-importing
+                blog posts, product listings, or migrating pages between CMS
+                platforms.
+              </p>
+
+              <h2>What Makes a Clean, SEO-Friendly Slug?</h2>
+              <p>
+                A clean URL slug contains only lowercase letters, numbers, and
+                hyphens. It removes special characters, accents, and
+                unnecessary words to create a concise, human-readable string
+                that describes the page content. SEO-friendly slugs directly
+                improve your search rankings by:
+              </p>
+              <ul>
+                <li>Including target keywords that match search queries</li>
+                <li>Being short enough to display fully in search results</li>
+                <li>Making URLs shareable and easy to remember</li>
+                <li>Avoiding encoded characters that break on social media</li>
+              </ul>
+              <p>
+                For example, the title &quot;How to Build a REST API with
+                Node.js (2024 Guide)&quot; becomes the clean slug{" "}
+                <code>how-to-build-rest-api-nodejs-2024-guide</code> — or even
+                shorter with stop words removed:{" "}
+                <code>build-rest-api-nodejs-2024-guide</code>.
+              </p>
+
+              <h2>URL Slug Creator for WordPress, Ghost &amp; Hugo</h2>
+              <p>
+                This tool works as a universal URL slug creator compatible with
+                all major CMS platforms. WordPress uses slugs in its permalink
+                structure, Ghost auto-generates them from post titles, and Hugo
+                derives them from filenames. Use this generator to preview and
+                customize your slug before pasting it into your CMS.
+              </p>
             </section>
           )}
 

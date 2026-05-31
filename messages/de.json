@@ -42,6 +42,8 @@
     "kebabCase": "Kebab Case",
     "camelCase": "CamelCase",
     "titleCase": "Title Case",
+    "sentenceCase": "Sentence Case",
+    "caseConverter": "Case Converter",
     "blog": "Blog"
   },
   "related": {
@@ -133,7 +135,32 @@
     "titleCaseConverter": {
       "name": "Title-Case-Konverter",
       "desc": "Text in Title Case umwandeln"
-    }
+    },
+    "sentenceCaseConverter": {
+      "name": "Sentence-Case-Konverter",
+      "desc": "Text in Sentence Case umwandeln"
+    },
+    "caseConverterOnline": {
+      "name": "Case-Konverter",
+      "desc": "Text in jedes Format umwandeln"
+    },
+    "alternatingCaseConverter": {
+      "name": "Alternating-Case-Konverter",
+      "desc": "Text in aLtErNaTiNg CaSe umwandeln"
+    },
+    "pascalCaseConverter": { "name": "PascalCase-Konverter", "desc": "Text in PascalCase umwandeln" },
+    "dotCaseConverter": { "name": "Dot-Case-Konverter", "desc": "Text in dot.case umwandeln" },
+    "constantCaseConverter": { "name": "Konstanten-Konverter", "desc": "Text in CONSTANT_CASE umwandeln" },
+    "jsonKeysToCamelcase": { "name": "JSON-Schlüssel zu camelCase", "desc": "JSON-Schlüssel in camelCase umwandeln" },
+    "jsonKeysToSnakeCase": { "name": "JSON-Schlüssel zu snake_case", "desc": "JSON-Schlüssel in snake_case umwandeln" },
+    "wordpressSlugGenerator": { "name": "WordPress-Slug-Generator", "desc": "Slugs für WordPress generieren" },
+    "blogSlugGenerator": { "name": "Blog-Slug-Generator", "desc": "Slugs für Blogbeiträge generieren" },
+    "productSlugGenerator": { "name": "Produkt-Slug-Generator", "desc": "Slugs für Produktseiten generieren" },
+    "plainTextConverter": { "name": "Klartext-Konverter", "desc": "Formatierung entfernen, Text bereinigen" },
+    "duplicateLineRemover": { "name": "Doppelte Zeilen entfernen", "desc": "Doppelte Zeilen aus Text entfernen" },
+    "removeEmptyLines": { "name": "Leerzeilen entfernen", "desc": "Leere Zeilen aus Text entfernen" },
+    "sortLinesAlphabetically": { "name": "Zeilen sortieren", "desc": "Textzeilen alphabetisch sortieren" },
+    "removeLineBreaks": { "name": "Zeilenumbrüche entfernen", "desc": "Zeilen zu einem Absatz verbinden" }
   },
   "pages": {
     "urlSlugGenerator": {
@@ -191,7 +218,47 @@
       "h1": "Title-Case-Konverter",
       "subtitle": "Text in korrektes Title Case umwandeln. Überschriften, Titel und Schlagzeilen nach Standardregeln großschreiben.",
       "placeholder": "z.B. der schnelle braune fuchs springt über den faulen hund"
-    }
+    },
+    "sentenceCaseConverter": {
+      "title": "Sentence-Case-Konverter - Text in Sentence Case umwandeln | SlugGenerator.app",
+      "description": "Konvertieren Sie Text in das Sentence-Case-Format. Den ersten Buchstaben jedes Satzes groß schreiben, den Rest klein. Kostenloses Online-Tool.",
+      "h1": "Sentence-Case-Konverter",
+      "subtitle": "Text in das Sentence-Case-Format umwandeln. Den ersten Buchstaben jedes Satzes automatisch groß schreiben.",
+      "placeholder": "z.B. DER SCHNELLE BRAUNE FUCHS SPRINGT ÜBER DEN FAULEN HUND"
+    },
+    "caseConverterOnline": {
+      "title": "Case-Konverter Online - Text in jedes Format umwandeln | SlugGenerator.app",
+      "description": "Text in Groß-/Kleinschreibung, Title Case, Sentence Case, camelCase, PascalCase, snake_case, kebab-case und mehr umwandeln. Kostenloses Online-Tool.",
+      "h1": "Case-Konverter Online",
+      "subtitle": "Text in 13 verschiedene Formate gleichzeitig umwandeln. Groß-, Kleinschreibung, camelCase, snake_case, kebab-case und mehr.",
+      "placeholder": "z.B. The Quick Brown Fox Jumps Over The Lazy Dog"
+    },
+    "alternatingCaseConverter": {
+      "title": "Alternating-Case-Konverter - aLtErNaTiNg CaSe Generator | SlugGenerator.app",
+      "description": "Text in aLtErNaTiNg CaSe umwandeln. Mocking-Text für Memes und Social Media erstellen. Kostenloses Online-Tool.",
+      "h1": "Alternating-Case-Konverter",
+      "subtitle": "Text sofort in aLtErNaTiNg CaSe umwandeln. Perfekt für Mocking-Text, Memes und Social-Media-Posts.",
+      "placeholder": "z.B. I totally believe you"
+    },
+    "pascalCaseConverter": {
+      "title": "PascalCase-Konverter - Text in PascalCase umwandeln | SlugGenerator.app",
+      "description": "Text in das PascalCase-Format umwandeln. Ideal für C#-Klassennamen, React-Komponenten und TypeScript-Interfaces. Kostenloses Online-Tool.",
+      "h1": "PascalCase-Konverter",
+      "subtitle": "Text in das PascalCase-Format umwandeln. Verwendet für Klassennamen, React-Komponenten und TypeScript-Typen.",
+      "placeholder": "z.B. user profile service oder my-component-name"
+    },
+    "dotCaseConverter": { "title": "Dot-Case-Konverter - Text in dot.case umwandeln | SlugGenerator.app", "description": "Text in dot.case-Format umwandeln. Für Java-Paketnamen, Konfigurationsschlüssel und Property-Zugriff. Kostenloses Online-Tool.", "h1": "Dot-Case-Konverter", "subtitle": "Text in dot.case-Format umwandeln. Für Java-Pakete, Konfigurationsschlüssel und Property-Notation.", "placeholder": "z.B. myVariableName oder User Profile Service" },
+    "constantCaseConverter": { "title": "Konstanten-Konverter - SCREAMING_SNAKE_CASE Generator | SlugGenerator.app", "description": "Text in CONSTANT_CASE (SCREAMING_SNAKE_CASE) umwandeln. Standard für Konstanten und Umgebungsvariablen. Kostenloses Online-Tool.", "h1": "Konstanten-Konverter", "subtitle": "Text in CONSTANT_CASE (SCREAMING_SNAKE_CASE) umwandeln. Standard für Konstanten, Umgebungsvariablen und Konfigurationsschlüssel.", "placeholder": "z.B. max retry count oder database host name" },
+    "jsonKeysToCamelcase": { "title": "JSON-Schlüssel zu camelCase - Online JSON-Konverter | SlugGenerator.app", "description": "JSON-Objektschlüssel von snake_case oder kebab-case in camelCase umwandeln. Unterstützt verschachtelte Objekte. Kostenloses Tool.", "h1": "JSON-Schlüssel zu camelCase", "subtitle": "Alle JSON-Schlüssel in camelCase umwandeln. Sofortige Ergebnisse mit Verschachtelungsunterstützung.", "placeholder": "{\"user_name\": \"John\", \"is_active\": true}" },
+    "jsonKeysToSnakeCase": { "title": "JSON-Schlüssel zu snake_case - Online JSON-Konverter | SlugGenerator.app", "description": "JSON-Objektschlüssel von camelCase oder PascalCase in snake_case umwandeln. Unterstützt verschachtelte Objekte. Kostenloses Tool.", "h1": "JSON-Schlüssel zu snake_case", "subtitle": "Alle JSON-Schlüssel in snake_case umwandeln. Sofortige Ergebnisse mit Verschachtelungsunterstützung.", "placeholder": "{\"userName\": \"John\", \"isActive\": true}" },
+    "wordpressSlugGenerator": { "title": "WordPress-Slug-Generator - SEO-freundliche Permalinks | SlugGenerator.app", "description": "SEO-freundliche URL-Slugs für WordPress-Beiträge und Seiten generieren. Permalink vor dem Veröffentlichen vorschauen.", "h1": "WordPress-Slug-Generator", "subtitle": "SEO-optimierte URL-Slugs für WordPress generieren. Permalink vor dem Veröffentlichen vorschauen.", "placeholder": "z.B. Wie man seine WordPress-Seite beschleunigt" },
+    "blogSlugGenerator": { "title": "Blog-Slug-Generator - SEO-URLs für Blogbeiträge | SlugGenerator.app", "description": "URL-Slugs für Blogbeiträge generieren. Funktioniert mit WordPress, Ghost, Hugo, Jekyll und jedem CMS. Kostenloses Tool.", "h1": "Blog-Slug-Generator", "subtitle": "SEO-optimierte URL-Slugs für Blogbeiträge generieren. Funktioniert mit jeder Plattform.", "placeholder": "z.B. 10 Tipps für bessere Blogbeiträge die ranken" },
+    "productSlugGenerator": { "title": "Produkt-Slug-Generator - E-Commerce URL-Generator | SlugGenerator.app", "description": "URL-Slugs für Produktseiten generieren. Funktioniert mit Shopify, WooCommerce, Magento und jeder Plattform. Kostenloses Tool.", "h1": "Produkt-Slug-Generator", "subtitle": "SEO-freundliche URL-Slugs für E-Commerce-Produktseiten generieren.", "placeholder": "z.B. Nike Air Max 90 — Weiß/Schwarz (Herrengröße 44)" },
+    "plainTextConverter": { "title": "Klartext-Konverter - Formatierung entfernen | SlugGenerator.app", "description": "HTML entfernen, unsichtbare Zeichen bereinigen, Smart Quotes normalisieren. Text in Klartext umwandeln. Kostenloses Tool.", "h1": "Klartext-Konverter", "subtitle": "HTML-Tags entfernen, unsichtbare Zeichen bereinigen und Text in Klartext umwandeln.", "placeholder": "<p>Hallo <strong>Welt</strong>!</p> Text hier einfügen…" },
+    "duplicateLineRemover": { "title": "Doppelte Zeilen entfernen - Online Duplikat-Entferner | SlugGenerator.app", "description": "Doppelte Zeilen aus Text sofort entfernen. Listen deduplizieren, Daten bereinigen. Kostenloses Online-Tool.", "h1": "Doppelte Zeilen entfernen", "subtitle": "Doppelte Zeilen aus Text sofort entfernen. Liste einfügen und einzigartige Zeilen erhalten.", "placeholder": "Apfel\nBanane\nKirsche\nApfel\nDattel\nBanane" },
+    "removeEmptyLines": { "title": "Leerzeilen entfernen - Leere Zeilen löschen | SlugGenerator.app", "description": "Leere Zeilen und Leerzeilen aus Text entfernen. Code, Daten und Dokumente bereinigen. Kostenloses Tool.", "h1": "Leerzeilen entfernen", "subtitle": "Leere Zeilen und Zeilen mit nur Leerzeichen aus Text entfernen.", "placeholder": "Zeile 1\n\nZeile 2\n\n\nZeile 3\n\nZeile 4" },
+    "sortLinesAlphabetically": { "title": "Zeilen alphabetisch sortieren - Online Text-Sortierer | SlugGenerator.app", "description": "Textzeilen alphabetisch sortieren (A-Z oder Z-A). Listen ordnen, Importe sortieren. Kostenloses Tool.", "h1": "Zeilen alphabetisch sortieren", "subtitle": "Textzeilen alphabetisch sortieren. Aufsteigend (A-Z) oder absteigend (Z-A).", "placeholder": "Kirsche\nApfel\nBanane\nDattel" },
+    "removeLineBreaks": { "title": "Zeilenumbrüche entfernen - Text zu einem Absatz | SlugGenerator.app", "description": "Zeilenumbrüche entfernen und mehrzeiligen Text zu einem Absatz verbinden. Kostenloses Online-Tool.", "h1": "Zeilenumbrüche entfernen", "subtitle": "Zeilenumbrüche entfernen und Text zu einem zusammenhängenden Absatz verbinden.", "placeholder": "Dieser Text hat\nmehrere Zeilenumbrüche\ndie entfernt werden sollen." }
   },
   "blog": {
     "title": "Blog",

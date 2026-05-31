@@ -42,6 +42,8 @@
     "kebabCase": "Kebab Case",
     "camelCase": "CamelCase",
     "titleCase": "Title Case",
+    "sentenceCase": "Sentence Case",
+    "caseConverter": "Case Converter",
     "blog": "Blog"
   },
   "related": {
@@ -133,6 +135,70 @@
     "titleCaseConverter": {
       "name": "Title Case Converter",
       "desc": "Capitalize text in title case"
+    },
+    "sentenceCaseConverter": {
+      "name": "Sentence Case Converter",
+      "desc": "Convert text to sentence case"
+    },
+    "caseConverterOnline": {
+      "name": "Case Converter",
+      "desc": "Convert text to any case format"
+    },
+    "alternatingCaseConverter": {
+      "name": "Alternating Case",
+      "desc": "Convert text to aLtErNaTiNg CaSe"
+    },
+    "pascalCaseConverter": {
+      "name": "PascalCase Converter",
+      "desc": "Convert text to PascalCase"
+    },
+    "dotCaseConverter": {
+      "name": "Dot Case Converter",
+      "desc": "Convert text to dot.case"
+    },
+    "constantCaseConverter": {
+      "name": "Constant Case Converter",
+      "desc": "Convert text to CONSTANT_CASE"
+    },
+    "jsonKeysToCamelcase": {
+      "name": "JSON Keys to camelCase",
+      "desc": "Convert JSON keys to camelCase"
+    },
+    "jsonKeysToSnakeCase": {
+      "name": "JSON Keys to snake_case",
+      "desc": "Convert JSON keys to snake_case"
+    },
+    "wordpressSlugGenerator": {
+      "name": "WordPress Slug Generator",
+      "desc": "Generate slugs for WordPress"
+    },
+    "blogSlugGenerator": {
+      "name": "Blog Slug Generator",
+      "desc": "Generate slugs for blog posts"
+    },
+    "productSlugGenerator": {
+      "name": "Product Slug Generator",
+      "desc": "Generate slugs for product pages"
+    },
+    "plainTextConverter": {
+      "name": "Plain Text Converter",
+      "desc": "Strip formatting, clean text"
+    },
+    "duplicateLineRemover": {
+      "name": "Duplicate Line Remover",
+      "desc": "Remove duplicate lines from text"
+    },
+    "removeEmptyLines": {
+      "name": "Remove Empty Lines",
+      "desc": "Remove blank lines from text"
+    },
+    "sortLinesAlphabetically": {
+      "name": "Sort Lines Alphabetically",
+      "desc": "Sort text lines A-Z or Z-A"
+    },
+    "removeLineBreaks": {
+      "name": "Remove Line Breaks",
+      "desc": "Join lines into one paragraph"
     }
   },
   "pages": {
@@ -191,6 +257,118 @@
       "h1": "Title Case Converter",
       "subtitle": "Convert any text to proper Title Case. Capitalize headlines, titles, and headings following standard style rules.",
       "placeholder": "e.g. the quick brown fox jumps over the lazy dog"
+    },
+    "sentenceCaseConverter": {
+      "title": "Sentence Case Converter - Convert Text to Sentence Case Online | SlugGenerator.app",
+      "description": "Convert any text to sentence case online. Capitalize the first letter of each sentence while keeping the rest lowercase. Free, instant, no signup.",
+      "h1": "Sentence Case Converter",
+      "subtitle": "Convert any text to sentence case. Capitalize the first letter of each sentence automatically. Free, fast, works in your browser.",
+      "placeholder": "e.g. THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG"
+    },
+    "caseConverterOnline": {
+      "title": "Case Converter Online - Convert Text to Any Case Format | SlugGenerator.app",
+      "description": "Convert text to uppercase, lowercase, title case, sentence case, camelCase, PascalCase, snake_case, kebab-case and more. Free online case converter tool.",
+      "h1": "Case Converter Online",
+      "subtitle": "Convert any text to 13 case formats at once. Uppercase, lowercase, camelCase, snake_case, kebab-case, and more — all in one tool.",
+      "placeholder": "e.g. The Quick Brown Fox Jumps Over The Lazy Dog"
+    },
+    "alternatingCaseConverter": {
+      "title": "Alternating Case Converter - aLtErNaTiNg CaSe Generator | SlugGenerator.app",
+      "description": "Convert any text to alternating case (aLtErNaTiNg CaSe). Create mocking text for memes and social media. Free online tool, no signup.",
+      "h1": "Alternating Case Converter",
+      "subtitle": "Convert any text to aLtErNaTiNg CaSe instantly. Perfect for mocking text, memes, and social media posts.",
+      "placeholder": "e.g. I totally believe you"
+    },
+    "pascalCaseConverter": {
+      "title": "PascalCase Converter - Convert Text to PascalCase Online | SlugGenerator.app",
+      "description": "Convert any text to PascalCase format. Ideal for C# class names, React components, TypeScript interfaces, and Java classes. Free online tool.",
+      "h1": "PascalCase Converter",
+      "subtitle": "Convert any text to PascalCase format. Used for class names, React components, TypeScript types, and programming identifiers.",
+      "placeholder": "e.g. user profile service or my-component-name"
+    },
+    "dotCaseConverter": {
+      "title": "Dot Case Converter - Convert Text to dot.case | SlugGenerator.app",
+      "description": "Convert any text to dot.case format. Used for Java packages, config keys, and property access. Free online tool.",
+      "h1": "Dot Case Converter",
+      "subtitle": "Convert any text to dot.case format. Used for Java package names, configuration keys, and property notation.",
+      "placeholder": "e.g. myVariableName or User Profile Service"
+    },
+    "constantCaseConverter": {
+      "title": "Constant Case Converter - SCREAMING_SNAKE_CASE Generator | SlugGenerator.app",
+      "description": "Convert text to CONSTANT_CASE (SCREAMING_SNAKE_CASE). The standard for constants and environment variables. Free online tool.",
+      "h1": "Constant Case Converter",
+      "subtitle": "Convert any text to CONSTANT_CASE (SCREAMING_SNAKE_CASE). The standard for constants, env vars, and configuration keys.",
+      "placeholder": "e.g. max retry count or database host name"
+    },
+    "jsonKeysToCamelcase": {
+      "title": "JSON Keys to camelCase - Convert JSON Key Case Online | SlugGenerator.app",
+      "description": "Convert JSON object keys from snake_case or kebab-case to camelCase. Handles nested objects and arrays. Free online tool.",
+      "h1": "JSON Keys to camelCase",
+      "subtitle": "Convert all JSON object keys to camelCase. Paste your JSON and get instant results with nested object support.",
+      "placeholder": "{\"user_name\": \"John\", \"is_active\": true}"
+    },
+    "jsonKeysToSnakeCase": {
+      "title": "JSON Keys to snake_case - Convert JSON Key Case Online | SlugGenerator.app",
+      "description": "Convert JSON object keys from camelCase or PascalCase to snake_case. Handles nested objects and arrays. Free online tool.",
+      "h1": "JSON Keys to snake_case",
+      "subtitle": "Convert all JSON object keys to snake_case. Paste your JSON and get instant results with nested object support.",
+      "placeholder": "{\"userName\": \"John\", \"isActive\": true}"
+    },
+    "wordpressSlugGenerator": {
+      "title": "WordPress Slug Generator - SEO-Friendly Permalinks | SlugGenerator.app",
+      "description": "Generate SEO-friendly URL slugs for WordPress posts and pages. Preview and optimize your permalink before publishing. Free online tool.",
+      "h1": "WordPress Slug Generator",
+      "subtitle": "Generate clean, SEO-optimized URL slugs for WordPress. Preview your permalink before publishing.",
+      "placeholder": "e.g. How to Speed Up Your WordPress Site in 2024"
+    },
+    "blogSlugGenerator": {
+      "title": "Blog Slug Generator - Create SEO URLs for Blog Posts | SlugGenerator.app",
+      "description": "Generate clean URL slugs for blog posts. Works with WordPress, Ghost, Hugo, Jekyll, and any CMS. Free online tool.",
+      "h1": "Blog Slug Generator",
+      "subtitle": "Generate clean, SEO-optimized URL slugs for blog posts. Works with any blogging platform or CMS.",
+      "placeholder": "e.g. 10 Tips for Writing Better Blog Posts That Rank"
+    },
+    "productSlugGenerator": {
+      "title": "Product Slug Generator - E-Commerce URL Generator | SlugGenerator.app",
+      "description": "Generate clean URL slugs for product pages. Works with Shopify, WooCommerce, Magento, and any e-commerce platform. Free online tool.",
+      "h1": "Product Slug Generator",
+      "subtitle": "Generate clean, SEO-friendly URL slugs for e-commerce product pages. Works with Shopify, WooCommerce, and any platform.",
+      "placeholder": "e.g. Nike Air Max 90 — White/Black (Men's Size 10)"
+    },
+    "plainTextConverter": {
+      "title": "Plain Text Converter - Strip Formatting & Clean Text | SlugGenerator.app",
+      "description": "Strip HTML, remove invisible characters, clean smart quotes, and convert any text to clean plain text. Free online tool.",
+      "h1": "Plain Text Converter",
+      "subtitle": "Strip HTML tags, remove invisible characters, and clean any messy text into plain text. Everything runs in your browser.",
+      "placeholder": "<p>Hello <strong>World</strong>!</p> Paste any messy text here…"
+    },
+    "duplicateLineRemover": {
+      "title": "Duplicate Line Remover - Remove Duplicate Lines Online | SlugGenerator.app",
+      "description": "Remove duplicate lines from text instantly. Deduplicate lists, clean data, and keep only unique lines. Free online tool.",
+      "h1": "Duplicate Line Remover",
+      "subtitle": "Remove duplicate lines from text instantly. Paste your list and get unique lines with one click.",
+      "placeholder": "Apple\nBanana\nCherry\nApple\nDate\nBanana"
+    },
+    "removeEmptyLines": {
+      "title": "Remove Empty Lines - Delete Blank Lines from Text | SlugGenerator.app",
+      "description": "Remove blank and empty lines from text. Clean up code, data, and documents by removing unnecessary whitespace lines. Free online tool.",
+      "h1": "Remove Empty Lines",
+      "subtitle": "Remove blank lines and whitespace-only lines from your text. Clean up code, data, and documents instantly.",
+      "placeholder": "Line 1\n\nLine 2\n\n\nLine 3\n\nLine 4"
+    },
+    "sortLinesAlphabetically": {
+      "title": "Sort Lines Alphabetically - Online Text Sorter | SlugGenerator.app",
+      "description": "Sort text lines alphabetically (A-Z or Z-A). Alphabetize lists, sort imports, organize data. Free online text sorting tool.",
+      "h1": "Sort Lines Alphabetically",
+      "subtitle": "Sort text lines in alphabetical order. Ascending (A-Z) or descending (Z-A) with locale-aware comparison.",
+      "placeholder": "Cherry\nApple\nBanana\nDate\nElderberry"
+    },
+    "removeLineBreaks": {
+      "title": "Remove Line Breaks - Join Lines into One Paragraph | SlugGenerator.app",
+      "description": "Remove line breaks and join multi-line text into a single paragraph. Clean text from PDFs, emails, and terminal output. Free online tool.",
+      "h1": "Remove Line Breaks",
+      "subtitle": "Remove line breaks and join text into a single continuous paragraph. Clean text from PDFs, emails, and code output.",
+      "placeholder": "This text has\nmultiple line breaks\nthat need to be\nremoved and joined."
     }
   },
   "blog": {
