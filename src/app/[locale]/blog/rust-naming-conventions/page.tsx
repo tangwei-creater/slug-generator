@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import {  getTranslations, setRequestLocale } from "next-intl/server";
 import { buildMetadata } from "@/lib/seo";
 import { getArticle } from "@/lib/blog";
 import type { Locale } from "@/i18n/routing";
@@ -17,6 +17,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  setRequestLocale(locale);
   const a = getArticle(slug, locale as Locale)!;
   return buildMetadata({
     title: `${a.title} | SlugGenerator.app`,
@@ -32,6 +33,7 @@ export default async function RustNamingConventions({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations("blog");
   const a = getArticle(slug, locale as Locale)!;
 
