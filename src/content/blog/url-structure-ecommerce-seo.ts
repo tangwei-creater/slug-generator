@@ -35,28 +35,108 @@ export const article: Record<Locale, Article> = {
 <p>Use our <a href="%PRODUCT%">product slug generator</a> or <a href="%SLUG%">URL slug generator</a>.</p>`,
   }),
   ja: build("ja", {
-    title: "ECサイトURL構造：SEOベストプラクティス",
-    description: "商品、カテゴリ、コレクションのURL構造をSEOに最適化する方法。",
-    body: `<p>ECサイトのURL構造はクロール性、インデックス、ランキングに直接影響します。</p><h2>ツール</h2><p><a href="%PRODUCT%">商品スラッグジェネレーター</a>。</p>`,
+    title: "ECサイトのURL構造：オンラインストアのSEOベストプラクティス",
+    description: "ECサイトで商品、カテゴリ、コレクションのURL構造をSEOに最適化する方法を解説。クロール性とランキングを最大化します。",
+    body: `<p>ECサイトのURL構造は、クロール性、インデックス、ランキングに直接影響します。最初から正しく設定することが重要です。</p>
+<h2>推奨構造</h2>
+<table><thead><tr><th>ページタイプ</th><th>推奨</th><th>避けるべき</th></tr></thead><tbody>
+<tr><td>商品</td><td><code>/product-name</code></td><td><code>/products/category/subcategory/product-name</code></td></tr>
+<tr><td>カテゴリ</td><td><code>/category-name</code></td><td><code>/shop/all-categories/category-name</code></td></tr>
+<tr><td>サブカテゴリ</td><td><code>/category/subcategory</code></td><td><code>/shop/cat/subcat/subsubcat</code></td></tr>
+<tr><td>検索結果</td><td><code>/search?q=keyword</code></td><td>（インデックスは慎重に）</td></tr>
+</tbody></table>
+<h2>主要な原則</h2>
+<ul>
+<li><strong>フラットが優れている：</strong><code>/blue-running-shoes</code>は<code>/shoes/running/blue/nike-model-x</code>より優秀</li>
+<li><strong>説明的なスラッグを使う：</strong><code>/wireless-bluetooth-headphones</code>であって<code>/product-38291</code>ではない</li>
+<li><strong>ナビゲーションにURLパラメータを避ける：</strong><code>?color=blue&size=10</code>はクロールの問題を引き起こす</li>
+<li><strong>canonicalタグ：</strong>複数カテゴリに表示される商品には必須</li>
+</ul>
+<h2>商品スラッグを生成</h2>
+<p><a href="%PRODUCT%">商品スラッグジェネレーター</a>または<a href="%SLUG%">URLスラッグジェネレーター</a>をご利用ください。</p>`,
   }),
   de: build("de", {
-    title: "E-Commerce URL-Struktur: SEO Best Practices",
-    description: "URL-Strukturen für Produkt-, Kategorie- und Sammlungsseiten.",
-    body: `<p>URL-Struktur beeinflusst Crawling und Ranking direkt.</p><h2>Tool</h2><p><a href="%PRODUCT%">Produkt-Slug-Generator</a>.</p>`,
+    title: "E-Commerce URL-Struktur: SEO Best Practices für Online-Shops",
+    description: "Erfahren Sie, wie Sie Produkt-, Kategorie- und Sammlungs-URLs für maximale SEO-Wirkung im E-Commerce strukturieren.",
+    body: `<p>Die URL-Struktur im E-Commerce beeinflusst direkt Crawlbarkeit, Indexierung und Ranking. Machen Sie es von Anfang an richtig.</p>
+<h2>Empfohlene Strukturen</h2>
+<table><thead><tr><th>Seitentyp</th><th>Empfohlen</th><th>Vermeiden</th></tr></thead><tbody>
+<tr><td>Produkt</td><td><code>/product-name</code></td><td><code>/products/category/subcategory/product-name</code></td></tr>
+<tr><td>Kategorie</td><td><code>/category-name</code></td><td><code>/shop/all-categories/category-name</code></td></tr>
+<tr><td>Unterkategorie</td><td><code>/category/subcategory</code></td><td><code>/shop/cat/subcat/subsubcat</code></td></tr>
+<tr><td>Suchergebnisse</td><td><code>/search?q=keyword</code></td><td>(mit Vorsicht indexieren)</td></tr>
+</tbody></table>
+<h2>Wichtige Prinzipien</h2>
+<ul>
+<li><strong>Flach ist besser:</strong> <code>/blue-running-shoes</code> schlägt <code>/shoes/running/blue/nike-model-x</code></li>
+<li><strong>Beschreibende Slugs verwenden:</strong> <code>/wireless-bluetooth-headphones</code> statt <code>/product-38291</code></li>
+<li><strong>URL-Parameter für Navigation vermeiden:</strong> <code>?color=blue&size=10</code> erzeugt Crawling-Probleme</li>
+<li><strong>Canonical Tags:</strong> Unverzichtbar für Produkte, die in mehreren Kategorien erscheinen</li>
+</ul>
+<h2>Produkt-Slugs generieren</h2>
+<p>Verwenden Sie unseren <a href="%PRODUCT%">Produkt-Slug-Generator</a> oder den <a href="%SLUG%">URL-Slug-Generator</a>.</p>`,
   }),
   es: build("es", {
-    title: "Estructura de URL para e-commerce: Mejores prácticas SEO",
-    description: "Cómo estructurar URLs de productos y categorías para SEO.",
-    body: `<p>La estructura URL impacta directamente el rastreo y ranking.</p><h2>Herramienta</h2><p><a href="%PRODUCT%">Generador de slugs de producto</a>.</p>`,
+    title: "Estructura de URL para e-commerce: Mejores prácticas SEO para tiendas online",
+    description: "Aprende a estructurar URLs de productos, categorías y colecciones para máximo impacto SEO en e-commerce.",
+    body: `<p>La estructura de URL en e-commerce impacta directamente la rastreabilidad, indexación y posicionamiento. Es importante hacerlo bien desde el principio.</p>
+<h2>Estructuras recomendadas</h2>
+<table><thead><tr><th>Tipo de página</th><th>Recomendado</th><th>Evitar</th></tr></thead><tbody>
+<tr><td>Producto</td><td><code>/product-name</code></td><td><code>/products/category/subcategory/product-name</code></td></tr>
+<tr><td>Categoría</td><td><code>/category-name</code></td><td><code>/shop/all-categories/category-name</code></td></tr>
+<tr><td>Subcategoría</td><td><code>/category/subcategory</code></td><td><code>/shop/cat/subcat/subsubcat</code></td></tr>
+<tr><td>Resultados de búsqueda</td><td><code>/search?q=keyword</code></td><td>(indexar con precaución)</td></tr>
+</tbody></table>
+<h2>Principios clave</h2>
+<ul>
+<li><strong>Plano es mejor:</strong> <code>/blue-running-shoes</code> supera a <code>/shoes/running/blue/nike-model-x</code></li>
+<li><strong>Usa slugs descriptivos:</strong> <code>/wireless-bluetooth-headphones</code> no <code>/product-38291</code></li>
+<li><strong>Evita parámetros URL para navegación:</strong> <code>?color=blue&size=10</code> crea problemas de rastreo</li>
+<li><strong>Etiquetas canonical:</strong> Esenciales para productos que aparecen en múltiples categorías</li>
+</ul>
+<h2>Genera slugs de producto</h2>
+<p>Usa nuestro <a href="%PRODUCT%">generador de slugs de producto</a> o el <a href="%SLUG%">generador de slugs URL</a>.</p>`,
   }),
   pt: build("pt", {
-    title: "Estrutura de URL para e-commerce: Melhores práticas de SEO",
-    description: "Como estruturar URLs de produtos e categorias para SEO.",
-    body: `<p>A estrutura de URL impacta diretamente o rastreamento e ranking.</p><h2>Ferramenta</h2><p><a href="%PRODUCT%">Gerador de slugs de produto</a>.</p>`,
+    title: "Estrutura de URL para e-commerce: Melhores práticas de SEO para lojas online",
+    description: "Aprenda a estruturar URLs de produtos, categorias e coleções para máximo impacto SEO no e-commerce.",
+    body: `<p>A estrutura de URL no e-commerce impacta diretamente a rastreabilidade, indexação e posicionamento. É importante acertar desde o início.</p>
+<h2>Estruturas recomendadas</h2>
+<table><thead><tr><th>Tipo de página</th><th>Recomendado</th><th>Evitar</th></tr></thead><tbody>
+<tr><td>Produto</td><td><code>/product-name</code></td><td><code>/products/category/subcategory/product-name</code></td></tr>
+<tr><td>Categoria</td><td><code>/category-name</code></td><td><code>/shop/all-categories/category-name</code></td></tr>
+<tr><td>Subcategoria</td><td><code>/category/subcategory</code></td><td><code>/shop/cat/subcat/subsubcat</code></td></tr>
+<tr><td>Resultados de busca</td><td><code>/search?q=keyword</code></td><td>(indexar com cautela)</td></tr>
+</tbody></table>
+<h2>Princípios-chave</h2>
+<ul>
+<li><strong>Plano é melhor:</strong> <code>/blue-running-shoes</code> supera <code>/shoes/running/blue/nike-model-x</code></li>
+<li><strong>Use slugs descritivos:</strong> <code>/wireless-bluetooth-headphones</code> não <code>/product-38291</code></li>
+<li><strong>Evite parâmetros URL para navegação:</strong> <code>?color=blue&size=10</code> cria problemas de rastreamento</li>
+<li><strong>Tags canonical:</strong> Essenciais para produtos que aparecem em múltiplas categorias</li>
+</ul>
+<h2>Gere slugs de produto</h2>
+<p>Use nosso <a href="%PRODUCT%">gerador de slugs de produto</a> ou o <a href="%SLUG%">gerador de slugs URL</a>.</p>`,
   }),
   fr: build("fr", {
-    title: "Structure d'URL e-commerce : Bonnes pratiques SEO",
-    description: "Comment structurer les URLs produits et catégories pour le SEO.",
-    body: `<p>La structure d'URL impacte directement le crawl et le ranking.</p><h2>Outil</h2><p><a href="%PRODUCT%">Générateur de slugs produit</a>.</p>`,
+    title: "Structure d'URL e-commerce : bonnes pratiques SEO pour les boutiques en ligne",
+    description: "Apprenez à structurer les URLs de produits, catégories et collections pour un impact SEO maximal en e-commerce.",
+    body: `<p>La structure d'URL en e-commerce impacte directement la crawlabilité, l'indexation et le positionnement. Il est important de bien faire dès le départ.</p>
+<h2>Structures recommandées</h2>
+<table><thead><tr><th>Type de page</th><th>Recommandé</th><th>À éviter</th></tr></thead><tbody>
+<tr><td>Produit</td><td><code>/product-name</code></td><td><code>/products/category/subcategory/product-name</code></td></tr>
+<tr><td>Catégorie</td><td><code>/category-name</code></td><td><code>/shop/all-categories/category-name</code></td></tr>
+<tr><td>Sous-catégorie</td><td><code>/category/subcategory</code></td><td><code>/shop/cat/subcat/subsubcat</code></td></tr>
+<tr><td>Résultats de recherche</td><td><code>/search?q=keyword</code></td><td>(indexer avec prudence)</td></tr>
+</tbody></table>
+<h2>Principes clés</h2>
+<ul>
+<li><strong>Plat est préférable :</strong> <code>/blue-running-shoes</code> bat <code>/shoes/running/blue/nike-model-x</code></li>
+<li><strong>Utilisez des slugs descriptifs :</strong> <code>/wireless-bluetooth-headphones</code> pas <code>/product-38291</code></li>
+<li><strong>Évitez les paramètres URL pour la navigation :</strong> <code>?color=blue&size=10</code> crée des problèmes de crawl</li>
+<li><strong>Balises canonical :</strong> Essentielles pour les produits apparaissant dans plusieurs catégories</li>
+</ul>
+<h2>Générez des slugs produit</h2>
+<p>Utilisez notre <a href="%PRODUCT%">générateur de slugs produit</a> ou le <a href="%SLUG%">générateur de slugs URL</a>.</p>`,
   }),
 };
