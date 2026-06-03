@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Link } from "@/i18n/navigation";
 import {  getTranslations, setRequestLocale } from "next-intl/server";
 import { buildMetadata } from "@/lib/seo";
 import { Header, Footer, RelatedTools } from "@/components/Layout";
@@ -187,9 +188,9 @@ export default async function SentenceCaseConverter({
                 everything and then capitalize the first letter of each
                 sentence. For programmatic use, you can use JavaScript,
                 Python, or PHP — see our guide on{" "}
-                <a href="/blog/slugify-text-javascript-python-php">
+                <Link href="/blog/slugify-text-javascript-python-php">
                   text transformation in multiple languages
-                </a>.
+                </Link>.
               </p>
             </section>
           )}
