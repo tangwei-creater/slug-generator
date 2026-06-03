@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Link } from "@/i18n/navigation";
 import {  getTranslations, setRequestLocale } from "next-intl/server";
 import { buildMetadata } from "@/lib/seo";
 import { Header, Footer, RelatedTools } from "@/components/Layout";
@@ -148,7 +149,7 @@ export default async function SnakeCaseConverter({
               <h2>Where to Use Snake Case</h2>
               <ul>
                 <li>Python variable and function names (PEP 8 standard)</li>
-                <li>Database table and column names</li>
+                <li>Database table and column names (SQL convention)</li>
                 <li>Ruby method and variable names</li>
                 <li>API request and response field names</li>
                 <li>Configuration file keys</li>
@@ -156,6 +157,191 @@ export default async function SnakeCaseConverter({
                 <li>Environment variable names (SCREAMING_SNAKE_CASE)</li>
                 <li>Rust variable and function names</li>
               </ul>
+
+              <h2>Related Tools</h2>
+              <p>
+                Convert to hyphenated format with the{" "}
+                <Link href="/kebab-case-converter">Kebab Case Converter</Link>.
+                Switch between JavaScript and Python naming with the{" "}
+                <Link href="/camelcase-converter">CamelCase Converter</Link>.
+                For all formats at once, try the{" "}
+                <Link href="/case-converter-online">Case Converter Online</Link>.
+              </p>
+            </section>
+          )}
+
+          {locale === "ja" && (
+            <section className="w-full max-w-3xl mx-auto mt-16 prose prose-gray">
+              <h2>スネークケースとは？</h2>
+              <p>スネークケース（snake_case）は、単語をアンダースコアで区切り、すべての文字を小文字にする命名規則です。例：<code>my_variable_name</code>、<code>user_first_name</code>。</p>
+              <h2>スネークケースと他の命名規則の比較</h2>
+              <ul>
+                <li><strong>スネークケース</strong>: <code>my_variable_name</code> — Python、Ruby、データベースで使用</li>
+                <li><strong>キャメルケース</strong>: <code>myVariableName</code> — JavaScript、Javaで使用</li>
+                <li><strong>ケバブケース</strong>: <code>my-variable-name</code> — URL、CSS、HTML属性で使用</li>
+                <li><strong>パスカルケース</strong>: <code>MyVariableName</code> — C#、Reactコンポーネントで使用</li>
+              </ul>
+              <h2>SCREAMING_SNAKE_CASEとは？</h2>
+              <p>SCREAMING_SNAKE_CASE（アッパースネークケース/CONSTANT_CASE）は、大文字とアンダースコアを組み合わせた形式です。例：<code>MAX_RETRY_COUNT</code>、<code>API_BASE_URL</code>。Python、Java、C、JavaScript、Rustなどほとんどのプログラミング言語で定数の標準形式です。</p>
+              <h2>camelCaseからsnake_caseへの変換方法</h2>
+              <p>camelCaseからsnake_caseへの変換は、開発者が最も頻繁に必要とするテキスト変換の1つです。各大文字の前にアンダースコアを挿入し、全体を小文字化します：</p>
+              <ul>
+                <li><code>myVariableName</code> → <code>my_variable_name</code></li>
+                <li><code>getUserById</code> → <code>get_user_by_id</code></li>
+                <li><code>HTMLParser</code> → <code>html_parser</code></li>
+              </ul>
+              <h2>スネークケースの使用場所</h2>
+              <ul>
+                <li>Pythonの変数名・関数名（PEP 8標準）</li>
+                <li>データベースのテーブル名・カラム名（SQL規約）</li>
+                <li>Rubyのメソッド名・変数名</li>
+                <li>APIのリクエスト/レスポンスフィールド名</li>
+                <li>設定ファイルのキー名</li>
+                <li>環境変数名（SCREAMING_SNAKE_CASE）</li>
+                <li>Rustの変数名・関数名</li>
+              </ul>
+              <h2>関連ツール</h2>
+              <p>ハイフン形式には<Link href="/kebab-case-converter">Kebab Case Converter</Link>を、JavaScript命名には<Link href="/camelcase-converter">CamelCase Converter</Link>を、全形式一括には<Link href="/case-converter-online">Case Converter Online</Link>をどうぞ。</p>
+            </section>
+          )}
+
+          {locale === "de" && (
+            <section className="w-full max-w-3xl mx-auto mt-16 prose prose-gray">
+              <h2>Was ist Snake Case?</h2>
+              <p>Snake Case (auch snake_case geschrieben) ist eine Namenskonvention, bei der Wörter durch Unterstriche getrennt und alle Buchstaben kleingeschrieben werden. Beispiel: <code>my_variable_name</code> oder <code>user_first_name</code>.</p>
+              <h2>Snake Case im Vergleich zu anderen Konventionen</h2>
+              <ul>
+                <li><strong>Snake Case</strong>: <code>my_variable_name</code> — Python, Ruby, Datenbanken</li>
+                <li><strong>Camel Case</strong>: <code>myVariableName</code> — JavaScript, Java</li>
+                <li><strong>Kebab Case</strong>: <code>my-variable-name</code> — URLs, CSS, HTML-Attribute</li>
+                <li><strong>Pascal Case</strong>: <code>MyVariableName</code> — C#, React-Komponenten</li>
+              </ul>
+              <h2>Was ist SCREAMING_SNAKE_CASE?</h2>
+              <p>SCREAMING_SNAKE_CASE (auch Upper Snake Case oder CONSTANT_CASE genannt) verwendet Großbuchstaben mit Unterstrichen, z.B. <code>MAX_RETRY_COUNT</code> oder <code>API_BASE_URL</code>. Es ist der Standard für Konstanten in den meisten Programmiersprachen einschließlich Python, Java, C und JavaScript.</p>
+              <h2>camelCase in snake_case umwandeln</h2>
+              <p>Die Umwandlung von camelCase in snake_case ist eine der häufigsten Texttransformationen. Der Algorithmus fügt vor jedem Großbuchstaben einen Unterstrich ein und schreibt dann alles klein:</p>
+              <ul>
+                <li><code>myVariableName</code> → <code>my_variable_name</code></li>
+                <li><code>getUserById</code> → <code>get_user_by_id</code></li>
+                <li><code>HTMLParser</code> → <code>html_parser</code></li>
+              </ul>
+              <h2>Verwendung von Snake Case</h2>
+              <ul>
+                <li>Python-Variablen und -Funktionsnamen (PEP 8 Standard)</li>
+                <li>Datenbank-Tabellen- und Spaltennamen (SQL-Konvention)</li>
+                <li>Ruby-Methoden- und Variablennamen</li>
+                <li>API-Request/Response-Feldnamen</li>
+                <li>Konfigurationsdatei-Schlüssel</li>
+                <li>Umgebungsvariablen (SCREAMING_SNAKE_CASE)</li>
+                <li>Rust-Variablen- und Funktionsnamen</li>
+              </ul>
+              <h2>Verwandte Tools</h2>
+              <p>Für Bindestrich-Format: <Link href="/kebab-case-converter">Kebab Case Converter</Link>. Für JavaScript-Benennung: <Link href="/camelcase-converter">CamelCase Converter</Link>. Für alle Formate gleichzeitig: <Link href="/case-converter-online">Case Converter Online</Link>.</p>
+            </section>
+          )}
+
+          {locale === "es" && (
+            <section className="w-full max-w-3xl mx-auto mt-16 prose prose-gray">
+              <h2>¿Qué es Snake Case?</h2>
+              <p>Snake case (también escrito como snake_case) es una convención de nomenclatura donde las palabras se separan con guiones bajos y todas las letras son minúsculas. Ejemplo: <code>my_variable_name</code> o <code>user_first_name</code>.</p>
+              <h2>Snake Case vs otras convenciones</h2>
+              <ul>
+                <li><strong>Snake case</strong>: <code>my_variable_name</code> — Python, Ruby, bases de datos</li>
+                <li><strong>Camel case</strong>: <code>myVariableName</code> — JavaScript, Java</li>
+                <li><strong>Kebab case</strong>: <code>my-variable-name</code> — URLs, CSS, atributos HTML</li>
+                <li><strong>Pascal case</strong>: <code>MyVariableName</code> — C#, componentes React</li>
+              </ul>
+              <h2>¿Qué es SCREAMING_SNAKE_CASE?</h2>
+              <p>SCREAMING_SNAKE_CASE (también llamado upper snake case o CONSTANT_CASE) usa letras mayúsculas con guiones bajos, ej. <code>MAX_RETRY_COUNT</code> o <code>API_BASE_URL</code>. Es el estándar para constantes en la mayoría de lenguajes incluyendo Python, Java, C y JavaScript.</p>
+              <h2>Convertir camelCase a snake_case</h2>
+              <p>Convertir camelCase a snake_case es una de las transformaciones más comunes. El algoritmo inserta un guion bajo antes de cada letra mayúscula y luego convierte todo a minúsculas:</p>
+              <ul>
+                <li><code>myVariableName</code> → <code>my_variable_name</code></li>
+                <li><code>getUserById</code> → <code>get_user_by_id</code></li>
+                <li><code>HTMLParser</code> → <code>html_parser</code></li>
+              </ul>
+              <h2>Dónde usar Snake Case</h2>
+              <ul>
+                <li>Variables y funciones en Python (estándar PEP 8)</li>
+                <li>Nombres de tablas y columnas en bases de datos (convención SQL)</li>
+                <li>Métodos y variables en Ruby</li>
+                <li>Campos de request/response en APIs</li>
+                <li>Claves de archivos de configuración</li>
+                <li>Variables de entorno (SCREAMING_SNAKE_CASE)</li>
+                <li>Variables y funciones en Rust</li>
+              </ul>
+              <h2>Herramientas relacionadas</h2>
+              <p>Para formato con guiones: <Link href="/kebab-case-converter">Kebab Case Converter</Link>. Para nomenclatura JavaScript: <Link href="/camelcase-converter">CamelCase Converter</Link>. Para todos los formatos a la vez: <Link href="/case-converter-online">Case Converter Online</Link>.</p>
+            </section>
+          )}
+
+          {locale === "pt" && (
+            <section className="w-full max-w-3xl mx-auto mt-16 prose prose-gray">
+              <h2>O que é Snake Case?</h2>
+              <p>Snake case (também escrito como snake_case) é uma convenção de nomenclatura onde as palavras são separadas por underscores e todas as letras são minúsculas. Exemplo: <code>my_variable_name</code> ou <code>user_first_name</code>.</p>
+              <h2>Snake Case vs outras convenções</h2>
+              <ul>
+                <li><strong>Snake case</strong>: <code>my_variable_name</code> — Python, Ruby, bancos de dados</li>
+                <li><strong>Camel case</strong>: <code>myVariableName</code> — JavaScript, Java</li>
+                <li><strong>Kebab case</strong>: <code>my-variable-name</code> — URLs, CSS, atributos HTML</li>
+                <li><strong>Pascal case</strong>: <code>MyVariableName</code> — C#, componentes React</li>
+              </ul>
+              <h2>O que é SCREAMING_SNAKE_CASE?</h2>
+              <p>SCREAMING_SNAKE_CASE (também chamado de upper snake case ou CONSTANT_CASE) usa letras maiúsculas com underscores, ex. <code>MAX_RETRY_COUNT</code> ou <code>API_BASE_URL</code>. É o padrão para constantes na maioria das linguagens incluindo Python, Java, C e JavaScript.</p>
+              <h2>Converter camelCase para snake_case</h2>
+              <p>Converter camelCase para snake_case é uma das transformações mais comuns. O algoritmo insere um underscore antes de cada letra maiúscula e converte tudo para minúsculas:</p>
+              <ul>
+                <li><code>myVariableName</code> → <code>my_variable_name</code></li>
+                <li><code>getUserById</code> → <code>get_user_by_id</code></li>
+                <li><code>HTMLParser</code> → <code>html_parser</code></li>
+              </ul>
+              <h2>Onde usar Snake Case</h2>
+              <ul>
+                <li>Variáveis e funções em Python (padrão PEP 8)</li>
+                <li>Nomes de tabelas e colunas em bancos de dados (convenção SQL)</li>
+                <li>Métodos e variáveis em Ruby</li>
+                <li>Campos de request/response em APIs</li>
+                <li>Chaves de arquivos de configuração</li>
+                <li>Variáveis de ambiente (SCREAMING_SNAKE_CASE)</li>
+                <li>Variáveis e funções em Rust</li>
+              </ul>
+              <h2>Ferramentas relacionadas</h2>
+              <p>Para formato com hífens: <Link href="/kebab-case-converter">Kebab Case Converter</Link>. Para nomenclatura JavaScript: <Link href="/camelcase-converter">CamelCase Converter</Link>. Para todos os formatos de uma vez: <Link href="/case-converter-online">Case Converter Online</Link>.</p>
+            </section>
+          )}
+
+          {locale === "fr" && (
+            <section className="w-full max-w-3xl mx-auto mt-16 prose prose-gray">
+              <h2>Qu&apos;est-ce que le Snake Case ?</h2>
+              <p>Le snake case (aussi écrit snake_case) est une convention de nommage où les mots sont séparés par des underscores et toutes les lettres sont en minuscules. Exemple : <code>my_variable_name</code> ou <code>user_first_name</code>.</p>
+              <h2>Snake Case vs autres conventions</h2>
+              <ul>
+                <li><strong>Snake case</strong> : <code>my_variable_name</code> — Python, Ruby, bases de données</li>
+                <li><strong>Camel case</strong> : <code>myVariableName</code> — JavaScript, Java</li>
+                <li><strong>Kebab case</strong> : <code>my-variable-name</code> — URLs, CSS, attributs HTML</li>
+                <li><strong>Pascal case</strong> : <code>MyVariableName</code> — C#, composants React</li>
+              </ul>
+              <h2>Qu&apos;est-ce que SCREAMING_SNAKE_CASE ?</h2>
+              <p>SCREAMING_SNAKE_CASE (aussi appelé upper snake case ou CONSTANT_CASE) utilise des majuscules avec des underscores, ex. <code>MAX_RETRY_COUNT</code> ou <code>API_BASE_URL</code>. C&apos;est le standard pour les constantes dans la plupart des langages dont Python, Java, C et JavaScript.</p>
+              <h2>Convertir camelCase en snake_case</h2>
+              <p>La conversion de camelCase en snake_case est l&apos;une des transformations les plus courantes. L&apos;algorithme insère un underscore avant chaque lettre majuscule puis convertit tout en minuscules :</p>
+              <ul>
+                <li><code>myVariableName</code> → <code>my_variable_name</code></li>
+                <li><code>getUserById</code> → <code>get_user_by_id</code></li>
+                <li><code>HTMLParser</code> → <code>html_parser</code></li>
+              </ul>
+              <h2>Où utiliser le Snake Case</h2>
+              <ul>
+                <li>Variables et fonctions Python (standard PEP 8)</li>
+                <li>Noms de tables et colonnes de bases de données (convention SQL)</li>
+                <li>Méthodes et variables Ruby</li>
+                <li>Champs de request/response d&apos;API</li>
+                <li>Clés de fichiers de configuration</li>
+                <li>Variables d&apos;environnement (SCREAMING_SNAKE_CASE)</li>
+                <li>Variables et fonctions Rust</li>
+              </ul>
+              <h2>Outils associés</h2>
+              <p>Pour le format avec tirets : <Link href="/kebab-case-converter">Kebab Case Converter</Link>. Pour la nomenclature JavaScript : <Link href="/camelcase-converter">CamelCase Converter</Link>. Pour tous les formats à la fois : <Link href="/case-converter-online">Case Converter Online</Link>.</p>
             </section>
           )}
 
