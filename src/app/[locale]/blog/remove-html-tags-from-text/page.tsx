@@ -3,6 +3,7 @@ import {  getTranslations, setRequestLocale } from "next-intl/server";
 import { buildMetadata } from "@/lib/seo";
 import { getArticle } from "@/lib/blog";
 import type { Locale } from "@/i18n/routing";
+import { Link } from "@/i18n/navigation";
 import { Header, Footer } from "@/components/Layout";
 import { JsonLd } from "@/components/JsonLd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -66,6 +67,14 @@ export default async function RemoveHtmlTagsFromText({
             </div>
           </header>
           <div className="prose prose-gray max-w-none" dangerouslySetInnerHTML={{ __html: a.body }} />
+          <nav className="mt-12 p-6 bg-gray-50 rounded-lg">
+            <h2 className="text-lg font-semibold text-gray-900 mb-3">Related Tools</h2>
+            <ul className="space-y-2 text-base">
+              <li><Link href="/plain-text-converter" className="text-blue-600 hover:underline">Plain Text Converter</Link> — Strip HTML and convert to plain text</li>
+              <li><Link href="/remove-empty-lines" className="text-blue-600 hover:underline">Remove Empty Lines</Link> — Clean up blank lines after tag removal</li>
+              <li><Link href="/text-to-slug" className="text-blue-600 hover:underline">Text to Slug Converter</Link> — Convert cleaned text to URL slugs</li>
+            </ul>
+          </nav>
         </article>
       </main>
       <Footer />

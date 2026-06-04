@@ -3,6 +3,7 @@ import {  getTranslations, setRequestLocale } from "next-intl/server";
 import { buildMetadata } from "@/lib/seo";
 import { getArticle } from "@/lib/blog";
 import type { Locale } from "@/i18n/routing";
+import { Link } from "@/i18n/navigation";
 import { Header, Footer } from "@/components/Layout";
 import { JsonLd } from "@/components/JsonLd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -66,6 +67,14 @@ export default async function UppercaseVsLowercaseSeo({
             </div>
           </header>
           <div className="prose prose-gray max-w-none" dangerouslySetInnerHTML={{ __html: a.body }} />
+          <nav className="mt-12 p-6 bg-gray-50 rounded-lg">
+            <h2 className="text-lg font-semibold text-gray-900 mb-3">Related Tools</h2>
+            <ul className="space-y-2 text-base">
+              <li><Link href="/case-converter-online" className="text-blue-600 hover:underline">Case Converter Online</Link> — Convert between uppercase and lowercase</li>
+              <li><Link href="/url-slug-generator" className="text-blue-600 hover:underline">URL Slug Generator</Link> — Create lowercase SEO-friendly slugs</li>
+              <li><Link href="/title-case-converter" className="text-blue-600 hover:underline">Title Case Converter</Link> — Convert text to Title Case</li>
+            </ul>
+          </nav>
         </article>
       </main>
       <Footer />

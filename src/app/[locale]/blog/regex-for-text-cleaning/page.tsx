@@ -3,6 +3,7 @@ import {  getTranslations, setRequestLocale } from "next-intl/server";
 import { buildMetadata } from "@/lib/seo";
 import { getArticle } from "@/lib/blog";
 import type { Locale } from "@/i18n/routing";
+import { Link } from "@/i18n/navigation";
 import { Header, Footer } from "@/components/Layout";
 import { JsonLd } from "@/components/JsonLd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -66,6 +67,14 @@ export default async function RegexForTextCleaning({
             </div>
           </header>
           <div className="prose prose-gray max-w-none" dangerouslySetInnerHTML={{ __html: a.body }} />
+          <nav className="mt-12 p-6 bg-gray-50 rounded-lg">
+            <h2 className="text-lg font-semibold text-gray-900 mb-3">Related Tools</h2>
+            <ul className="space-y-2 text-base">
+              <li><Link href="/plain-text-converter" className="text-blue-600 hover:underline">Plain Text Converter</Link> — Clean text by stripping formatting</li>
+              <li><Link href="/remove-empty-lines" className="text-blue-600 hover:underline">Remove Empty Lines</Link> — Remove blank lines from text</li>
+              <li><Link href="/remove-line-breaks" className="text-blue-600 hover:underline">Remove Line Breaks</Link> — Clean up line breaks from text</li>
+            </ul>
+          </nav>
         </article>
       </main>
       <Footer />

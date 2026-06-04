@@ -3,6 +3,7 @@ import {  getTranslations, setRequestLocale } from "next-intl/server";
 import { buildMetadata } from "@/lib/seo";
 import { getArticle } from "@/lib/blog";
 import type { Locale } from "@/i18n/routing";
+import { Link } from "@/i18n/navigation";
 import { Header, Footer } from "@/components/Layout";
 import { JsonLd } from "@/components/JsonLd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -66,6 +67,14 @@ export default async function PythonNamingConventions({
             </div>
           </header>
           <div className="prose prose-gray max-w-none" dangerouslySetInnerHTML={{ __html: a.body }} />
+          <nav className="mt-12 p-6 bg-gray-50 rounded-lg">
+            <h2 className="text-lg font-semibold text-gray-900 mb-3">Related Tools</h2>
+            <ul className="space-y-2 text-base">
+              <li><Link href="/snake-case-converter" className="text-blue-600 hover:underline">Snake Case Converter</Link> — Convert text to snake_case (PEP 8 convention)</li>
+              <li><Link href="/pascal-case-converter" className="text-blue-600 hover:underline">PascalCase Converter</Link> — Convert text to PascalCase (Python classes)</li>
+              <li><Link href="/constant-case-converter" className="text-blue-600 hover:underline">CONSTANT_CASE Converter</Link> — Convert text to SCREAMING_SNAKE_CASE (Python constants)</li>
+            </ul>
+          </nav>
         </article>
       </main>
       <Footer />
