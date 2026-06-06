@@ -51,6 +51,8 @@ interface WordCounterToolProps {
 export default function WordCounterTool({ placeholder }: WordCounterToolProps) {
   const [input, setInput] = useState("");
   const [pasted, setPasted] = useState(false);
+  const [goalInput, setGoalInput] = useState("");
+  const goal = goalInput ? parseInt(goalInput, 10) || 0 : 0;
 
   const handlePaste = useCallback(async () => {
     try {
@@ -113,6 +115,35 @@ export default function WordCounterTool({ placeholder }: WordCounterToolProps) {
         <StatCard label="Lines" value={stats.lines} />
         <StatCard label="Reading time" value={stats.readingTime} />
         <StatCard label="Speaking time" value={stats.speakingTime} />
+      </div>
+
+      <div className="flex items-center gap-3 mb-4">
+        <label className="text-sm font-medium text-gray-600 whitespace-nowrap">Word Goal</label>
+        <input
+          type="number"
+          min="0"
+          value={goalInput}
+          onChange={(e) => setGoalInput(e.target.value)}
+          placeholder="e.g. 500"
+          className="w-24 px-3 py-1.5 border border-gray-200 rounded-lg text-sm outline-none focus:border-blue-400 transition-colors"
+        />
+        {goal > 0 && (
+          <div className="flex-1 flex items-center gap-3">
+            <div className="flex-1 h-2.5 bg-gray-100 rounded-full overflow-hidden">
+              <div
+                className={`h-full rounded-full transition-all duration-300 ${
+                  stats.words >= goal ? "bg-green-500" : "bg-blue-500"
+                }`}
+                style={{ width: `${Math.min((stats.words / goal) * 100, 100)}%` }}
+              />
+            </div>
+            <span className={`text-sm font-medium whitespace-nowrap ${
+              stats.words >= goal ? "text-green-600" : "text-gray-500"
+            }`}>
+              {stats.words}/{goal} {stats.words >= goal ? "✓" : ""}
+            </span>
+          </div>
+        )}
       </div>
 
       <div className="mb-4">

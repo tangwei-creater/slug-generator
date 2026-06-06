@@ -5,6 +5,38 @@ import MobileNav from "./MobileNav";
 import LocaleSwitcher from "./LocaleSwitcher";
 import { blogPosts } from "@/lib/blog";
 
+const toolIcons: Record<string, string> = {
+  slugGenerator: "/",
+  urlSlugGenerator: "🔗",
+  textToSlug: "📝",
+  slugifyOnline: "⚡",
+  permalinkGenerator: "🔒",
+  wordpressSlugGenerator: "🌐",
+  blogSlugGenerator: "✍️",
+  productSlugGenerator: "🏷️",
+  caseConverterOnline: "Aa",
+  camelCaseConverter: "aA",
+  titleCaseConverter: "Tt",
+  sentenceCaseConverter: "Ss",
+  kebabCaseConverter: "k-c",
+  snakeCaseConverter: "s_c",
+  pascalCaseConverter: "Pc",
+  alternatingCaseConverter: "aLt",
+  dotCaseConverter: "d.c",
+  constantCaseConverter: "C_C",
+  wordCounter: "🔢",
+  loremIpsumGenerator: "📄",
+  plainTextConverter: "📋",
+  duplicateLineRemover: "✂️",
+  removeEmptyLines: "⊟",
+  sortLinesAlphabetically: "↕️",
+  removeLineBreaks: "↩️",
+  urlEncoderDecoder: "%20",
+  utmBuilder: "📊",
+  jsonKeysToCamelcase: "{}",
+  jsonKeysToSnakeCase: "{_}",
+};
+
 const toolCategories: {
   categoryKey: string;
   tools: { href: string; key: string }[];
@@ -153,6 +185,7 @@ export async function RelatedTools({ current }: { current: string }) {
       href: tp.href,
       name: tTools(`${tp.key}.name`),
       desc: tTools(`${tp.key}.desc`),
+      icon: toolIcons[tp.key] || "·",
     }));
 
   return (
@@ -164,10 +197,15 @@ export async function RelatedTools({ current }: { current: string }) {
             key={tool.href}
             href={tool.href}
             title={tool.name}
-            className="block p-4 border border-gray-200 rounded-xl hover:border-blue-300 hover:bg-blue-50 transition-colors"
+            className="flex items-start gap-3 p-4 border border-gray-200 rounded-xl hover:border-blue-300 hover:bg-blue-50 transition-colors"
           >
-            <h3 className="font-semibold text-gray-900">{tool.name}</h3>
-            <p className="text-sm text-gray-500 mt-1">{tool.desc}</p>
+            <span className="flex-shrink-0 w-9 h-9 flex items-center justify-center rounded-lg bg-gray-100 text-sm font-bold text-gray-600">
+              {tool.icon}
+            </span>
+            <div>
+              <h3 className="font-semibold text-gray-900">{tool.name}</h3>
+              <p className="text-sm text-gray-500 mt-1">{tool.desc}</p>
+            </div>
           </Link>
         ))}
       </div>
