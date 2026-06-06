@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useCallback } from "react";
 
 function countWords(s: string): number {
   const trimmed = s.trim();
@@ -50,6 +50,33 @@ interface WordCounterToolProps {
 
 export default function WordCounterTool({ placeholder }: WordCounterToolProps) {
   const [input, setInput] = useState("");
+  const [pasted, setPasted] = useState(false);
+
+  const handlePaste = useCallback(async () => {
+    try {
+      const text = await navigator.clipboard.readText();
+      setInput(text);
+      setPasted(true);
+      setTimeout(() => setPasted(false), 1500);
+    } catch {
+      /* clipboard permission denied — ignore */
+    }
+  }, []);
+
+  const handleDownload = useCallback(() => {
+    if (!input) return;
+    const blob = new Blob([input], { type: "text/plain;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "text.txt";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }, [input]);
+
+  const handleClear = useCallback(() => setInput(""), []);
 
   const stats = useMemo(() => {
     const chars = input.length;
@@ -89,6 +116,28 @@ export default function WordCounterTool({ placeholder }: WordCounterToolProps) {
       </div>
 
       <div className="mb-4">
+        <div className="flex items-center justify-end gap-2 mb-2">
+          <button
+            onClick={handlePaste}
+            className="px-3 py-1 text-xs rounded-lg border border-gray-200 text-gray-500 hover:text-gray-700 hover:border-gray-300 transition-colors"
+          >
+            {pasted ? "Pasted!" : "📋 Paste"}
+          </button>
+          <button
+            onClick={handleDownload}
+            disabled={!input}
+            className="px-3 py-1 text-xs rounded-lg border border-gray-200 text-gray-500 hover:text-gray-700 hover:border-gray-300 transition-colors disabled:opacity-40"
+          >
+            ↓ Download TXT
+          </button>
+          <button
+            onClick={handleClear}
+            disabled={!input}
+            className="px-3 py-1 text-xs rounded-lg border border-gray-200 text-gray-500 hover:text-gray-700 hover:border-gray-300 transition-colors disabled:opacity-40"
+          >
+            Clear
+          </button>
+        </div>
         <textarea
           value={input}
           onChange={(e) => setInput(e.target.value)}
