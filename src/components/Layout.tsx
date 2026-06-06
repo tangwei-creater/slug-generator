@@ -1,54 +1,78 @@
 import { Link } from "@/i18n/navigation";
 import { getTranslations } from "next-intl/server";
+import DesktopNav from "./DesktopNav";
 import MobileNav from "./MobileNav";
 import LocaleSwitcher from "./LocaleSwitcher";
 import { blogPosts } from "@/lib/blog";
 
-const toolPaths = [
-  { href: "/" as const, key: "slugGenerator" },
-  { href: "/url-slug-generator" as const, key: "urlSlugGenerator" },
-  { href: "/text-to-slug" as const, key: "textToSlug" },
-  { href: "/kebab-case-converter" as const, key: "kebabCaseConverter" },
-  { href: "/slugify-online" as const, key: "slugifyOnline" },
-  { href: "/permalink-generator" as const, key: "permalinkGenerator" },
-  { href: "/snake-case-converter" as const, key: "snakeCaseConverter" },
-  { href: "/camelcase-converter" as const, key: "camelCaseConverter" },
-  { href: "/title-case-converter" as const, key: "titleCaseConverter" },
-  { href: "/sentence-case-converter" as const, key: "sentenceCaseConverter" },
-  { href: "/case-converter-online" as const, key: "caseConverterOnline" },
-  { href: "/alternating-case-converter" as const, key: "alternatingCaseConverter" },
-  { href: "/pascal-case-converter" as const, key: "pascalCaseConverter" },
-  { href: "/dot-case-converter" as const, key: "dotCaseConverter" },
-  { href: "/constant-case-converter" as const, key: "constantCaseConverter" },
-  { href: "/json-keys-to-camelcase" as const, key: "jsonKeysToCamelcase" },
-  { href: "/json-keys-to-snake-case" as const, key: "jsonKeysToSnakeCase" },
-  { href: "/wordpress-slug-generator" as const, key: "wordpressSlugGenerator" },
-  { href: "/blog-slug-generator" as const, key: "blogSlugGenerator" },
-  { href: "/product-slug-generator" as const, key: "productSlugGenerator" },
-  { href: "/plain-text-converter" as const, key: "plainTextConverter" },
-  { href: "/duplicate-line-remover" as const, key: "duplicateLineRemover" },
-  { href: "/remove-empty-lines" as const, key: "removeEmptyLines" },
-  { href: "/sort-lines-alphabetically" as const, key: "sortLinesAlphabetically" },
-  { href: "/remove-line-breaks" as const, key: "removeLineBreaks" },
-  { href: "/url-encoder-decoder" as const, key: "urlEncoderDecoder" },
-  { href: "/word-counter" as const, key: "wordCounter" },
-  { href: "/lorem-ipsum-generator" as const, key: "loremIpsumGenerator" },
-  { href: "/utm-builder" as const, key: "utmBuilder" },
+const toolCategories: {
+  categoryKey: string;
+  tools: { href: string; key: string }[];
+}[] = [
+  {
+    categoryKey: "slugTools",
+    tools: [
+      { href: "/", key: "slugGenerator" },
+      { href: "/url-slug-generator", key: "urlSlugGenerator" },
+      { href: "/text-to-slug", key: "textToSlug" },
+      { href: "/slugify-online", key: "slugifyOnline" },
+      { href: "/permalink-generator", key: "permalinkGenerator" },
+      { href: "/wordpress-slug-generator", key: "wordpressSlugGenerator" },
+      { href: "/blog-slug-generator", key: "blogSlugGenerator" },
+      { href: "/product-slug-generator", key: "productSlugGenerator" },
+    ],
+  },
+  {
+    categoryKey: "caseConverters",
+    tools: [
+      { href: "/case-converter-online", key: "caseConverterOnline" },
+      { href: "/camelcase-converter", key: "camelCaseConverter" },
+      { href: "/title-case-converter", key: "titleCaseConverter" },
+      { href: "/sentence-case-converter", key: "sentenceCaseConverter" },
+      { href: "/kebab-case-converter", key: "kebabCaseConverter" },
+      { href: "/snake-case-converter", key: "snakeCaseConverter" },
+      { href: "/pascal-case-converter", key: "pascalCaseConverter" },
+      { href: "/alternating-case-converter", key: "alternatingCaseConverter" },
+      { href: "/dot-case-converter", key: "dotCaseConverter" },
+      { href: "/constant-case-converter", key: "constantCaseConverter" },
+    ],
+  },
+  {
+    categoryKey: "textTools",
+    tools: [
+      { href: "/word-counter", key: "wordCounter" },
+      { href: "/lorem-ipsum-generator", key: "loremIpsumGenerator" },
+      { href: "/plain-text-converter", key: "plainTextConverter" },
+      { href: "/duplicate-line-remover", key: "duplicateLineRemover" },
+      { href: "/remove-empty-lines", key: "removeEmptyLines" },
+      { href: "/sort-lines-alphabetically", key: "sortLinesAlphabetically" },
+      { href: "/remove-line-breaks", key: "removeLineBreaks" },
+    ],
+  },
+  {
+    categoryKey: "devTools",
+    tools: [
+      { href: "/url-encoder-decoder", key: "urlEncoderDecoder" },
+      { href: "/utm-builder", key: "utmBuilder" },
+      { href: "/json-keys-to-camelcase", key: "jsonKeysToCamelcase" },
+      { href: "/json-keys-to-snake-case", key: "jsonKeysToSnakeCase" },
+    ],
+  },
 ];
+
+const toolPaths = toolCategories.flatMap((cat) => cat.tools);
 
 export async function Header() {
   const t = await getTranslations("nav");
+  const tTools = await getTranslations("tools");
 
-  const navLinks = [
-    { href: "/url-slug-generator", label: t("urlSlug") },
-    { href: "/text-to-slug", label: t("textToSlug") },
-    { href: "/kebab-case-converter", label: t("kebabCase") },
-    { href: "/camelcase-converter", label: t("camelCase") },
-    { href: "/title-case-converter", label: t("titleCase") },
-    { href: "/sentence-case-converter", label: t("sentenceCase") },
-    { href: "/case-converter-online", label: t("caseConverter") },
-    { href: "/blog", label: t("blog") },
-  ];
+  const categories = toolCategories.map((cat) => ({
+    label: t(cat.categoryKey),
+    tools: cat.tools.map((tool) => ({
+      href: tool.href,
+      name: tTools(`${tool.key}.name`),
+    })),
+  }));
 
   return (
     <header className="relative border-b border-gray-100 bg-white">
@@ -57,16 +81,10 @@ export async function Header() {
           Slug<span className="text-blue-600">Generator</span>
           <span className="text-gray-400 text-sm font-normal">.app</span>
         </Link>
-        <div className="flex items-center gap-4">
-          <nav className="hidden sm:flex gap-6 text-sm text-gray-600">
-            {navLinks.map((link) => (
-              <Link key={link.href} href={link.href} title={link.label} className="hover:text-gray-900 transition-colors">
-                {link.label}
-              </Link>
-            ))}
-          </nav>
+        <div className="flex items-center gap-2">
+          <DesktopNav categories={categories} blogLabel={t("blog")} />
           <LocaleSwitcher />
-          <MobileNav links={navLinks} />
+          <MobileNav categories={categories} blogLabel={t("blog")} />
         </div>
       </div>
     </header>
@@ -75,27 +93,34 @@ export async function Header() {
 
 export async function Footer() {
   const t = await getTranslations("footer");
+  const tNav = await getTranslations("nav");
   const tTools = await getTranslations("tools");
 
   return (
     <footer className="border-t border-gray-100 bg-gray-50 mt-16">
       <div className="max-w-5xl mx-auto px-4 py-10">
-        <div className="grid grid-cols-1 md:grid-cols-[200px_1fr_220px] gap-8 mb-8">
-          <div>
-            <h4 className="text-sm font-semibold text-gray-900 mb-3">Tools</h4>
-            <ul className="space-y-2 text-sm text-gray-500">
-              {toolPaths.map((tp) => (
-                <li key={tp.href}>
-                  <Link href={tp.href} title={tTools(`${tp.key}.name`)} className="hover:text-gray-700 transition-colors">
-                    {tTools(`${tp.key}.name`)}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+          {toolCategories.map((cat) => (
+            <div key={cat.categoryKey}>
+              <h4 className="text-sm font-semibold text-gray-900 mb-3">
+                {tNav(cat.categoryKey)}
+              </h4>
+              <ul className="space-y-2 text-sm text-gray-500">
+                {cat.tools.map((tp) => (
+                  <li key={tp.href}>
+                    <Link href={tp.href} title={tTools(`${tp.key}.name`)} className="hover:text-gray-700 transition-colors">
+                      {tTools(`${tp.key}.name`)}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_220px] gap-8 mb-8">
           <div>
             <h4 className="text-sm font-semibold text-gray-900 mb-3">Blog</h4>
-            <ul className="columns-2 gap-x-6 space-y-2 text-sm text-gray-500">
+            <ul className="columns-2 lg:columns-3 gap-x-6 space-y-2 text-sm text-gray-500">
               {blogPosts.map((post) => (
                 <li key={post.slug} className="break-inside-avoid">
                   <Link href={`/blog/${post.slug}` as never} className="hover:text-gray-700 transition-colors">

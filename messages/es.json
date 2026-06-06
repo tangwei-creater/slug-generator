@@ -37,14 +37,18 @@
     "tryExample": "Prueba:"
   },
   "nav": {
+    "slugTools": "Herramientas Slug",
+    "caseConverters": "Conversores",
+    "textTools": "Herramientas de Texto",
+    "devTools": "Herramientas Dev",
+    "blog": "Blog",
     "urlSlug": "Slug URL",
     "textToSlug": "Texto a Slug",
     "kebabCase": "Kebab Case",
     "camelCase": "CamelCase",
     "titleCase": "Title Case",
     "sentenceCase": "Sentence Case",
-    "caseConverter": "Case Converter",
-    "blog": "Blog"
+    "caseConverter": "Case Converter"
   },
   "related": {
     "title": "Herramientas Relacionadas"

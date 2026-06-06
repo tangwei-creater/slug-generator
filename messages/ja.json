@@ -37,14 +37,18 @@
     "tryExample": "例："
   },
   "nav": {
+    "slugTools": "スラッグツール",
+    "caseConverters": "ケース変換",
+    "textTools": "テキストツール",
+    "devTools": "開発ツール",
+    "blog": "ブログ",
     "urlSlug": "URLスラッグ",
     "textToSlug": "テキスト→スラッグ",
     "kebabCase": "ケバブケース",
     "camelCase": "キャメルケース",
     "titleCase": "タイトルケース",
     "sentenceCase": "Sentence Case",
-    "caseConverter": "ケース変換",
-    "blog": "ブログ"
+    "caseConverter": "ケース変換"
   },
   "related": {
     "title": "関連ツール"
