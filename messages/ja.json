@@ -152,18 +152,70 @@
       "name": "パスカルケース変換",
       "desc": "テキストをPascalCaseに変換"
     },
-    "dotCaseConverter": { "name": "ドットケース変換", "desc": "テキストをdot.caseに変換" },
-    "constantCaseConverter": { "name": "定数ケース変換", "desc": "テキストをCONSTANT_CASEに変換" },
-    "jsonKeysToCamelcase": { "name": "JSONキーをcamelCaseに", "desc": "JSONキーをcamelCaseに変換" },
-    "jsonKeysToSnakeCase": { "name": "JSONキーをsnake_caseに", "desc": "JSONキーをsnake_caseに変換" },
-    "wordpressSlugGenerator": { "name": "WordPressスラッグ生成", "desc": "WordPress用スラッグ生成" },
-    "blogSlugGenerator": { "name": "ブログスラッグ生成", "desc": "ブログ記事用スラッグ生成" },
-    "productSlugGenerator": { "name": "商品スラッグ生成", "desc": "商品ページ用スラッグ生成" },
-    "plainTextConverter": { "name": "プレーンテキスト変換", "desc": "書式削除・テキスト整形" },
-    "duplicateLineRemover": { "name": "重複行削除", "desc": "テキストの重複行を削除" },
-    "removeEmptyLines": { "name": "空行削除", "desc": "空白行を削除" },
-    "sortLinesAlphabetically": { "name": "行の並べ替え", "desc": "テキスト行をアルファベット順にソート" },
-    "removeLineBreaks": { "name": "改行削除", "desc": "行を結合して1段落に" }
+    "dotCaseConverter": {
+      "name": "ドットケース変換",
+      "desc": "テキストをdot.caseに変換"
+    },
+    "constantCaseConverter": {
+      "name": "定数ケース変換",
+      "desc": "テキストをCONSTANT_CASEに変換"
+    },
+    "jsonKeysToCamelcase": {
+      "name": "JSONキーをcamelCaseに",
+      "desc": "JSONキーをcamelCaseに変換"
+    },
+    "jsonKeysToSnakeCase": {
+      "name": "JSONキーをsnake_caseに",
+      "desc": "JSONキーをsnake_caseに変換"
+    },
+    "wordpressSlugGenerator": {
+      "name": "WordPressスラッグ生成",
+      "desc": "WordPress用スラッグ生成"
+    },
+    "blogSlugGenerator": {
+      "name": "ブログスラッグ生成",
+      "desc": "ブログ記事用スラッグ生成"
+    },
+    "productSlugGenerator": {
+      "name": "商品スラッグ生成",
+      "desc": "商品ページ用スラッグ生成"
+    },
+    "plainTextConverter": {
+      "name": "プレーンテキスト変換",
+      "desc": "書式削除・テキスト整形"
+    },
+    "duplicateLineRemover": {
+      "name": "重複行削除",
+      "desc": "テキストの重複行を削除"
+    },
+    "removeEmptyLines": {
+      "name": "空行削除",
+      "desc": "空白行を削除"
+    },
+    "sortLinesAlphabetically": {
+      "name": "行の並べ替え",
+      "desc": "テキスト行をアルファベット順にソート"
+    },
+    "removeLineBreaks": {
+      "name": "改行削除",
+      "desc": "行を結合して1段落に"
+    },
+    "urlEncoderDecoder": {
+      "name": "URLエンコーダー / デコーダー",
+      "desc": "URLをオンラインでエンコード・デコード"
+    },
+    "wordCounter": {
+      "name": "文字数カウンター",
+      "desc": "単語数・文字数・文章数をカウント"
+    },
+    "loremIpsumGenerator": {
+      "name": "Lorem Ipsumジェネレーター",
+      "desc": "プレースホルダーテキストを生成"
+    },
+    "utmBuilder": {
+      "name": "UTMビルダー",
+      "desc": "キャンペーン追跡URLを作成"
+    }
   },
   "pages": {
     "urlSlugGenerator": {
@@ -250,18 +302,118 @@
       "subtitle": "テキストをPascalCase形式に変換。クラス名、Reactコンポーネント、TypeScript型に使用。",
       "placeholder": "例: user profile service または my-component-name"
     },
-    "dotCaseConverter": { "title": "ドットケース変換 - dot.caseに変換 | SlugGenerator.app", "description": "テキストをdot.case形式に変換。Javaパッケージ名や設定キーに最適。無料オンラインツール。", "h1": "ドットケース変換", "subtitle": "テキストをdot.case形式に変換。Javaパッケージ名、設定キー、プロパティ表記に使用。", "placeholder": "例: myVariableName または User Profile Service" },
-    "constantCaseConverter": { "title": "定数ケース変換 - SCREAMING_SNAKE_CASE生成 | SlugGenerator.app", "description": "テキストをCONSTANT_CASE（SCREAMING_SNAKE_CASE）に変換。定数や環境変数に最適。無料オンラインツール。", "h1": "定数ケース変換", "subtitle": "テキストをCONSTANT_CASE（SCREAMING_SNAKE_CASE）に変換。定数、環境変数、設定キーに使用。", "placeholder": "例: max retry count または database host name" },
-    "jsonKeysToCamelcase": { "title": "JSONキーをcamelCaseに変換 | SlugGenerator.app", "description": "JSONオブジェクトキーをsnake_caseやkebab-caseからcamelCaseに変換。ネストオブジェクト対応。無料ツール。", "h1": "JSONキーをcamelCaseに変換", "subtitle": "すべてのJSONキーをcamelCaseに変換。ネストオブジェクトと配列に対応。", "placeholder": "{\"user_name\": \"John\", \"is_active\": true}" },
-    "jsonKeysToSnakeCase": { "title": "JSONキーをsnake_caseに変換 | SlugGenerator.app", "description": "JSONオブジェクトキーをcamelCaseやPascalCaseからsnake_caseに変換。ネストオブジェクト対応。無料ツール。", "h1": "JSONキーをsnake_caseに変換", "subtitle": "すべてのJSONキーをsnake_caseに変換。ネストオブジェクトと配列に対応。", "placeholder": "{\"userName\": \"John\", \"isActive\": true}" },
-    "wordpressSlugGenerator": { "title": "WordPressスラッグ生成 - SEOフレンドリーなパーマリンク | SlugGenerator.app", "description": "WordPress投稿・ページ用のSEOフレンドリーなURLスラッグを生成。公開前にパーマリンクをプレビュー。", "h1": "WordPressスラッグ生成", "subtitle": "WordPress用のSEO最適化URLスラッグを生成。公開前にパーマリンクをプレビュー。", "placeholder": "例: WordPressサイトを高速化する方法" },
-    "blogSlugGenerator": { "title": "ブログスラッグ生成 - ブログ記事のSEO URL | SlugGenerator.app", "description": "ブログ記事用のURLスラッグを生成。WordPress、Ghost、Hugo、Jekyllなど対応。無料ツール。", "h1": "ブログスラッグ生成", "subtitle": "ブログ記事用のSEO最適化URLスラッグを生成。あらゆるプラットフォームに対応。", "placeholder": "例: SEOランキングを上げる10のヒント" },
-    "productSlugGenerator": { "title": "商品スラッグ生成 - ECサイトURL生成 | SlugGenerator.app", "description": "商品ページ用のURLスラッグを生成。Shopify、WooCommerce、Magentoなど対応。無料ツール。", "h1": "商品スラッグ生成", "subtitle": "EC商品ページ用のSEOフレンドリーなURLスラッグを生成。", "placeholder": "例: ナイキ エアマックス 90 ホワイト メンズ" },
-    "plainTextConverter": { "title": "プレーンテキスト変換 - 書式削除＆テキスト整形 | SlugGenerator.app", "description": "HTML削除、不可視文字除去、スマートクォート変換など。テキストをプレーンテキストに変換。無料ツール。", "h1": "プレーンテキスト変換", "subtitle": "HTMLタグ削除、不可視文字除去、テキストの整形。すべてブラウザで処理。", "placeholder": "<p>Hello <strong>World</strong>!</p> テキストをここに貼り付け…" },
-    "duplicateLineRemover": { "title": "重複行削除 - オンライン重複行除去 | SlugGenerator.app", "description": "テキストの重複行を瞬時に削除。リストの重複除去、データクリーニング。無料オンラインツール。", "h1": "重複行削除", "subtitle": "テキストの重複行を瞬時に削除。リストを貼り付けてワンクリックで一意の行を取得。", "placeholder": "りんご\nバナナ\nさくらんぼ\nりんご\nなつめ\nバナナ" },
-    "removeEmptyLines": { "title": "空行削除 - テキストの空白行を削除 | SlugGenerator.app", "description": "テキストの空行・空白行を削除。コード、データ、文書の不要な空白行を整理。無料ツール。", "h1": "空行削除", "subtitle": "テキストの空行と空白のみの行を削除。コード、データ、文書を整形。", "placeholder": "行1\n\n行2\n\n\n行3\n\n行4" },
-    "sortLinesAlphabetically": { "title": "行のアルファベット順ソート - テキスト並べ替え | SlugGenerator.app", "description": "テキスト行をアルファベット順（A-ZまたはZ-A）にソート。リスト整理、インポート文ソート。無料ツール。", "h1": "行のアルファベット順ソート", "subtitle": "テキスト行をアルファベット順にソート。昇順（A-Z）または降順（Z-A）。", "placeholder": "さくらんぼ\nりんご\nバナナ\nなつめ" },
-    "removeLineBreaks": { "title": "改行削除 - テキストを1段落に結合 | SlugGenerator.app", "description": "改行を削除して複数行テキストを1つの段落に結合。PDF、メール、ターミナル出力の整形。無料ツール。", "h1": "改行削除", "subtitle": "改行を削除してテキストを1つの連続した段落に結合。", "placeholder": "このテキストには\n複数の改行が\nあります" }
+    "dotCaseConverter": {
+      "title": "ドットケース変換 - dot.caseに変換 | SlugGenerator.app",
+      "description": "テキストをdot.case形式に変換。Javaパッケージ名や設定キーに最適。無料オンラインツール。",
+      "h1": "ドットケース変換",
+      "subtitle": "テキストをdot.case形式に変換。Javaパッケージ名、設定キー、プロパティ表記に使用。",
+      "placeholder": "例: myVariableName または User Profile Service"
+    },
+    "constantCaseConverter": {
+      "title": "定数ケース変換 - SCREAMING_SNAKE_CASE生成 | SlugGenerator.app",
+      "description": "テキストをCONSTANT_CASE（SCREAMING_SNAKE_CASE）に変換。定数や環境変数に最適。無料オンラインツール。",
+      "h1": "定数ケース変換",
+      "subtitle": "テキストをCONSTANT_CASE（SCREAMING_SNAKE_CASE）に変換。定数、環境変数、設定キーに使用。",
+      "placeholder": "例: max retry count または database host name"
+    },
+    "jsonKeysToCamelcase": {
+      "title": "JSONキーをcamelCaseに変換 | SlugGenerator.app",
+      "description": "JSONオブジェクトキーをsnake_caseやkebab-caseからcamelCaseに変換。ネストオブジェクト対応。無料ツール。",
+      "h1": "JSONキーをcamelCaseに変換",
+      "subtitle": "すべてのJSONキーをcamelCaseに変換。ネストオブジェクトと配列に対応。",
+      "placeholder": "{\"user_name\": \"John\", \"is_active\": true}"
+    },
+    "jsonKeysToSnakeCase": {
+      "title": "JSONキーをsnake_caseに変換 | SlugGenerator.app",
+      "description": "JSONオブジェクトキーをcamelCaseやPascalCaseからsnake_caseに変換。ネストオブジェクト対応。無料ツール。",
+      "h1": "JSONキーをsnake_caseに変換",
+      "subtitle": "すべてのJSONキーをsnake_caseに変換。ネストオブジェクトと配列に対応。",
+      "placeholder": "{\"userName\": \"John\", \"isActive\": true}"
+    },
+    "wordpressSlugGenerator": {
+      "title": "WordPressスラッグ生成 - SEOフレンドリーなパーマリンク | SlugGenerator.app",
+      "description": "WordPress投稿・ページ用のSEOフレンドリーなURLスラッグを生成。公開前にパーマリンクをプレビュー。",
+      "h1": "WordPressスラッグ生成",
+      "subtitle": "WordPress用のSEO最適化URLスラッグを生成。公開前にパーマリンクをプレビュー。",
+      "placeholder": "例: WordPressサイトを高速化する方法"
+    },
+    "blogSlugGenerator": {
+      "title": "ブログスラッグ生成 - ブログ記事のSEO URL | SlugGenerator.app",
+      "description": "ブログ記事用のURLスラッグを生成。WordPress、Ghost、Hugo、Jekyllなど対応。無料ツール。",
+      "h1": "ブログスラッグ生成",
+      "subtitle": "ブログ記事用のSEO最適化URLスラッグを生成。あらゆるプラットフォームに対応。",
+      "placeholder": "例: SEOランキングを上げる10のヒント"
+    },
+    "productSlugGenerator": {
+      "title": "商品スラッグ生成 - ECサイトURL生成 | SlugGenerator.app",
+      "description": "商品ページ用のURLスラッグを生成。Shopify、WooCommerce、Magentoなど対応。無料ツール。",
+      "h1": "商品スラッグ生成",
+      "subtitle": "EC商品ページ用のSEOフレンドリーなURLスラッグを生成。",
+      "placeholder": "例: ナイキ エアマックス 90 ホワイト メンズ"
+    },
+    "plainTextConverter": {
+      "title": "プレーンテキスト変換 - 書式削除＆テキスト整形 | SlugGenerator.app",
+      "description": "HTML削除、不可視文字除去、スマートクォート変換など。テキストをプレーンテキストに変換。無料ツール。",
+      "h1": "プレーンテキスト変換",
+      "subtitle": "HTMLタグ削除、不可視文字除去、テキストの整形。すべてブラウザで処理。",
+      "placeholder": "<p>Hello <strong>World</strong>!</p> テキストをここに貼り付け…"
+    },
+    "duplicateLineRemover": {
+      "title": "重複行削除 - オンライン重複行除去 | SlugGenerator.app",
+      "description": "テキストの重複行を瞬時に削除。リストの重複除去、データクリーニング。無料オンラインツール。",
+      "h1": "重複行削除",
+      "subtitle": "テキストの重複行を瞬時に削除。リストを貼り付けてワンクリックで一意の行を取得。",
+      "placeholder": "りんご\nバナナ\nさくらんぼ\nりんご\nなつめ\nバナナ"
+    },
+    "removeEmptyLines": {
+      "title": "空行削除 - テキストの空白行を削除 | SlugGenerator.app",
+      "description": "テキストの空行・空白行を削除。コード、データ、文書の不要な空白行を整理。無料ツール。",
+      "h1": "空行削除",
+      "subtitle": "テキストの空行と空白のみの行を削除。コード、データ、文書を整形。",
+      "placeholder": "行1\n\n行2\n\n\n行3\n\n行4"
+    },
+    "sortLinesAlphabetically": {
+      "title": "行のアルファベット順ソート - テキスト並べ替え | SlugGenerator.app",
+      "description": "テキスト行をアルファベット順（A-ZまたはZ-A）にソート。リスト整理、インポート文ソート。無料ツール。",
+      "h1": "行のアルファベット順ソート",
+      "subtitle": "テキスト行をアルファベット順にソート。昇順（A-Z）または降順（Z-A）。",
+      "placeholder": "さくらんぼ\nりんご\nバナナ\nなつめ"
+    },
+    "removeLineBreaks": {
+      "title": "改行削除 - テキストを1段落に結合 | SlugGenerator.app",
+      "description": "改行を削除して複数行テキストを1つの段落に結合。PDF、メール、ターミナル出力の整形。無料ツール。",
+      "h1": "改行削除",
+      "subtitle": "改行を削除してテキストを1つの連続した段落に結合。",
+      "placeholder": "このテキストには\n複数の改行が\nあります"
+    },
+    "urlEncoderDecoder": {
+      "title": "URLエンコーダー / デコーダー - URLのエンコード・デコード | SlugGenerator.app",
+      "description": "URLやクエリ文字列をオンラインでエンコード・デコード。encodeURIComponentとencodeURIモードに対応。無料・即時。",
+      "h1": "URLエンコーダー / デコーダー",
+      "subtitle": "URL、クエリパラメータ、特殊文字のエンコードとデコード。ブラウザ上で完結します。",
+      "placeholder": "例: Hello World! @2024 または Hello%20World%21"
+    },
+    "wordCounter": {
+      "title": "文字数カウンター - 単語数・文字数・文章数を数える | SlugGenerator.app",
+      "description": "テキストの単語数、文字数、文章数、段落数をカウント。読了時間とキーワード密度もチェック。無料オンラインツール。",
+      "h1": "文字数カウンター",
+      "subtitle": "単語数、文字数、文章数、段落数をカウント。読了時間やテキスト統計を即座に確認。",
+      "placeholder": "ここにテキストを貼り付けるか入力して、文字数をカウント..."
+    },
+    "loremIpsumGenerator": {
+      "title": "Lorem Ipsumジェネレーター - プレースホルダーテキスト生成 | SlugGenerator.app",
+      "description": "Webデザイン、モックアップ、プロトタイプ用のLorem Ipsumプレースホルダーテキストを生成。段落、文、単語から選択。無料ツール。",
+      "h1": "Lorem Ipsumジェネレーター",
+      "subtitle": "デザイン、モックアップ、プロトタイプ用のプレースホルダーテキストを生成。",
+      "placeholder": ""
+    },
+    "utmBuilder": {
+      "title": "UTMビルダー - キャンペーンURL生成ツール | SlugGenerator.app",
+      "description": "Google Analyticsキャンペーン用のUTMトラッキングURLを作成。utm_source、utm_medium、utm_campaignなどを追加。無料ツール。",
+      "h1": "UTMキャンペーンURLビルダー",
+      "subtitle": "Google Analytics用のUTMパラメータ付きトラッキングURLを作成。",
+      "placeholder": "https://example.com/landing-page"
+    }
   },
   "blog": {
     "title": "ブログ",

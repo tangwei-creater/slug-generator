@@ -148,19 +148,74 @@
       "name": "Alternating-Case-Konverter",
       "desc": "Text in aLtErNaTiNg CaSe umwandeln"
     },
-    "pascalCaseConverter": { "name": "PascalCase-Konverter", "desc": "Text in PascalCase umwandeln" },
-    "dotCaseConverter": { "name": "Dot-Case-Konverter", "desc": "Text in dot.case umwandeln" },
-    "constantCaseConverter": { "name": "Konstanten-Konverter", "desc": "Text in CONSTANT_CASE umwandeln" },
-    "jsonKeysToCamelcase": { "name": "JSON-Schlüssel zu camelCase", "desc": "JSON-Schlüssel in camelCase umwandeln" },
-    "jsonKeysToSnakeCase": { "name": "JSON-Schlüssel zu snake_case", "desc": "JSON-Schlüssel in snake_case umwandeln" },
-    "wordpressSlugGenerator": { "name": "WordPress-Slug-Generator", "desc": "Slugs für WordPress generieren" },
-    "blogSlugGenerator": { "name": "Blog-Slug-Generator", "desc": "Slugs für Blogbeiträge generieren" },
-    "productSlugGenerator": { "name": "Produkt-Slug-Generator", "desc": "Slugs für Produktseiten generieren" },
-    "plainTextConverter": { "name": "Klartext-Konverter", "desc": "Formatierung entfernen, Text bereinigen" },
-    "duplicateLineRemover": { "name": "Doppelte Zeilen entfernen", "desc": "Doppelte Zeilen aus Text entfernen" },
-    "removeEmptyLines": { "name": "Leerzeilen entfernen", "desc": "Leere Zeilen aus Text entfernen" },
-    "sortLinesAlphabetically": { "name": "Zeilen sortieren", "desc": "Textzeilen alphabetisch sortieren" },
-    "removeLineBreaks": { "name": "Zeilenumbrüche entfernen", "desc": "Zeilen zu einem Absatz verbinden" }
+    "pascalCaseConverter": {
+      "name": "PascalCase-Konverter",
+      "desc": "Text in PascalCase umwandeln"
+    },
+    "dotCaseConverter": {
+      "name": "Dot-Case-Konverter",
+      "desc": "Text in dot.case umwandeln"
+    },
+    "constantCaseConverter": {
+      "name": "Konstanten-Konverter",
+      "desc": "Text in CONSTANT_CASE umwandeln"
+    },
+    "jsonKeysToCamelcase": {
+      "name": "JSON-Schlüssel zu camelCase",
+      "desc": "JSON-Schlüssel in camelCase umwandeln"
+    },
+    "jsonKeysToSnakeCase": {
+      "name": "JSON-Schlüssel zu snake_case",
+      "desc": "JSON-Schlüssel in snake_case umwandeln"
+    },
+    "wordpressSlugGenerator": {
+      "name": "WordPress-Slug-Generator",
+      "desc": "Slugs für WordPress generieren"
+    },
+    "blogSlugGenerator": {
+      "name": "Blog-Slug-Generator",
+      "desc": "Slugs für Blogbeiträge generieren"
+    },
+    "productSlugGenerator": {
+      "name": "Produkt-Slug-Generator",
+      "desc": "Slugs für Produktseiten generieren"
+    },
+    "plainTextConverter": {
+      "name": "Klartext-Konverter",
+      "desc": "Formatierung entfernen, Text bereinigen"
+    },
+    "duplicateLineRemover": {
+      "name": "Doppelte Zeilen entfernen",
+      "desc": "Doppelte Zeilen aus Text entfernen"
+    },
+    "removeEmptyLines": {
+      "name": "Leerzeilen entfernen",
+      "desc": "Leere Zeilen aus Text entfernen"
+    },
+    "sortLinesAlphabetically": {
+      "name": "Zeilen sortieren",
+      "desc": "Textzeilen alphabetisch sortieren"
+    },
+    "removeLineBreaks": {
+      "name": "Zeilenumbrüche entfernen",
+      "desc": "Zeilen zu einem Absatz verbinden"
+    },
+    "urlEncoderDecoder": {
+      "name": "URL-Encoder / Decoder",
+      "desc": "URLs online kodieren & dekodieren"
+    },
+    "wordCounter": {
+      "name": "Wörter Zähler",
+      "desc": "Wörter, Zeichen & Sätze zählen"
+    },
+    "loremIpsumGenerator": {
+      "name": "Lorem Ipsum Generator",
+      "desc": "Platzhaltertext generieren"
+    },
+    "utmBuilder": {
+      "name": "UTM-Builder",
+      "desc": "Kampagnen-Tracking-URLs erstellen"
+    }
   },
   "pages": {
     "urlSlugGenerator": {
@@ -247,18 +302,118 @@
       "subtitle": "Text in das PascalCase-Format umwandeln. Verwendet für Klassennamen, React-Komponenten und TypeScript-Typen.",
       "placeholder": "z.B. user profile service oder my-component-name"
     },
-    "dotCaseConverter": { "title": "Dot-Case-Konverter - Text in dot.case umwandeln | SlugGenerator.app", "description": "Text in dot.case-Format umwandeln. Für Java-Paketnamen, Konfigurationsschlüssel und Property-Zugriff. Kostenloses Online-Tool.", "h1": "Dot-Case-Konverter", "subtitle": "Text in dot.case-Format umwandeln. Für Java-Pakete, Konfigurationsschlüssel und Property-Notation.", "placeholder": "z.B. myVariableName oder User Profile Service" },
-    "constantCaseConverter": { "title": "Konstanten-Konverter - SCREAMING_SNAKE_CASE Generator | SlugGenerator.app", "description": "Text in CONSTANT_CASE (SCREAMING_SNAKE_CASE) umwandeln. Standard für Konstanten und Umgebungsvariablen. Kostenloses Online-Tool.", "h1": "Konstanten-Konverter", "subtitle": "Text in CONSTANT_CASE (SCREAMING_SNAKE_CASE) umwandeln. Standard für Konstanten, Umgebungsvariablen und Konfigurationsschlüssel.", "placeholder": "z.B. max retry count oder database host name" },
-    "jsonKeysToCamelcase": { "title": "JSON-Schlüssel zu camelCase - Online JSON-Konverter | SlugGenerator.app", "description": "JSON-Objektschlüssel von snake_case oder kebab-case in camelCase umwandeln. Unterstützt verschachtelte Objekte. Kostenloses Tool.", "h1": "JSON-Schlüssel zu camelCase", "subtitle": "Alle JSON-Schlüssel in camelCase umwandeln. Sofortige Ergebnisse mit Verschachtelungsunterstützung.", "placeholder": "{\"user_name\": \"John\", \"is_active\": true}" },
-    "jsonKeysToSnakeCase": { "title": "JSON-Schlüssel zu snake_case - Online JSON-Konverter | SlugGenerator.app", "description": "JSON-Objektschlüssel von camelCase oder PascalCase in snake_case umwandeln. Unterstützt verschachtelte Objekte. Kostenloses Tool.", "h1": "JSON-Schlüssel zu snake_case", "subtitle": "Alle JSON-Schlüssel in snake_case umwandeln. Sofortige Ergebnisse mit Verschachtelungsunterstützung.", "placeholder": "{\"userName\": \"John\", \"isActive\": true}" },
-    "wordpressSlugGenerator": { "title": "WordPress-Slug-Generator - SEO-freundliche Permalinks | SlugGenerator.app", "description": "SEO-freundliche URL-Slugs für WordPress-Beiträge und Seiten generieren. Permalink vor dem Veröffentlichen vorschauen.", "h1": "WordPress-Slug-Generator", "subtitle": "SEO-optimierte URL-Slugs für WordPress generieren. Permalink vor dem Veröffentlichen vorschauen.", "placeholder": "z.B. Wie man seine WordPress-Seite beschleunigt" },
-    "blogSlugGenerator": { "title": "Blog-Slug-Generator - SEO-URLs für Blogbeiträge | SlugGenerator.app", "description": "URL-Slugs für Blogbeiträge generieren. Funktioniert mit WordPress, Ghost, Hugo, Jekyll und jedem CMS. Kostenloses Tool.", "h1": "Blog-Slug-Generator", "subtitle": "SEO-optimierte URL-Slugs für Blogbeiträge generieren. Funktioniert mit jeder Plattform.", "placeholder": "z.B. 10 Tipps für bessere Blogbeiträge die ranken" },
-    "productSlugGenerator": { "title": "Produkt-Slug-Generator - E-Commerce URL-Generator | SlugGenerator.app", "description": "URL-Slugs für Produktseiten generieren. Funktioniert mit Shopify, WooCommerce, Magento und jeder Plattform. Kostenloses Tool.", "h1": "Produkt-Slug-Generator", "subtitle": "SEO-freundliche URL-Slugs für E-Commerce-Produktseiten generieren.", "placeholder": "z.B. Nike Air Max 90 — Weiß/Schwarz (Herrengröße 44)" },
-    "plainTextConverter": { "title": "Klartext-Konverter - Formatierung entfernen | SlugGenerator.app", "description": "HTML entfernen, unsichtbare Zeichen bereinigen, Smart Quotes normalisieren. Text in Klartext umwandeln. Kostenloses Tool.", "h1": "Klartext-Konverter", "subtitle": "HTML-Tags entfernen, unsichtbare Zeichen bereinigen und Text in Klartext umwandeln.", "placeholder": "<p>Hallo <strong>Welt</strong>!</p> Text hier einfügen…" },
-    "duplicateLineRemover": { "title": "Doppelte Zeilen entfernen - Online Duplikat-Entferner | SlugGenerator.app", "description": "Doppelte Zeilen aus Text sofort entfernen. Listen deduplizieren, Daten bereinigen. Kostenloses Online-Tool.", "h1": "Doppelte Zeilen entfernen", "subtitle": "Doppelte Zeilen aus Text sofort entfernen. Liste einfügen und einzigartige Zeilen erhalten.", "placeholder": "Apfel\nBanane\nKirsche\nApfel\nDattel\nBanane" },
-    "removeEmptyLines": { "title": "Leerzeilen entfernen - Leere Zeilen löschen | SlugGenerator.app", "description": "Leere Zeilen und Leerzeilen aus Text entfernen. Code, Daten und Dokumente bereinigen. Kostenloses Tool.", "h1": "Leerzeilen entfernen", "subtitle": "Leere Zeilen und Zeilen mit nur Leerzeichen aus Text entfernen.", "placeholder": "Zeile 1\n\nZeile 2\n\n\nZeile 3\n\nZeile 4" },
-    "sortLinesAlphabetically": { "title": "Zeilen alphabetisch sortieren - Online Text-Sortierer | SlugGenerator.app", "description": "Textzeilen alphabetisch sortieren (A-Z oder Z-A). Listen ordnen, Importe sortieren. Kostenloses Tool.", "h1": "Zeilen alphabetisch sortieren", "subtitle": "Textzeilen alphabetisch sortieren. Aufsteigend (A-Z) oder absteigend (Z-A).", "placeholder": "Kirsche\nApfel\nBanane\nDattel" },
-    "removeLineBreaks": { "title": "Zeilenumbrüche entfernen - Text zu einem Absatz | SlugGenerator.app", "description": "Zeilenumbrüche entfernen und mehrzeiligen Text zu einem Absatz verbinden. Kostenloses Online-Tool.", "h1": "Zeilenumbrüche entfernen", "subtitle": "Zeilenumbrüche entfernen und Text zu einem zusammenhängenden Absatz verbinden.", "placeholder": "Dieser Text hat\nmehrere Zeilenumbrüche\ndie entfernt werden sollen." }
+    "dotCaseConverter": {
+      "title": "Dot-Case-Konverter - Text in dot.case umwandeln | SlugGenerator.app",
+      "description": "Text in dot.case-Format umwandeln. Für Java-Paketnamen, Konfigurationsschlüssel und Property-Zugriff. Kostenloses Online-Tool.",
+      "h1": "Dot-Case-Konverter",
+      "subtitle": "Text in dot.case-Format umwandeln. Für Java-Pakete, Konfigurationsschlüssel und Property-Notation.",
+      "placeholder": "z.B. myVariableName oder User Profile Service"
+    },
+    "constantCaseConverter": {
+      "title": "Konstanten-Konverter - SCREAMING_SNAKE_CASE Generator | SlugGenerator.app",
+      "description": "Text in CONSTANT_CASE (SCREAMING_SNAKE_CASE) umwandeln. Standard für Konstanten und Umgebungsvariablen. Kostenloses Online-Tool.",
+      "h1": "Konstanten-Konverter",
+      "subtitle": "Text in CONSTANT_CASE (SCREAMING_SNAKE_CASE) umwandeln. Standard für Konstanten, Umgebungsvariablen und Konfigurationsschlüssel.",
+      "placeholder": "z.B. max retry count oder database host name"
+    },
+    "jsonKeysToCamelcase": {
+      "title": "JSON-Schlüssel zu camelCase - Online JSON-Konverter | SlugGenerator.app",
+      "description": "JSON-Objektschlüssel von snake_case oder kebab-case in camelCase umwandeln. Unterstützt verschachtelte Objekte. Kostenloses Tool.",
+      "h1": "JSON-Schlüssel zu camelCase",
+      "subtitle": "Alle JSON-Schlüssel in camelCase umwandeln. Sofortige Ergebnisse mit Verschachtelungsunterstützung.",
+      "placeholder": "{\"user_name\": \"John\", \"is_active\": true}"
+    },
+    "jsonKeysToSnakeCase": {
+      "title": "JSON-Schlüssel zu snake_case - Online JSON-Konverter | SlugGenerator.app",
+      "description": "JSON-Objektschlüssel von camelCase oder PascalCase in snake_case umwandeln. Unterstützt verschachtelte Objekte. Kostenloses Tool.",
+      "h1": "JSON-Schlüssel zu snake_case",
+      "subtitle": "Alle JSON-Schlüssel in snake_case umwandeln. Sofortige Ergebnisse mit Verschachtelungsunterstützung.",
+      "placeholder": "{\"userName\": \"John\", \"isActive\": true}"
+    },
+    "wordpressSlugGenerator": {
+      "title": "WordPress-Slug-Generator - SEO-freundliche Permalinks | SlugGenerator.app",
+      "description": "SEO-freundliche URL-Slugs für WordPress-Beiträge und Seiten generieren. Permalink vor dem Veröffentlichen vorschauen.",
+      "h1": "WordPress-Slug-Generator",
+      "subtitle": "SEO-optimierte URL-Slugs für WordPress generieren. Permalink vor dem Veröffentlichen vorschauen.",
+      "placeholder": "z.B. Wie man seine WordPress-Seite beschleunigt"
+    },
+    "blogSlugGenerator": {
+      "title": "Blog-Slug-Generator - SEO-URLs für Blogbeiträge | SlugGenerator.app",
+      "description": "URL-Slugs für Blogbeiträge generieren. Funktioniert mit WordPress, Ghost, Hugo, Jekyll und jedem CMS. Kostenloses Tool.",
+      "h1": "Blog-Slug-Generator",
+      "subtitle": "SEO-optimierte URL-Slugs für Blogbeiträge generieren. Funktioniert mit jeder Plattform.",
+      "placeholder": "z.B. 10 Tipps für bessere Blogbeiträge die ranken"
+    },
+    "productSlugGenerator": {
+      "title": "Produkt-Slug-Generator - E-Commerce URL-Generator | SlugGenerator.app",
+      "description": "URL-Slugs für Produktseiten generieren. Funktioniert mit Shopify, WooCommerce, Magento und jeder Plattform. Kostenloses Tool.",
+      "h1": "Produkt-Slug-Generator",
+      "subtitle": "SEO-freundliche URL-Slugs für E-Commerce-Produktseiten generieren.",
+      "placeholder": "z.B. Nike Air Max 90 — Weiß/Schwarz (Herrengröße 44)"
+    },
+    "plainTextConverter": {
+      "title": "Klartext-Konverter - Formatierung entfernen | SlugGenerator.app",
+      "description": "HTML entfernen, unsichtbare Zeichen bereinigen, Smart Quotes normalisieren. Text in Klartext umwandeln. Kostenloses Tool.",
+      "h1": "Klartext-Konverter",
+      "subtitle": "HTML-Tags entfernen, unsichtbare Zeichen bereinigen und Text in Klartext umwandeln.",
+      "placeholder": "<p>Hallo <strong>Welt</strong>!</p> Text hier einfügen…"
+    },
+    "duplicateLineRemover": {
+      "title": "Doppelte Zeilen entfernen - Online Duplikat-Entferner | SlugGenerator.app",
+      "description": "Doppelte Zeilen aus Text sofort entfernen. Listen deduplizieren, Daten bereinigen. Kostenloses Online-Tool.",
+      "h1": "Doppelte Zeilen entfernen",
+      "subtitle": "Doppelte Zeilen aus Text sofort entfernen. Liste einfügen und einzigartige Zeilen erhalten.",
+      "placeholder": "Apfel\nBanane\nKirsche\nApfel\nDattel\nBanane"
+    },
+    "removeEmptyLines": {
+      "title": "Leerzeilen entfernen - Leere Zeilen löschen | SlugGenerator.app",
+      "description": "Leere Zeilen und Leerzeilen aus Text entfernen. Code, Daten und Dokumente bereinigen. Kostenloses Tool.",
+      "h1": "Leerzeilen entfernen",
+      "subtitle": "Leere Zeilen und Zeilen mit nur Leerzeichen aus Text entfernen.",
+      "placeholder": "Zeile 1\n\nZeile 2\n\n\nZeile 3\n\nZeile 4"
+    },
+    "sortLinesAlphabetically": {
+      "title": "Zeilen alphabetisch sortieren - Online Text-Sortierer | SlugGenerator.app",
+      "description": "Textzeilen alphabetisch sortieren (A-Z oder Z-A). Listen ordnen, Importe sortieren. Kostenloses Tool.",
+      "h1": "Zeilen alphabetisch sortieren",
+      "subtitle": "Textzeilen alphabetisch sortieren. Aufsteigend (A-Z) oder absteigend (Z-A).",
+      "placeholder": "Kirsche\nApfel\nBanane\nDattel"
+    },
+    "removeLineBreaks": {
+      "title": "Zeilenumbrüche entfernen - Text zu einem Absatz | SlugGenerator.app",
+      "description": "Zeilenumbrüche entfernen und mehrzeiligen Text zu einem Absatz verbinden. Kostenloses Online-Tool.",
+      "h1": "Zeilenumbrüche entfernen",
+      "subtitle": "Zeilenumbrüche entfernen und Text zu einem zusammenhängenden Absatz verbinden.",
+      "placeholder": "Dieser Text hat\nmehrere Zeilenumbrüche\ndie entfernt werden sollen."
+    },
+    "urlEncoderDecoder": {
+      "title": "URL-Encoder / Decoder - URLs Online Kodieren & Dekodieren | SlugGenerator.app",
+      "description": "URLs und Query-Strings online kodieren oder dekodieren. Unterstützt encodeURIComponent und encodeURI. Kostenlos, sofort, ohne Anmeldung.",
+      "h1": "URL-Encoder / Decoder",
+      "subtitle": "URLs, Query-Parameter und Sonderzeichen kodieren oder dekodieren. Alles läuft in Ihrem Browser.",
+      "placeholder": "z.B. Hello World! @2024 oder Hello%20World%21"
+    },
+    "wordCounter": {
+      "title": "Wörter Zähler - Wörter, Zeichen & Sätze Online Zählen | SlugGenerator.app",
+      "description": "Zählen Sie Wörter, Zeichen, Sätze und Absätze in Ihrem Text. Lesezeit und Keyword-Dichte prüfen. Kostenloses Online-Tool.",
+      "h1": "Wörter Zähler",
+      "subtitle": "Wörter, Zeichen, Sätze und Absätze zählen. Lesezeit und Textstatistiken sofort prüfen.",
+      "placeholder": "Fügen Sie Ihren Text hier ein, um Wörter und Zeichen zu zählen..."
+    },
+    "loremIpsumGenerator": {
+      "title": "Lorem Ipsum Generator - Kostenloser Platzhaltertext | SlugGenerator.app",
+      "description": "Generieren Sie Lorem Ipsum Platzhaltertext für Webdesign, Mockups und Prototypen. Wählen Sie Absätze, Sätze oder Wörter. Kostenloses Tool.",
+      "h1": "Lorem Ipsum Generator",
+      "subtitle": "Platzhaltertext für Designs, Mockups und Prototypen generieren. Wählen Sie Format und Länge.",
+      "placeholder": ""
+    },
+    "utmBuilder": {
+      "title": "UTM-Builder - Kampagnen-URL-Generator | SlugGenerator.app",
+      "description": "Erstellen Sie UTM-Tracking-URLs für Google Analytics-Kampagnen. Fügen Sie utm_source, utm_medium, utm_campaign und mehr hinzu. Kostenloses Tool.",
+      "h1": "UTM-Kampagnen-URL-Builder",
+      "subtitle": "Tracking-URLs mit UTM-Parametern für Google Analytics erstellen.",
+      "placeholder": "https://example.com/landing-page"
+    }
   },
   "blog": {
     "title": "Blog",

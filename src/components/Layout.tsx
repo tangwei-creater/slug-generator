@@ -30,6 +30,10 @@ const toolPaths = [
   { href: "/remove-empty-lines" as const, key: "removeEmptyLines" },
   { href: "/sort-lines-alphabetically" as const, key: "sortLinesAlphabetically" },
   { href: "/remove-line-breaks" as const, key: "removeLineBreaks" },
+  { href: "/url-encoder-decoder" as const, key: "urlEncoderDecoder" },
+  { href: "/word-counter" as const, key: "wordCounter" },
+  { href: "/lorem-ipsum-generator" as const, key: "loremIpsumGenerator" },
+  { href: "/utm-builder" as const, key: "utmBuilder" },
 ];
 
 export async function Header() {

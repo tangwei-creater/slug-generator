@@ -30,6 +30,10 @@ const toolPages = [
   { path: "/remove-empty-lines", priority: 0.8, changeFrequency: "monthly" as const },
   { path: "/sort-lines-alphabetically", priority: 0.8, changeFrequency: "monthly" as const },
   { path: "/remove-line-breaks", priority: 0.8, changeFrequency: "monthly" as const },
+  { path: "/url-encoder-decoder", priority: 0.8, changeFrequency: "monthly" as const },
+  { path: "/word-counter", priority: 0.8, changeFrequency: "monthly" as const },
+  { path: "/lorem-ipsum-generator", priority: 0.8, changeFrequency: "monthly" as const },
+  { path: "/utm-builder", priority: 0.8, changeFrequency: "monthly" as const },
 ];
 
 // Generate blog entries dynamically from the blog registry.

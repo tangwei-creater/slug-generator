@@ -199,6 +199,22 @@
     "removeLineBreaks": {
       "name": "Remove Line Breaks",
       "desc": "Join lines into one paragraph"
+    },
+    "urlEncoderDecoder": {
+      "name": "URL Encoder / Decoder",
+      "desc": "Encode & decode URLs online"
+    },
+    "wordCounter": {
+      "name": "Word Counter",
+      "desc": "Count words, characters & sentences"
+    },
+    "loremIpsumGenerator": {
+      "name": "Lorem Ipsum Generator",
+      "desc": "Generate placeholder text"
+    },
+    "utmBuilder": {
+      "name": "UTM Builder",
+      "desc": "Build campaign tracking URLs"
     }
   },
   "pages": {
@@ -369,6 +385,34 @@
       "h1": "Remove Line Breaks",
       "subtitle": "Remove line breaks and join text into a single continuous paragraph. Clean text from PDFs, emails, and code output.",
       "placeholder": "This text has\nmultiple line breaks\nthat need to be\nremoved and joined."
+    },
+    "urlEncoderDecoder": {
+      "title": "URL Encoder / Decoder - Encode & Decode URLs Online | SlugGenerator.app",
+      "description": "Encode or decode URLs and query strings online. Supports encodeURIComponent and encodeURI modes. Free, instant, no signup.",
+      "h1": "URL Encoder / Decoder",
+      "subtitle": "Encode or decode URLs, query parameters, and special characters. Everything runs in your browser.",
+      "placeholder": "e.g. Hello World! @2024 or Hello%20World%21%20%402024"
+    },
+    "wordCounter": {
+      "title": "Word Counter - Count Words, Characters & Sentences Online | SlugGenerator.app",
+      "description": "Count words, characters, sentences, and paragraphs in your text. Check reading time and keyword density. Free online word counter tool.",
+      "h1": "Word Counter",
+      "subtitle": "Count words, characters, sentences, and paragraphs. Check reading time and text statistics instantly.",
+      "placeholder": "Paste or type your text here to count words, characters, and more..."
+    },
+    "loremIpsumGenerator": {
+      "title": "Lorem Ipsum Generator - Free Placeholder Text Generator | SlugGenerator.app",
+      "description": "Generate lorem ipsum placeholder text for web design, mockups, and prototypes. Choose paragraphs, sentences, or words. Free online tool.",
+      "h1": "Lorem Ipsum Generator",
+      "subtitle": "Generate placeholder text for designs, mockups, and prototypes. Choose the format and length you need.",
+      "placeholder": ""
+    },
+    "utmBuilder": {
+      "title": "UTM Builder - Campaign URL Generator | SlugGenerator.app",
+      "description": "Build UTM tracking URLs for Google Analytics campaigns. Add utm_source, utm_medium, utm_campaign, and more. Free online UTM builder tool.",
+      "h1": "UTM Campaign URL Builder",
+      "subtitle": "Build tracking URLs with UTM parameters for Google Analytics. Generate campaign links in seconds.",
+      "placeholder": "https://example.com/landing-page"
     }
   },
   "blog": {
