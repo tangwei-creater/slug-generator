@@ -6,6 +6,16 @@ const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 const nextConfig: NextConfig = {
   output: "standalone",
   poweredByHeader: false,
+  rewrites: async () => ({
+    beforeFiles: [
+      {
+        source: "/a7f3e9c2b8d4615f0e2a9c7b3d8f4e61.txt",
+        destination: "/api/indexnow",
+      },
+    ],
+    afterFiles: [],
+    fallback: [],
+  }),
   headers: async () => [
     {
       source: "/(.*)",
