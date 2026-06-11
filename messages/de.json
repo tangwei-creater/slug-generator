@@ -204,6 +204,14 @@
       "name": "Zeilenumbrüche entfernen",
       "desc": "Zeilen zu einem Absatz verbinden"
     },
+    "emDashRemover": {
+      "name": "Geviertstrich-Entferner",
+      "desc": "Geviertstriche durch Kommas oder Bindestriche ersetzen"
+    },
+    "invisibleCharacterDetector": {
+      "name": "Unsichtbare-Zeichen-Detektor",
+      "desc": "Versteckte Unicode-Zeichen mit Codepunkten finden"
+    },
     "urlEncoderDecoder": {
       "name": "URL-Encoder / Decoder",
       "desc": "URLs online kodieren & dekodieren"
@@ -390,6 +398,20 @@
       "subtitle": "Zeilenumbrüche entfernen und Text zu einem zusammenhängenden Absatz verbinden.",
       "placeholder": "Dieser Text hat\nmehrere Zeilenumbrüche\ndie entfernt werden sollen."
     },
+    "emDashRemover": {
+      "title": "Geviertstrich entfernen - Em Dash (—) Online Ersetzen | SlugGenerator.app",
+      "description": "Geviertstriche (—) durch Kommas, Bindestriche, Punkte oder Leerzeichen ersetzen oder ganz entfernen. Zählt jeden Strich. Kostenloses Online-Tool.",
+      "h1": "Geviertstrich-Entferner (Em Dash Remover)",
+      "subtitle": "Geviertstriche (—) durch Kommas, Bindestriche oder Punkte ersetzen — oder komplett entfernen. Läuft komplett im Browser.",
+      "placeholder": "Die Ergebnisse waren beeindruckend — weit über den Erwartungen — und das Team feierte."
+    },
+    "invisibleCharacterDetector": {
+      "title": "Unsichtbare Zeichen Erkennen - Versteckte Unicode-Zeichen Finden | SlugGenerator.app",
+      "description": "Unsichtbare Unicode-Zeichen erkennen: Zero-Width Spaces, BOM, weiche Trennstriche und 40+ mehr. Zeigt exakte Codepunkte, Namen und Anzahl. Kostenlos.",
+      "h1": "Unsichtbare-Zeichen-Detektor",
+      "subtitle": "Text auf Zero-Width Spaces, BOM, weiche Trennstriche und 40+ versteckte Unicode-Zeichen scannen. Exakte Codepunkte sehen und mit einem Klick bereinigen.",
+      "placeholder": "Text einfügen, um nach unsichtbaren Unicode-Zeichen zu scannen…"
+    },
     "urlEncoderDecoder": {
       "title": "URL-Encoder / Decoder - URLs Online Kodieren & Dekodieren | SlugGenerator.app",
       "description": "URLs und Query-Strings online kodieren oder dekodieren. Unterstützt encodeURIComponent und encodeURI. Kostenlos, sofort, ohne Anmeldung.",
@@ -412,7 +434,7 @@
       "placeholder": ""
     },
     "utmBuilder": {
-      "title": "UTM-Builder - Kampagnen-URL-Generator | SlugGenerator.app",
+      "title": "UTM Generator - Kampagnen-URLs Online Erstellen | SlugGenerator.app",
       "description": "Erstellen Sie UTM-Tracking-URLs für Google Analytics-Kampagnen. Fügen Sie utm_source, utm_medium, utm_campaign und mehr hinzu. Kostenloses Tool.",
       "h1": "UTM-Kampagnen-URL-Builder",
       "subtitle": "Tracking-URLs mit UTM-Parametern für Google Analytics erstellen.",

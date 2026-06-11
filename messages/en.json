@@ -204,6 +204,14 @@
       "name": "Remove Line Breaks",
       "desc": "Join lines into one paragraph"
     },
+    "emDashRemover": {
+      "name": "Em Dash Remover",
+      "desc": "Replace em dashes with commas or hyphens"
+    },
+    "invisibleCharacterDetector": {
+      "name": "Invisible Character Detector",
+      "desc": "Find hidden Unicode characters with code points"
+    },
     "urlEncoderDecoder": {
       "name": "URL Encoder / Decoder",
       "desc": "Encode & decode URLs online"
@@ -390,6 +398,20 @@
       "subtitle": "Remove line breaks and join text into a single continuous paragraph. Clean text from PDFs, emails, and code output.",
       "placeholder": "This text has\nmultiple line breaks\nthat need to be\nremoved and joined."
     },
+    "emDashRemover": {
+      "title": "Em Dash Remover - Replace Em Dashes (—) Online | SlugGenerator.app",
+      "description": "Remove or replace em dashes (—) with commas, hyphens, periods, or spaces. Counts every dash and cleans your text in one click. Free online tool.",
+      "h1": "Em Dash Remover",
+      "subtitle": "Replace em dashes (—) with commas, hyphens, or periods — or remove them entirely. Counts every dash. Runs in your browser.",
+      "placeholder": "The results were impressive — far beyond expectations — and the team celebrated."
+    },
+    "invisibleCharacterDetector": {
+      "title": "Invisible Character Detector - Find Hidden Unicode Characters | SlugGenerator.app",
+      "description": "Detect invisible Unicode characters: zero-width spaces, BOM, soft hyphens, and 40+ more. Shows exact code points, names, and counts. Free online tool.",
+      "h1": "Invisible Character Detector",
+      "subtitle": "Scan text for zero-width spaces, BOM, soft hyphens, and 40+ hidden Unicode characters. See exact code points and clean them in one click.",
+      "placeholder": "Paste text to scan for invisible Unicode characters…"
+    },
     "urlEncoderDecoder": {
       "title": "URL Encoder / Decoder - Encode & Decode URLs Online | SlugGenerator.app",
       "description": "Encode or decode URLs and query strings online. Supports encodeURIComponent and encodeURI modes. Free, instant, no signup.",
@@ -412,9 +434,9 @@
       "placeholder": ""
     },
     "utmBuilder": {
-      "title": "UTM Builder - Campaign URL Generator | SlugGenerator.app",
-      "description": "Build UTM tracking URLs for Google Analytics campaigns. Add utm_source, utm_medium, utm_campaign, and more. Free online UTM builder tool.",
-      "h1": "UTM Campaign URL Builder",
+      "title": "UTM Generator - Build Campaign Tracking URLs Online | SlugGenerator.app",
+      "description": "Free UTM generator: build UTM tracking URLs for Google Analytics campaigns. Add utm_source, utm_medium, utm_campaign, and more. No signup.",
+      "h1": "UTM Generator (Campaign URL Builder)",
       "subtitle": "Build tracking URLs with UTM parameters for Google Analytics. Generate campaign links in seconds.",
       "placeholder": "https://example.com/landing-page"
     }

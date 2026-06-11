@@ -4,7 +4,7 @@ import { buildMetadata } from "@/lib/seo";
 import { Header, Footer, RelatedTools } from "@/components/Layout";
 import { JsonLd } from "@/components/JsonLd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import SlugTool from "@/components/SlugTool";
+import SingleCaseTool from "@/components/SingleCaseTool";
 
 const siteUrl = "https://sluggenerator.app";
 const path = "/pascal-case-converter";
@@ -86,7 +86,7 @@ export default async function PascalCaseConverter({
             </p>
           </div>
 
-          <SlugTool placeholder={t("placeholder")} />
+          <SingleCaseTool mode="PascalCase" placeholder={t("placeholder")} />
 
           {locale === "en" && (
             <section className="w-full max-w-3xl mx-auto mt-16 prose prose-gray">

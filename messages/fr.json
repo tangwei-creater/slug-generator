@@ -204,6 +204,14 @@
       "name": "Supprimer Sauts de Ligne",
       "desc": "Joindre les lignes en un paragraphe"
     },
+    "emDashRemover": {
+      "name": "Suppression de Tirets Cadratins",
+      "desc": "Remplace les tirets cadratins (—) par virgules ou traits d'union"
+    },
+    "invisibleCharacterDetector": {
+      "name": "Détecteur de Caractères Invisibles",
+      "desc": "Trouve les caractères Unicode cachés avec points de code"
+    },
     "urlEncoderDecoder": {
       "name": "Encodeur / Décodeur d'URL",
       "desc": "Encoder et décoder des URLs en ligne"
@@ -390,6 +398,20 @@
       "subtitle": "Supprimez les sauts de ligne et joignez le texte en un paragraphe continu.",
       "placeholder": "Ce texte a\nplusieurs sauts de ligne\nqui doivent être supprimés."
     },
+    "emDashRemover": {
+      "title": "Suppression de Tirets Cadratins - Remplacer Em Dash (—) | SlugGenerator.app",
+      "description": "Supprimez ou remplacez les tirets cadratins (—) par virgules, traits d'union, points ou espaces. Compte chaque tiret et nettoie en un clic. Outil gratuit.",
+      "h1": "Suppression de Tirets Cadratins (Em Dash)",
+      "subtitle": "Remplacez les tirets cadratins (—) par virgules, traits d'union ou points — ou supprimez-les. Tout s'exécute dans votre navigateur.",
+      "placeholder": "Les résultats étaient impressionnants — bien au-delà des attentes — et l'équipe a célébré."
+    },
+    "invisibleCharacterDetector": {
+      "title": "Détecteur de Caractères Invisibles - Trouver l'Unicode Caché | SlugGenerator.app",
+      "description": "Détectez les caractères Unicode invisibles : espaces sans chasse, BOM, traits d'union conditionnels et plus de 40 types. Points de code exacts et comptages. Gratuit.",
+      "h1": "Détecteur de Caractères Invisibles",
+      "subtitle": "Scannez le texte pour les espaces sans chasse, BOM, traits d'union conditionnels et 40+ caractères cachés. Points de code exacts, nettoyage en un clic.",
+      "placeholder": "Collez du texte pour détecter les caractères Unicode invisibles…"
+    },
     "urlEncoderDecoder": {
       "title": "Encodeur / Décodeur d'URL - Encoder et Décoder des URLs | SlugGenerator.app",
       "description": "Encodez ou décodez des URLs et des chaînes de requête en ligne. Compatible encodeURIComponent et encodeURI. Gratuit, instantané.",
@@ -412,7 +434,7 @@
       "placeholder": ""
     },
     "utmBuilder": {
-      "title": "Constructeur UTM - Générateur d'URLs de Campagne | SlugGenerator.app",
+      "title": "Générateur UTM (UTM Generator) - URLs de Campagne en Ligne | SlugGenerator.app",
       "description": "Construisez des URLs de suivi UTM pour les campagnes Google Analytics. Ajoutez utm_source, utm_medium, utm_campaign et plus. Outil gratuit.",
       "h1": "Constructeur d'URLs UTM",
       "subtitle": "Construisez des URLs de suivi avec des paramètres UTM pour Google Analytics.",

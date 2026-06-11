@@ -31,6 +31,8 @@ const toolIcons: Record<string, string> = {
   removeEmptyLines: "⊟",
   sortLinesAlphabetically: "↕️",
   removeLineBreaks: "↩️",
+  emDashRemover: "—",
+  invisibleCharacterDetector: "👁",
   urlEncoderDecoder: "%20",
   utmBuilder: "📊",
   jsonKeysToCamelcase: "{}",
@@ -79,6 +81,8 @@ const toolCategories: {
       { href: "/remove-empty-lines", key: "removeEmptyLines" },
       { href: "/sort-lines-alphabetically", key: "sortLinesAlphabetically" },
       { href: "/remove-line-breaks", key: "removeLineBreaks" },
+      { href: "/em-dash-remover", key: "emDashRemover" },
+      { href: "/invisible-character-detector", key: "invisibleCharacterDetector" },
     ],
   },
   {

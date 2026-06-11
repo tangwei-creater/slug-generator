@@ -204,6 +204,14 @@
       "name": "Eliminar Saltos de Línea",
       "desc": "Une líneas en un párrafo"
     },
+    "emDashRemover": {
+      "name": "Eliminador de Rayas",
+      "desc": "Reemplaza rayas (—) por comas o guiones"
+    },
+    "invisibleCharacterDetector": {
+      "name": "Detector de Caracteres Invisibles",
+      "desc": "Encuentra caracteres Unicode ocultos con puntos de código"
+    },
     "urlEncoderDecoder": {
       "name": "Codificador / Decodificador de URL",
       "desc": "Codificar y decodificar URLs en línea"
@@ -390,6 +398,20 @@
       "subtitle": "Elimina saltos de línea y une el texto en un párrafo continuo.",
       "placeholder": "Este texto tiene\nvarios saltos de línea\nque necesitan eliminarse."
     },
+    "emDashRemover": {
+      "title": "Eliminador de Rayas - Reemplazar Em Dash (—) Online | SlugGenerator.app",
+      "description": "Elimina o reemplaza rayas (—) por comas, guiones, puntos o espacios. Cuenta cada raya y limpia tu texto en un clic. Herramienta online gratuita.",
+      "h1": "Eliminador de Rayas (Em Dash)",
+      "subtitle": "Reemplaza rayas (—) por comas, guiones o puntos — o elimínalas por completo. Todo se procesa en tu navegador.",
+      "placeholder": "Los resultados fueron impresionantes — mucho más de lo esperado — y el equipo lo celebró."
+    },
+    "invisibleCharacterDetector": {
+      "title": "Detector de Caracteres Invisibles - Encontrar Unicode Oculto | SlugGenerator.app",
+      "description": "Detecta caracteres Unicode invisibles: espacios de ancho cero, BOM, guiones suaves y más de 40 tipos. Muestra puntos de código exactos y recuentos. Gratis.",
+      "h1": "Detector de Caracteres Invisibles",
+      "subtitle": "Escanea texto en busca de espacios de ancho cero, BOM, guiones suaves y 40+ caracteres ocultos. Ve los puntos de código exactos y límpialos en un clic.",
+      "placeholder": "Pega texto para escanear caracteres Unicode invisibles…"
+    },
     "urlEncoderDecoder": {
       "title": "Codificador / Decodificador de URL - Codificar y Decodificar URLs | SlugGenerator.app",
       "description": "Codifica o decodifica URLs y cadenas de consulta en línea. Compatible con encodeURIComponent y encodeURI. Gratis, instantáneo.",
@@ -412,7 +434,7 @@
       "placeholder": ""
     },
     "utmBuilder": {
-      "title": "Constructor UTM - Generador de URLs de Campaña | SlugGenerator.app",
+      "title": "Generador UTM (UTM Generator) - URLs de Campaña Online | SlugGenerator.app",
       "description": "Construye URLs de seguimiento UTM para campañas de Google Analytics. Agrega utm_source, utm_medium, utm_campaign y más. Herramienta gratuita.",
       "h1": "Constructor de URLs UTM",
       "subtitle": "Construye URLs de seguimiento con parámetros UTM para Google Analytics.",

@@ -204,6 +204,14 @@
       "name": "改行削除",
       "desc": "行を結合して1段落に"
     },
+    "emDashRemover": {
+      "name": "EMダッシュ削除",
+      "desc": "EMダッシュを読点やハイフンに置換"
+    },
+    "invisibleCharacterDetector": {
+      "name": "不可視文字検出",
+      "desc": "隠れたUnicode文字をコードポイント付きで検出"
+    },
     "urlEncoderDecoder": {
       "name": "URLエンコーダー / デコーダー",
       "desc": "URLをオンラインでエンコード・デコード"
@@ -390,6 +398,20 @@
       "subtitle": "改行を削除してテキストを1つの連続した段落に結合。",
       "placeholder": "このテキストには\n複数の改行が\nあります"
     },
+    "emDashRemover": {
+      "title": "EMダッシュ削除 - ダッシュ（—）をオンラインで置換 | SlugGenerator.app",
+      "description": "EMダッシュ（—）を読点・ハイフン・句点・スペースに置換、または完全削除。全ダッシュをカウントしてワンクリックで整形。無料ツール。",
+      "h1": "EMダッシュ削除",
+      "subtitle": "EMダッシュ（—）を読点・ハイフン・句点に置換、または完全削除。すべてブラウザ内で処理。",
+      "placeholder": "結果は素晴らしかった — 期待をはるかに超えて — チームは祝杯を挙げた。"
+    },
+    "invisibleCharacterDetector": {
+      "title": "不可視文字検出 - 隠れたUnicode文字を発見 | SlugGenerator.app",
+      "description": "ゼロ幅スペース、BOM、ソフトハイフンなど40種類以上の不可視Unicode文字を検出。正確なコードポイント・名前・個数を表示。無料ツール。",
+      "h1": "不可視文字検出",
+      "subtitle": "ゼロ幅スペース、BOM、ソフトハイフンなど40種類以上の隠れ文字をスキャン。コードポイントを表示してワンクリックで除去。",
+      "placeholder": "不可視Unicode文字をスキャンするテキストを貼り付け…"
+    },
     "urlEncoderDecoder": {
       "title": "URLエンコーダー / デコーダー - URLのエンコード・デコード | SlugGenerator.app",
       "description": "URLやクエリ文字列をオンラインでエンコード・デコード。encodeURIComponentとencodeURIモードに対応。無料・即時。",
@@ -412,7 +434,7 @@
       "placeholder": ""
     },
     "utmBuilder": {
-      "title": "UTMビルダー - キャンペーンURL生成ツール | SlugGenerator.app",
+      "title": "UTMジェネレーター（UTM Generator）- キャンペーンURL生成ツール | SlugGenerator.app",
       "description": "Google Analyticsキャンペーン用のUTMトラッキングURLを作成。utm_source、utm_medium、utm_campaignなどを追加。無料ツール。",
       "h1": "UTMキャンペーンURLビルダー",
       "subtitle": "Google Analytics用のUTMパラメータ付きトラッキングURLを作成。",

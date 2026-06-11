@@ -48,13 +48,9 @@ ssh_run.py
 upload.py
 
 # internal research / QA artifacts (not part of the OSS product)
+/research/
+/tests/
 ahrefs_*.png
 v2_ahrefs_*.png
 v2_wt_*.png
 semrush_*.png
-keyword_research*.py
-keyword_results*.json
-audit_seo.py
-test_live*.py
-live_test/
-saashub_screenshots/

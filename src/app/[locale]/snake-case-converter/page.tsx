@@ -5,7 +5,7 @@ import { buildMetadata } from "@/lib/seo";
 import { Header, Footer, RelatedTools } from "@/components/Layout";
 import { JsonLd } from "@/components/JsonLd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import SlugTool from "@/components/SlugTool";
+import SingleCaseTool from "@/components/SingleCaseTool";
 
 const siteUrl = "https://sluggenerator.app";
 const path = "/snake-case-converter";
@@ -63,7 +63,7 @@ export default async function SnakeCaseConverter({
             </p>
           </div>
 
-          <SlugTool placeholder={t("placeholder")} />
+          <SingleCaseTool mode="snake_case" placeholder={t("placeholder")} />
 
           {locale === "en" && (
             <section className="w-full max-w-3xl mx-auto mt-16 prose prose-gray">
@@ -146,10 +146,63 @@ export default async function SnakeCaseConverter({
                 renaming database columns.
               </p>
 
+              <h2>Snake Case in Python (PEP 8)</h2>
+              <p>
+                Python&apos;s official style guide,{" "}
+                <Link href="/blog/python-naming-conventions-pep8">PEP 8</Link>,
+                mandates snake_case for variables, functions, methods, and module
+                names:
+              </p>
+              <pre>
+                <code>{`# Variables and functions: snake_case
+user_count = 42
+def calculate_total_price(items, tax_rate):
+    ...
+
+# Constants: SCREAMING_SNAKE_CASE
+MAX_CONNECTIONS = 100
+DEFAULT_TIMEOUT_SECONDS = 30
+
+# Classes are the exception: PascalCase
+class OrderProcessor:
+    def get_pending_orders(self):  # methods: snake_case
+        ...`}</code>
+              </pre>
+              <p>
+                Converting JavaScript-style names when porting code? See our guide on{" "}
+                <Link href="/blog/camelcase-to-snake-case-python">
+                  converting camelCase to snake_case in Python
+                </Link>
+                .
+              </p>
+
+              <h2>Snake Case for SQL Columns and Tables</h2>
+              <p>
+                Snake_case is the dominant convention for{" "}
+                <Link href="/blog/database-naming-conventions">database naming</Link>{" "}
+                because SQL is case-insensitive by default and many databases
+                (PostgreSQL in particular) fold unquoted identifiers to lowercase:
+              </p>
+              <pre>
+                <code>{`CREATE TABLE customer_orders (
+    order_id        BIGINT PRIMARY KEY,
+    customer_id     BIGINT REFERENCES customers(customer_id),
+    order_date      DATE NOT NULL,
+    total_amount    NUMERIC(10, 2),
+    shipping_status VARCHAR(20) DEFAULT 'pending'
+);`}</code>
+              </pre>
+              <p>
+                Mixed-case column names like <code>orderDate</code> require quoting
+                (<code>&quot;orderDate&quot;</code>) in PostgreSQL forever after — snake_case
+                avoids that trap entirely.
+              </p>
+
               <h2>Where to Use Snake Case</h2>
               <ul>
                 <li>Python variable and function names (PEP 8 standard)</li>
                 <li>Database table and column names (SQL convention)</li>
+                <li>PHP variable names in many legacy and WordPress codebases</li>
                 <li>Ruby method and variable names</li>
                 <li>API request and response field names</li>
                 <li>Configuration file keys</li>
@@ -190,6 +243,19 @@ export default async function SnakeCaseConverter({
                 <li><code>getUserById</code> → <code>get_user_by_id</code></li>
                 <li><code>HTMLParser</code> → <code>html_parser</code></li>
               </ul>
+              <h2>PythonでのSnake Case（PEP 8）</h2>
+              <p>Python公式スタイルガイド<Link href="/blog/python-naming-conventions-pep8">PEP 8</Link>は、変数・関数・メソッド・モジュール名にsnake_caseを義務付けています：</p>
+              <pre><code>{`user_count = 42
+def calculate_total_price(items, tax_rate):
+    ...
+MAX_CONNECTIONS = 100  # 定数はSCREAMING_SNAKE_CASE`}</code></pre>
+              <h2>SQLカラム・テーブルでのSnake Case</h2>
+              <p>SQLはデフォルトで大文字小文字を区別せず、PostgreSQLは引用符なしの識別子を小文字に変換するため、snake_caseが<Link href="/blog/database-naming-conventions">データベース命名</Link>の主流規約です：</p>
+              <pre><code>{`CREATE TABLE customer_orders (
+    order_id     BIGINT PRIMARY KEY,
+    order_date   DATE NOT NULL,
+    total_amount NUMERIC(10, 2)
+);`}</code></pre>
               <h2>スネークケースの使用場所</h2>
               <ul>
                 <li>Pythonの変数名・関数名（PEP 8標準）</li>
@@ -225,6 +291,19 @@ export default async function SnakeCaseConverter({
                 <li><code>getUserById</code> → <code>get_user_by_id</code></li>
                 <li><code>HTMLParser</code> → <code>html_parser</code></li>
               </ul>
+              <h2>Snake Case in Python (PEP 8)</h2>
+              <p>Pythons offizieller Styleguide <Link href="/blog/python-naming-conventions-pep8">PEP 8</Link> schreibt snake_case für Variablen, Funktionen, Methoden und Modulnamen vor:</p>
+              <pre><code>{`user_count = 42
+def calculate_total_price(items, tax_rate):
+    ...
+MAX_CONNECTIONS = 100  # Konstanten: SCREAMING_SNAKE_CASE`}</code></pre>
+              <h2>Snake Case für SQL-Spalten und -Tabellen</h2>
+              <p>SQL ist standardmäßig nicht case-sensitiv und PostgreSQL wandelt unquotierte Bezeichner in Kleinbuchstaben um — deshalb ist snake_case die dominierende Konvention bei der <Link href="/blog/database-naming-conventions">Datenbank-Benennung</Link>:</p>
+              <pre><code>{`CREATE TABLE customer_orders (
+    order_id     BIGINT PRIMARY KEY,
+    order_date   DATE NOT NULL,
+    total_amount NUMERIC(10, 2)
+);`}</code></pre>
               <h2>Verwendung von Snake Case</h2>
               <ul>
                 <li>Python-Variablen und -Funktionsnamen (PEP 8 Standard)</li>
@@ -260,6 +339,19 @@ export default async function SnakeCaseConverter({
                 <li><code>getUserById</code> → <code>get_user_by_id</code></li>
                 <li><code>HTMLParser</code> → <code>html_parser</code></li>
               </ul>
+              <h2>Snake Case en Python (PEP 8)</h2>
+              <p>La guía de estilo oficial de Python, <Link href="/blog/python-naming-conventions-pep8">PEP 8</Link>, exige snake_case para variables, funciones, métodos y nombres de módulos:</p>
+              <pre><code>{`user_count = 42
+def calculate_total_price(items, tax_rate):
+    ...
+MAX_CONNECTIONS = 100  # Constantes: SCREAMING_SNAKE_CASE`}</code></pre>
+              <h2>Snake Case para columnas y tablas SQL</h2>
+              <p>SQL no distingue mayúsculas por defecto y PostgreSQL convierte los identificadores sin comillas a minúsculas — por eso snake_case es la convención dominante en la <Link href="/blog/database-naming-conventions">nomenclatura de bases de datos</Link>:</p>
+              <pre><code>{`CREATE TABLE customer_orders (
+    order_id     BIGINT PRIMARY KEY,
+    order_date   DATE NOT NULL,
+    total_amount NUMERIC(10, 2)
+);`}</code></pre>
               <h2>Dónde usar Snake Case</h2>
               <ul>
                 <li>Variables y funciones en Python (estándar PEP 8)</li>
@@ -295,6 +387,19 @@ export default async function SnakeCaseConverter({
                 <li><code>getUserById</code> → <code>get_user_by_id</code></li>
                 <li><code>HTMLParser</code> → <code>html_parser</code></li>
               </ul>
+              <h2>Snake Case em Python (PEP 8)</h2>
+              <p>O guia de estilo oficial do Python, <Link href="/blog/python-naming-conventions-pep8">PEP 8</Link>, exige snake_case para variáveis, funções, métodos e nomes de módulos:</p>
+              <pre><code>{`user_count = 42
+def calculate_total_price(items, tax_rate):
+    ...
+MAX_CONNECTIONS = 100  # Constantes: SCREAMING_SNAKE_CASE`}</code></pre>
+              <h2>Snake Case para colunas e tabelas SQL</h2>
+              <p>SQL não diferencia maiúsculas por padrão e o PostgreSQL converte identificadores sem aspas para minúsculas — por isso snake_case é a convenção dominante na <Link href="/blog/database-naming-conventions">nomenclatura de bancos de dados</Link>:</p>
+              <pre><code>{`CREATE TABLE customer_orders (
+    order_id     BIGINT PRIMARY KEY,
+    order_date   DATE NOT NULL,
+    total_amount NUMERIC(10, 2)
+);`}</code></pre>
               <h2>Onde usar Snake Case</h2>
               <ul>
                 <li>Variáveis e funções em Python (padrão PEP 8)</li>
@@ -330,6 +435,19 @@ export default async function SnakeCaseConverter({
                 <li><code>getUserById</code> → <code>get_user_by_id</code></li>
                 <li><code>HTMLParser</code> → <code>html_parser</code></li>
               </ul>
+              <h2>Snake Case en Python (PEP 8)</h2>
+              <p>Le guide de style officiel de Python, <Link href="/blog/python-naming-conventions-pep8">PEP 8</Link>, impose le snake_case pour les variables, fonctions, méthodes et noms de modules :</p>
+              <pre><code>{`user_count = 42
+def calculate_total_price(items, tax_rate):
+    ...
+MAX_CONNECTIONS = 100  # Constantes : SCREAMING_SNAKE_CASE`}</code></pre>
+              <h2>Snake Case pour les colonnes et tables SQL</h2>
+              <p>SQL est insensible à la casse par défaut et PostgreSQL convertit les identifiants non quotés en minuscules — c&apos;est pourquoi le snake_case domine la <Link href="/blog/database-naming-conventions">nomenclature des bases de données</Link> :</p>
+              <pre><code>{`CREATE TABLE customer_orders (
+    order_id     BIGINT PRIMARY KEY,
+    order_date   DATE NOT NULL,
+    total_amount NUMERIC(10, 2)
+);`}</code></pre>
               <h2>Où utiliser le Snake Case</h2>
               <ul>
                 <li>Variables et fonctions Python (standard PEP 8)</li>

@@ -4,7 +4,7 @@ import { buildMetadata } from "@/lib/seo";
 import { Header, Footer, RelatedTools } from "@/components/Layout";
 import { JsonLd } from "@/components/JsonLd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import SlugTool from "@/components/SlugTool";
+import SingleCaseTool from "@/components/SingleCaseTool";
 
 const siteUrl = "https://sluggenerator.app";
 const path = "/dot-case-converter";
@@ -51,7 +51,7 @@ export default async function DotCaseConverter({
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">{t("h1")}</h1>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">{t("subtitle")}</p>
           </div>
-          <SlugTool defaultSeparator="." placeholder={t("placeholder")} />
+          <SingleCaseTool mode="dot.case" placeholder={t("placeholder")} />
           {locale === "en" && (
             <section className="w-full max-w-3xl mx-auto mt-16 prose prose-gray">
               <h2>What Is Dot Case?</h2>
