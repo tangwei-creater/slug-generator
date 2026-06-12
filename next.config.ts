@@ -4,7 +4,8 @@ import createNextIntlPlugin from "next-intl/plugin";
 const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
 const nextConfig: NextConfig = {
-  output: "standalone",
+  // VPS uses standalone; Cloudflare Workers build (BUILD_TARGET=cloudflare) must not.
+  output: process.env.BUILD_TARGET === "cloudflare" ? undefined : "standalone",
   poweredByHeader: false,
   rewrites: async () => ({
     beforeFiles: [
