@@ -17,6 +17,30 @@ const nextConfig: NextConfig = {
     afterFiles: [],
     fallback: [],
   }),
+  redirects: async () => {
+    const deleted = [
+      { src: "/alternating-case-converter", dst: "/case-converter-online" },
+      { src: "/constant-case-converter", dst: "/case-converter-online" },
+      { src: "/dot-case-converter", dst: "/case-converter-online" },
+      { src: "/json-keys-to-camelcase", dst: "/camelcase-converter" },
+      { src: "/json-keys-to-snake-case", dst: "/snake-case-converter" },
+      { src: "/lorem-ipsum-generator", dst: "/" },
+      { src: "/sort-lines-alphabetically", dst: "/" },
+      { src: "/remove-empty-lines", dst: "/" },
+      { src: "/remove-line-breaks", dst: "/" },
+      { src: "/duplicate-line-remover", dst: "/" },
+      { src: "/plain-text-converter", dst: "/" },
+    ];
+    const locales = ["en", "ja", "de", "es", "pt", "fr"];
+    return deleted.flatMap(({ src, dst }) => [
+      { source: src, destination: dst, permanent: true },
+      ...locales.map((l) => ({
+        source: `/${l}${src}`,
+        destination: `/${l}${dst}`,
+        permanent: true,
+      })),
+    ]);
+  },
   headers: async () => [
     {
       source: "/(.*)",
